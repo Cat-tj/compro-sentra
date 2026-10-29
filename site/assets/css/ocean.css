@@ -1,0 +1,34 @@
+/* Laut ASCII (lihat /assets/js/ocean.js), gaya ascii-sharks.
+   Hero beranda: light mode, air biru terang. Footer semua halaman: laut navy.
+   Seluruh area laut ditutup kaca buram: canvas diberi blur langsung (lebih ringan daripada backdrop-filter)
+   dan lapisan warna tipis di atasnya. */
+.hero-ocean { --aqua: #C7E2FF; background: var(--aqua); isolation: isolate; min-height: 640px; display: flex; align-items: center; }
+.hero-ocean::before, .hero-ocean::after { display: none; }
+.hero-ocean-bg { position: absolute; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+.hero-ocean-bg canvas, .footer-ocean canvas { display: block; width: 100%; height: 100%; filter: blur(5px) saturate(1.15); transform: scale(1.02); }
+/* Kaca: warna tipis di seluruh area, pudar ke navbar di atas dan ke section berikutnya di bawah */
+.hero-ocean-bg::after { content: ""; position: absolute; inset: 0; background:
+  linear-gradient(180deg, rgba(199,226,255,.6) 0, transparent 120px),
+  linear-gradient(transparent 85%, var(--alt)),
+  rgba(255,255,255,.28); }
+.hero-ocean .wrap { position: relative; z-index: 1; }
+.hero-ocean .chip { background: rgba(255,255,255,.85); }
+.hero-ocean .btn-ghost { background: rgba(255,255,255,.85); }
+
+/* CTA di atas footer: gradient dari biru muda ke biru tua, lalu footer melanjutkannya ke navy gelap */
+.cta-sec { background:
+  radial-gradient(50% 70% at 12% 0%, rgba(120,180,255,.45) 0%, transparent 70%),
+  radial-gradient(45% 60% at 92% 30%, rgba(59,130,246,.35) 0%, transparent 70%),
+  linear-gradient(180deg, #3F80E4 0%, #2A5FC0 48%, #13306B 100%); }
+
+/* Footer: laut ASCII gelap (gradient sama dengan latar canvas) */
+.site-footer:has(.footer-ocean) { background: linear-gradient(180deg, #13306B, #081530); }
+.footer-ocean { position: absolute; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+.footer-ocean::after { content: ""; position: absolute; inset: 0; background:
+  linear-gradient(180deg, #13306B 0, rgba(19,48,107,0) 64px),
+  rgba(10,27,61,.3); }
+.site-footer .sf-mark { z-index: 0; }
+
+@media (max-width: 767px) {
+  .hero-ocean-bg canvas, .footer-ocean canvas { filter: blur(4px); }
+}
