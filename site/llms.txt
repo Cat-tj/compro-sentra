@@ -1,0 +1,64 @@
+# Sentra Technology (PT. Sentra Visi Teknologi)
+
+> Sentra Technology is an Indonesian technology company headquartered in Samarinda, East Kalimantan, founded in 2019. It builds AI on top of existing CCTV (video analytics, PPE detection, face-recognition attendance), IoT and field hardware (smartlocks, GPS fleet telematics, sensors, networking), private on-premise LLMs, and custom enterprise software for government, universities, industry (mining, plantations, logistics), healthcare, and corporate clients across Indonesia and abroad.
+
+Key facts:
+
+- Legal name: PT. Sentra Visi Teknologi. Brand: Sentra Technology.
+- Founded: 2019, Samarinda, East Kalimantan, Indonesia. Office: Kompleks Graha Indah A.13, Samarinda Kota.
+- Team: 13 in-house experts (leadership, hardware division, software division). CEO: Muhammad Nabil Akbar Pratama. COO: Richard Chandra Tjiang.
+- Track record: 50+ delivered projects. Clients include Pemerintah Kota Samarinda, Diskominfosandi Kabupaten Barito Utara, Universitas Mulawarman, Institut Teknologi Kalimantan, STT Migas Balikpapan, PT. Adhi Karya, PT Astra International Tbk, 1Ci Enterprise, and MBC Entertainment.
+- Award: POMPy BATARA, a thematic map portal built by Sentra for Kabupaten Barito Utara, helped the regency win the Digital Innovation Award 2026.
+- Working model: free initial consultation, then a measured 2–4 week pilot before rollout; full rollouts typically take 2–6 months. All products can run on-premise or in a private cloud; no vendor lock-in.
+- Support: 100% in-house team based in Indonesia, SLA response time of 1–4 hours depending on tier, with on-site field teams for large deployments.
+- Hardware partners: TP-Link VIGI (CCTV), Teltonika (GPS trackers), Lenovo, Starlink.
+- Languages: Indonesian (default), English, Chinese, Korean, Malay.
+- Contact: admin@sentratechnology.com, WhatsApp/phone +62 822-5544-3380, https://www.sentratechnology.com/contact
+
+## Services
+
+- [CCTV Analytics](https://www.sentratechnology.com/en/services/cctv-analytics): AI layer on existing CCTV that detects people, vehicles, restricted zones, and incidents, with real-time alerts.
+- [Computer Vision](https://www.sentratechnology.com/en/services/computer-vision): PPE/safety detection, face recognition, and text reading from cameras, trained on Indonesian field data.
+- [Private LLM](https://www.sentratechnology.com/en/services/private-llm): internal AI assistant that answers from company documents and runs on the client's own servers.
+- [IoT & Hardware](https://www.sentratechnology.com/en/services/iot-hardware): smartlocks, fleet telematics, sensors, gateways, and networking, from site survey to maintenance.
+- [Custom Software](https://www.sentratechnology.com/en/services/custom-software): web and mobile applications built around a team's workflow.
+- [System Integration](https://www.sentratechnology.com/en/services/integrasi-sistem): connects ERP, HRIS, CCTV, and legacy databases via APIs, connectors, and SSO.
+- [Data & Analytics](https://www.sentratechnology.com/en/services/data-analytics): real-time dashboards, ETL, thematic maps, and media analytics.
+- [Technology Consulting](https://www.sentratechnology.com/en/services/konsultasi-teknologi): infrastructure assessment and 3–5 year digital transformation roadmaps.
+
+## Products
+
+- [Safety AI](https://www.sentratechnology.com/en/produk/safety-ai): computer vision for occupational safety (K3/HSE), including PPE detection.
+- [Attendance](https://www.sentratechnology.com/en/produk/attendance): face-recognition attendance that prevents buddy punching and syncs with HRIS.
+- [HRIS Sentra](https://www.sentratechnology.com/en/produk/hris): end-to-end HR, leave, overtime, and payroll.
+- [Smartlock](https://www.sentratechnology.com/en/produk/smartlock): smart door access control.
+- [Fleet](https://www.sentratechnology.com/en/produk/fleet): GPS fleet telematics, fuel, and driver behavior monitoring.
+- [sentrAI](https://www.sentratechnology.com/en/produk/sentrai): on-premise private LLM.
+- [Sentra Meeting](https://www.sentratechnology.com/en/produk/meeting): enterprise video conferencing with recording and Indonesian transcription.
+- [Integrasi](https://www.sentratechnology.com/en/produk/integrasi), [Kiosk](https://www.sentratechnology.com/en/produk/kiosk), [Invoice](https://www.sentratechnology.com/en/produk/invoice), [Website](https://www.sentratechnology.com/en/produk/website).
+- [Device catalog](https://www.sentratechnology.com/en/produk) and [VIGI CCTV catalog](https://www.sentratechnology.com/en/katalog-cctv-vigi): procurement and installation of CCTV, GPS trackers, Starlink, laptops, servers, displays, and fiber.
+
+## Selected projects
+
+- [POMPy BATARA](https://www.sentratechnology.com/en/portfolio/pompy-batara): thematic map portal for Diskominfosandi Kabupaten Barito Utara.
+- [DAPODIK Geospatial Dashboard](https://www.sentratechnology.com/en/portfolio/dashboard-geospasial-dapodik): education data mapping for Kabupaten Barito Utara.
+- [Smart Attendance](https://www.sentratechnology.com/en/portfolio/smart-attendance): face-recognition attendance at Universitas Mulawarman.
+- [AI PPE Detection](https://www.sentratechnology.com/en/portfolio/deteksi-apd-ai): safety detection for PT. Multi Harapan Utama.
+- [Fleet Management System](https://www.sentratechnology.com/en/portfolio/fleet-management): mining contractor in East Kalimantan.
+- [HRIS Mobile & Payroll](https://www.sentratechnology.com/en/portfolio/hris-mobile-payroll): Bukit Baiduri Energi.
+- [All projects](https://www.sentratechnology.com/en/portfolio)
+
+## Company
+
+- [About Sentra Technology](https://www.sentratechnology.com/en/about)
+- [Solutions by industry](https://www.sentratechnology.com/en/industri)
+- [Articles and guides](https://www.sentratechnology.com/en/blog)
+- [Careers](https://www.sentratechnology.com/en/careers)
+- [Support](https://www.sentratechnology.com/en/support)
+- [Contact / consultation](https://www.sentratechnology.com/en/contact)
+
+## Optional
+
+- Indonesian version (default): https://www.sentratechnology.com/
+- Chinese: https://www.sentratechnology.com/zh/ · Korean: https://www.sentratechnology.com/ko/ · Malay: https://www.sentratechnology.com/ms/
+- Sitemap: https://www.sentratechnology.com/sitemap.xml
