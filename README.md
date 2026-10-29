@@ -6,8 +6,9 @@ Website company profile PT. Sentra Visi Teknologi. Situs statis (HTML/CSS/JS) da
 
 - `site/` — seluruh isi website, disajikan apa adanya oleh Vercel.
 - `vercel.json` — tanpa build. Mengatur URL bersih (`/about` → `site/about.html`, `/about.html` → 308 ke `/about`), cache aset, dan halaman 404 per bahasa.
-- `site/assets/js/ocean.js` (+ `ocean-worker.js`, `ocean/scene.js`) dan `site/assets/css/ocean.css` — laut ASCII bergaya ascii-sharks (hiu berwarna, ikan `-` `><` `<=>` `<>`): hero beranda versi light mode (air biru terang, ikan warna-warni) dan footer semua halaman versi gelap (gradient biru tua ke navy yang menyambung CTA di atasnya). Seluruh area laut di hero dan footer tertutup kaca buram (blur di canvas + lapisan warna tipis). Digambar di Web Worker lewat OffscreenCanvas supaya thread utama tetap bebas. HP memakai preset lebih ringan (hiu lebih sedikit, fps lebih rendah), dan kualitas turun otomatis sampai gambar diam kalau perangkat kewalahan. Saat mengubah file di `assets/js/ocean*`, naikkan versi `?v=` di semua import dan di HTML, karena `/assets/*` di-cache setahun.
-- `site/assets/js/ocean/` — engine laut ASCII dari [ascii-sharks](https://github.com/stackedlol/ascii-sharks) (MIT, lihat `LICENSE.txt` di folder itu), dikonversi ke JS biasa, ditambah tema (warna hiu, glyph ikan) dan dukungan Web Worker.
+- `site/assets/js/field.js` + `site/assets/css/ocean.css` — medan ASCII: gumpalan glyph yang pelan-pelan berubah bentuk, digambar di GPU dengan satu fragment shader WebGL (simplex noise, MIT). Hero beranda versi light mode (glyph biru di atas biru terang) dan footer semua halaman versi gelap (gradient biru tua ke navy yang menyambung CTA). CPU hampir tidak terpakai; 30 fps, berhenti saat di luar layar, dan satu frame diam tanpa WebGL atau saat "kurangi gerakan" aktif.
+- `site/assets/js/reach.js` + `site/assets/css/reach.css` + `site/assets/img/reach/` — peta jangkauan interaktif di section "Pusat teknologi dari Samarinda": Hardware (Kalimantan Timur) dan Software (seluruh dunia). Data peta dari Natural Earth dan batas provinsi BAKOSURTANAL.
+- Saat mengubah file di `/assets`, naikkan versi `?v=` di HTML (dan di import antar-modul), karena `/assets/*` di-cache setahun.
 
 ## Jalankan lokal
 

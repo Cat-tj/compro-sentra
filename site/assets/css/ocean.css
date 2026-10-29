@@ -1,16 +1,14 @@
-/* Laut ASCII (lihat /assets/js/ocean.js), gaya ascii-sharks.
-   Hero beranda: light mode, air biru terang. Footer semua halaman: laut navy.
-   Seluruh area laut ditutup kaca buram: canvas diberi blur langsung (lebih ringan daripada backdrop-filter)
-   dan lapisan warna tipis di atasnya. */
-.hero-ocean { --aqua: #C7E2FF; background: var(--aqua); isolation: isolate; min-height: 640px; display: flex; align-items: center; }
+/* Medan ASCII (lihat /assets/js/field.js): gumpalan glyph yang pelan-pelan berubah bentuk, digambar di GPU.
+   Hero beranda: light mode, glyph biru di atas biru terang. Footer semua halaman: glyph biru di atas navy. */
+.hero-ocean { --aqua: #D6E8FF; background: var(--aqua); isolation: isolate; min-height: 640px; display: flex; align-items: center; }
 .hero-ocean::before, .hero-ocean::after { display: none; }
 .hero-ocean-bg { position: absolute; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
-.hero-ocean-bg canvas, .footer-ocean canvas { display: block; width: 100%; height: 100%; filter: blur(5px) saturate(1.15); transform: scale(1.02); }
-/* Kaca: warna tipis di seluruh area, pudar ke navbar di atas dan ke section berikutnya di bawah */
+.hero-ocean-bg canvas, .footer-ocean canvas { display: block; width: 100%; height: 100%; }
+/* Sorotan lembut di belakang teks, pudar ke navbar di atas dan ke section berikutnya di bawah */
 .hero-ocean-bg::after { content: ""; position: absolute; inset: 0; background:
-  linear-gradient(180deg, rgba(199,226,255,.6) 0, transparent 120px),
-  linear-gradient(transparent 85%, var(--alt)),
-  rgba(255,255,255,.28); }
+  radial-gradient(ellipse 52% 46% at 50% 50%, rgba(214,232,255,.94), rgba(214,232,255,.6) 62%, transparent),
+  linear-gradient(180deg, rgba(214,232,255,.7) 0, transparent 120px),
+  linear-gradient(transparent 85%, var(--alt)); }
 .hero-ocean .wrap { position: relative; z-index: 1; }
 .hero-ocean .chip { background: rgba(255,255,255,.85); }
 .hero-ocean .btn-ghost { background: rgba(255,255,255,.85); }
@@ -21,14 +19,14 @@
   radial-gradient(45% 60% at 92% 30%, rgba(59,130,246,.35) 0%, transparent 70%),
   linear-gradient(180deg, #3F80E4 0%, #2A5FC0 48%, #13306B 100%); }
 
-/* Footer: laut ASCII gelap (gradient sama dengan latar canvas) */
+/* Footer: gradient sama dengan latar canvas; lapisan tipis menjaga teks tetap terbaca */
 .site-footer:has(.footer-ocean) { background: linear-gradient(180deg, #13306B, #081530); }
 .footer-ocean { position: absolute; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
 .footer-ocean::after { content: ""; position: absolute; inset: 0; background:
   linear-gradient(180deg, #13306B 0, rgba(19,48,107,0) 64px),
-  rgba(10,27,61,.3); }
+  rgba(8,21,48,.35); }
 .site-footer .sf-mark { z-index: 0; }
-
-@media (max-width: 767px) {
-  .hero-ocean-bg canvas, .footer-ocean canvas { filter: blur(4px); }
+/* HP: teks footer memenuhi lebar layar, jadi glyph di belakangnya dibuat lebih samar */
+@media (max-width: 640px) {
+  .footer-ocean::after { background: linear-gradient(180deg, #13306B 0, rgba(19,48,107,0) 64px), rgba(8,21,48,.6); }
 }
