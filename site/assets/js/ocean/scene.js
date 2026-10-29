@@ -1,7 +1,7 @@
 // Inti laut ASCII Sentra: simulasi, render, koin logo, dan kualitas adaptif.
 // Tanpa DOM, jadi bisa jalan di Web Worker (OffscreenCanvas) maupun di thread utama sebagai cadangan.
-import { World } from "./world.js?v=20261029e";
-import { AsciiRenderer } from "./renderer.js?v=20261029e";
+import { World } from "./world.js?v=20261029f";
+import { AsciiRenderer } from "./renderer.js?v=20261029f";
 
 var STEP = 1 / 60, MAX_STEPS = 4;
 var SPIN = 5.2;            // detik per putaran koin
@@ -15,7 +15,7 @@ export var FONT = "ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mo
 
 // Tingkat kualitas, dari terbaik ke teringan; null = satu frame diam.
 // slow: median waktu frame (ms) yang membuat scene turun satu tingkat.
-// Hero dan footer memakai laut yang sama; footer tanpa koin dan lebih hemat.
+// Hero: laut terang (light mode) + koin logo. Footer: laut gelap tanpa koin, lebih hemat.
 export var PRESETS = {
   hero: [
     { fps: 60, dpr: 2, sharks: 3, slow: 10 },
@@ -41,8 +41,9 @@ export var PRESETS = {
   ],
 };
 
-// Gaya ascii-sharks asli: latar hitam, hiu berwarna solid, ikan sebagai -, ><, <=>, <>.
-var THEME = {
+// Gaya ascii-sharks asli: hiu berwarna solid, ikan sebagai -, ><, <=>, <>.
+// Footer: latar hitam seperti aslinya.
+var DARK = {
   bg: "#000",
   sharks: [
     [1.55, 0.88, 0.26],    // oranye
@@ -58,12 +59,35 @@ var THEME = {
   ],
 };
 
+// Hero (light mode): air biru terang, ikan warna-warni seperti ikan hias, hiu yang kontras di latar biru.
+var LIGHT = {
+  bg: "#C7E2FF",
+  grid: "rgba(44,91,184,0.08)",
+  wake: [30, 110, 210],
+  wakeAlpha: 0.55,
+  light: true,
+  sharks: [
+    [1.95, 1.08, 0.3],     // oranye (lebih terang dari versi gelap supaya tidak kecokelatan di latar biru)
+    [0.34, 0.5, 1.6],      // biru tua
+    [1.95, 0.72, 0.62],    // coral
+  ],
+  fish: [
+    { glyph: "-", far: "rgba(232,89,12,.55)", near: "rgba(232,89,12,.95)" },       // oranye
+    { glyph: "-", far: "rgba(201,140,0,.55)", near: "rgba(201,140,0,.95)" },       // kuning
+    { glyph: "><", far: "rgba(214,51,108,.55)", near: "rgba(214,51,108,.95)" },    // pink
+    { glyph: "<=>", far: "rgba(8,140,126,.6)", near: "rgba(8,140,126,.95)" },      // toska
+    { glyph: "<>", far: "rgba(112,72,232,.55)", near: "rgba(112,72,232,.95)" },    // ungu
+  ],
+};
+
 var raf = typeof requestAnimationFrame === "function" ? requestAnimationFrame.bind(self) : function (cb) { return setTimeout(function () { cb(performance.now()); }, 16); };
 var caf = typeof cancelAnimationFrame === "function" ? cancelAnimationFrame.bind(self) : clearTimeout;
 
-function Coin(tex, bg) {
+function Coin(tex, theme) {
   this.tex = tex;          // { data: Uint8ClampedArray RGBA, n: sisi tekstur }
-  this.bg = bg;            // warna latar laut; menutup ikan dan hiu yang lewat di belakang koin
+  this.light = !!theme.light;
+  // Muka koin menutup ikan dan hiu yang lewat di belakangnya: putih di laut terang, warna laut di laut gelap.
+  this.bg = this.light ? "#F7FBFF" : theme.bg;
   this.cx = 0; this.cy = 0; this.r = 0;
   this.rows = []; this.palette = []; this.styles = {}; this.buckets = {};
   this.cw = 0; this.ch = 0;
@@ -132,7 +156,10 @@ Coin.prototype.draw = function (ctx, cw, ch, t) {
   var glint = sin * 0.9;                  // pita kilau yang menyapu muka koin
   var du = a > 0.5 ? cw / a : 0;
   var rimLevel = Math.round(Math.abs(sin) * 3);
-  var rimStyle = this.style("r" + rimLevel, function () { return "rgba(120,150,210," + (0.55 + 0.35 * rimLevel / 3).toFixed(2) + ")"; });
+  var light_ = this.light;
+  var rimStyle = this.style("r" + rimLevel, function () {
+    return (light_ ? "rgba(44,91,184," : "rgba(120,150,210,") + (0.55 + 0.35 * rimLevel / 3).toFixed(2) + ")";
+  });
   var rimGlyph = a < cw ? "|" : null;
 
   for (var key in this.buckets) this.buckets[key].length = 0;
@@ -156,6 +183,7 @@ Coin.prototype.draw = function (ctx, cw, ch, t) {
         var k = Math.min(LEVELS - 1, Math.round(Math.min(1, light + shine * 0.5) * (LEVELS - 1)));
         this.put(this.style("o" + k, function () {
           var f = k / (LEVELS - 1);
+          if (light_) return "rgb(" + Math.round(44 + 70 * (1 - f)) + "," + Math.round(91 + 60 * (1 - f)) + "," + Math.round(184 + 40 * (1 - f)) + ")";
           return "rgb(" + Math.round(150 * f) + "," + Math.round(180 * f) + "," + Math.round(235 * f) + ")";
         }), rr > 0.96 ? "o" : "O", x, y);
         continue;
@@ -171,12 +199,17 @@ Coin.prototype.draw = function (ctx, cw, ch, t) {
         var lv = Math.min(LEVELS - 1, Math.round((light + shine * 0.6) / 1.6 * (LEVELS - 1)));
         var gi = Math.min(FACE_RAMP.length - 1, 5 + Math.floor(best * 4.99));
         this.put(this.style("l" + bc + "_" + lv, function () {
-          var c = self.palette[bc], lift = (lv / (LEVELS - 1)) * 1.6 * 1.7;
+          var c = self.palette[bc];
+          if (light_) {
+            var m = 0.7 + 0.4 * (1 - lv / (LEVELS - 1));   // kilau menerangkan logo sedikit
+            return "rgb(" + Math.min(255, Math.round(c[0] * m)) + "," + Math.min(255, Math.round(c[1] * m)) + "," + Math.min(255, Math.round(c[2] * m)) + ")";
+          }
+          var lift = (lv / (LEVELS - 1)) * 1.6 * 1.7;
           return "rgb(" + Math.min(255, Math.round(c[0] * lift + 40)) + "," + Math.min(255, Math.round(c[1] * lift + 46)) + "," + Math.min(255, Math.round(c[2] * lift + 52)) + ")";
         }), FACE_RAMP[gi], x, y);
       } else if (((col * 7 + L.row * 13) & 3) === 0 || shine > 0.35) {
         var dl = Math.min(3, Math.round(shine * 3));
-        this.put(this.style("d" + dl, function () { return "rgba(110,140,200," + (0.1 + 0.15 * dl).toFixed(2) + ")"; }), shine > 0.35 ? ":" : ".", x, y);
+        this.put(this.style("d" + dl, function () { return (light_ ? "rgba(44,91,184," : "rgba(110,140,200,") + (0.1 + 0.15 * dl).toFixed(2) + ")"; }), shine > 0.35 ? ":" : ".", x, y);
       }
     }
   }
@@ -197,7 +230,8 @@ export function Scene(canvas, opts) {
   this.sharkSpecs = this.world.sharkSpecs;   // hiu dipanggil ulang tiap resize; tingkat kualitas memangkas jumlahnya
   this.renderer = new AsciiRenderer(canvas);
   this.renderer.setFontFamily(FONT);
-  this.renderer.setTheme(THEME);
+  this.theme = opts.preset.indexOf("hero") === 0 ? LIGHT : DARK;
+  this.renderer.setTheme(this.theme);
   this.ctx = canvas.getContext("2d");
   this.coin = null;
   this.w = 0; this.h = 0; this.dpr = 1;
@@ -210,7 +244,7 @@ export function Scene(canvas, opts) {
 Scene.prototype.still = function () { return this.reduced || !this.quality[this.level]; };
 
 Scene.prototype.setCoin = function (geom, tex) {
-  if (tex) this.coin = new Coin(tex, THEME.bg);
+  if (tex) this.coin = new Coin(tex, this.theme);
   if (this.coin && geom) this.coin.place(geom);
   if (this.still()) this.paintStill();
 };

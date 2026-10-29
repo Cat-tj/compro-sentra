@@ -3,7 +3,7 @@
 // - footer semua halaman: kawanan ikan "><>" saja.
 // Gambar dan simulasi berjalan di Web Worker (ocean-worker.js) supaya scroll tetap mulus.
 // Browser tanpa OffscreenCanvas memakai cadangan di thread utama dengan kualitas lebih rendah.
-var V = "20261029e";
+var V = "20261029f";
 
 function weakDevice() {
   var c = navigator.connection;
