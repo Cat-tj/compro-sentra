@@ -15,6 +15,15 @@
 .hero-ocean .chip { background: rgba(255,255,255,.85); }
 .hero-ocean .btn-ghost { background: rgba(255,255,255,.85); }
 
+/* Hero halaman Artikel: medan + kaca yang sama dengan beranda, tinggi tetap mengikuti isi; pudar ke putih di bawah */
+.page-ocean { background: #D6E8FF; isolation: isolate; padding-bottom: clamp(52px, 7vw, 84px); }
+.page-ocean::before { display: none; }
+.page-ocean .hero-ocean-bg::after { background:
+  linear-gradient(180deg, rgba(214,232,255,.7) 0, transparent 120px),
+  linear-gradient(transparent 70%, var(--bg)),
+  rgba(236,244,255,.42); }
+.page-ocean .wrap { position: relative; z-index: 1; }
+
 /* CTA di atas footer: gradient dari biru muda ke biru tua, lalu footer melanjutkannya ke navy gelap */
 .cta-sec { background:
   radial-gradient(50% 70% at 12% 0%, rgba(120,180,255,.45) 0%, transparent 70%),
@@ -30,3 +39,7 @@
 /* Watermark logo besar bertumpuk dengan pola glyph; logo utama sudah cukup */
 .site-footer:has(.footer-ocean) .sf-mark { display: none; }
 .site-footer.flush:has(.footer-ocean) .wrap { border-top: 0; }
+
+/* Halaman Tentang: kolam koi ASCII (lihat /assets/js/koi.js) menggantikan foto tim */
+.koi-pond { position: relative; aspect-ratio: 4 / 3.3; border-radius: var(--r-lg); border: 6px solid #fff; box-shadow: var(--shadow-2); background: linear-gradient(#2C6E92, #1B4A6B); }
+.koi-pond canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; border-radius: calc(var(--r-lg) - 6px); }

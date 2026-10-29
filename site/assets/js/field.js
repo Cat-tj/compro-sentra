@@ -5,7 +5,7 @@
 var VERT = "attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}";
 
 // Simplex noise 3D: Ian McEwan & Stefan Gustavson (Ashima Arts), MIT License.
-var NOISE = [
+export var NOISE = [
   "vec3 m289(vec3 x){return x-floor(x*(1./289.))*289.;}",
   "vec4 m289(vec4 x){return x-floor(x*(1./289.))*289.;}",
   "vec4 perm(vec4 x){return m289(((x*34.)+1.)*x);}",
@@ -52,18 +52,19 @@ var FRAG = [
 
 var GLYPHS = ".:-=+*#%@";
 
-function hex(c) {
+export function hex(c) {
   var n = parseInt(c.slice(1), 16);
   return [(n >> 16 & 255) / 255, (n >> 8 & 255) / 255, (n & 255) / 255];
 }
 
-function atlas(gl, cellPx) {
-  var c = document.createElement("canvas"), n = GLYPHS.length;
+export function atlas(gl, cellPx, glyphs) {
+  glyphs = glyphs || GLYPHS;
+  var c = document.createElement("canvas"), n = glyphs.length;
   c.width = cellPx * n; c.height = cellPx;
   var g = c.getContext("2d");
   g.font = "600 " + Math.round(cellPx * 0.82) + "px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace";
   g.textAlign = "center"; g.textBaseline = "middle"; g.fillStyle = "#fff";
-  for (var i = 0; i < n; i++) g.fillText(GLYPHS[i], i * cellPx + cellPx / 2, cellPx / 2 + 1);
+  for (var i = 0; i < n; i++) g.fillText(glyphs[i], i * cellPx + cellPx / 2, cellPx / 2 + 1);
   var tex = gl.createTexture();
   gl.bindTexture(gl.TEXTURE_2D, tex);
   gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, c);
@@ -138,8 +139,8 @@ Field.prototype.tick = function (now) {
   if (this.o.onStats) this.o.onStats(ms, gap);
 };
 
-// Hero beranda (light mode) dan footer semua halaman (gelap, menyambung CTA biru di atasnya).
-var hero = document.querySelector(".hero-ocean canvas"), footer = document.querySelector(".footer-ocean canvas");
+// Hero beranda dan hero halaman Artikel (light mode), footer semua halaman (gelap, menyambung CTA biru di atasnya).
+var hero = document.querySelector(".hero-ocean-bg canvas"), footer = document.querySelector(".footer-ocean canvas");
 var small = window.matchMedia("(max-width: 640px)").matches;
 if (hero) new Field(hero, { bg: "#D6E8FF", c1: "#7FA6E6", c2: "#2C5BB8", cell: small ? 10 : 12, scale: small ? 180 : 260, thresh: 0.48 });
 if (footer) new Field(footer, { bg: "#13306B", bg2: "#081530", c1: "#3E6FCC", c2: "#A9C6F5", cell: small ? 10 : 11, scale: small ? 170 : 220, thresh: 0.5 });
