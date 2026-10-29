@@ -7,8 +7,8 @@
  *   4. sharks rasterised cell-by-cell with supersampled edges: grey blocks
  *      shaded by the light, dense glyphs, and shimmering accent colours
  */
-import { clamp, hash3, smoothstep } from "./math.js";
-import { SHARK_NODES,                                        } from "./world.js";
+import { clamp, hash3, smoothstep } from "./math.js?v=20261029c";
+import { SHARK_NODES,                                        } from "./world.js?v=20261029c";
 
 export const BG = "#06122B";
 const ALPHA_LEVELS = 6;
@@ -325,7 +325,7 @@ export class AsciiRenderer {
     const ctx = canvas.getContext("2d", { alpha: false });
     if (!ctx) throw new Error("2D canvas unavailable");
     this.ctx = ctx;
-    this.bg = document.createElement("canvas");
+    this.bg = typeof document !== "undefined" ? document.createElement("canvas") : new OffscreenCanvas(1, 1);
 
     for (let c = 0; c < DOT_RGB.length; c++) {
       const [r, g, b] = DOT_RGB[c];
@@ -381,6 +381,7 @@ export class AsciiRenderer {
       this.sharkKind = new Uint8Array(n);
       this.sharkShadow = new Uint8Array(n);
       this.fishStamp = new Uint32Array(n);
+      this.fishDir = new Int8Array(n);
     }
 
     for (let i = 0; i < n; i++) {
@@ -841,6 +842,7 @@ export class AsciiRenderer {
         const i = this.cellIndex(f.x, f.y);
         if (i < 0 || fishStamp[i] === frame || sharkFlag[i]) continue;
         fishStamp[i] = frame;
+        this.fishDir[i] = f.vx < 0 ? -1 : 1;
         const glint = clamp(Math.abs(f.turn) / 3.5, 0, 1);
         const v = 0.3 + (0.4 * (f.depth - 0.55)) / 0.45 + 0.3 * Math.max(glint, f.alarm);
         fishBuckets[clamp(Math.floor(v * FISH_ALPHAS.length), 0, FISH_ALPHAS.length - 1)].push(i);
@@ -850,14 +852,19 @@ export class AsciiRenderer {
 
           drawFish() {
     const { ctx, cw, ch, cols, fishBuckets } = this;
+    // Sentra: ikan bisa digambar lebih besar dari sel (footer), lalu font dikembalikan.
+    const font = ctx.font;
+    if (this.fishScale) ctx.font = `600 ${Math.round(ch * 0.74 * this.fishScale)}px ${this.fontFamily}`;
     for (let b = 0; b < fishBuckets.length; b++) {
       const bucket = fishBuckets[b];
       if (!bucket.length) continue;
       ctx.fillStyle = this.fishStyles[b];
       for (const i of bucket) {
-        ctx.fillText("-", (i % cols) * cw + cw / 2, ((i / cols) | 0) * ch + ch / 2 + 1);
+        const g = this.fishGlyphs;
+        ctx.fillText(g ? g[this.fishDir[i] < 0 ? 0 : 1] : "-", (i % cols) * cw + cw / 2, ((i / cols) | 0) * ch + ch / 2 + 1);
       }
     }
+    ctx.font = font;
   }
 
           drawHeat() {

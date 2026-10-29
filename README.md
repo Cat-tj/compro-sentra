@@ -6,7 +6,7 @@ Website company profile PT. Sentra Visi Teknologi. Situs statis (HTML/CSS/JS) da
 
 - `site/` — seluruh isi website, disajikan apa adanya oleh Vercel.
 - `vercel.json` — tanpa build. Mengatur URL bersih (`/about` → `site/about.html`, `/about.html` → 308 ke `/about`), cache aset, dan halaman 404 per bahasa.
-- `site/assets/js/ocean.js` + `site/assets/css/ocean.css` — laut ASCII: di hero beranda (hiu + ikan, logo Sentra sebagai koin ASCII yang berputar) dan di footer semua halaman (ikan saja). Kualitas menyesuaikan perangkat: 30 fps, turun ke 20 fps / 2 hiu di perangkat lemah, dan berhenti jadi gambar diam kalau masih terlalu berat.
+- `site/assets/js/ocean.js` (+ `ocean-worker.js`, `ocean/scene.js`) dan `site/assets/css/ocean.css` — laut ASCII di hero beranda (hiu + ikan, logo Sentra sebagai koin ASCII yang berputar) dan di footer semua halaman (kawanan ikan `><>`). Digambar di Web Worker lewat OffscreenCanvas supaya thread utama tetap bebas; kualitas turun otomatis (60 → 30 → 20 fps → gambar diam) kalau perangkat kewalahan. Saat mengubah file di `assets/js/ocean*`, naikkan versi `?v=` di semua import dan di HTML, karena `/assets/*` di-cache setahun.
 - `site/assets/js/ocean/` — engine laut ASCII dari [ascii-sharks](https://github.com/stackedlol/ascii-sharks) (MIT, lihat `LICENSE.txt` di folder itu), dikonversi ke JS biasa dengan latar navy Sentra.
 
 ## Jalankan lokal
