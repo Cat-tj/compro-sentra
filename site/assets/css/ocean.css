@@ -1,29 +1,26 @@
 /* Laut ASCII (lihat /assets/js/ocean.js), gaya ascii-sharks.
-   Hero beranda: light mode, air biru terang + koin logo Sentra. Footer semua halaman: laut navy tanpa koin, isi di panel kaca. */
+   Hero beranda: light mode, air biru terang. Footer semua halaman: laut navy.
+   Di keduanya, isi berada di atas pita kaca buram selebar layar; laut tetap terlihat jelas di atas dan bawah pita. */
 .hero-ocean { --aqua: #C7E2FF; background: var(--aqua); isolation: isolate; min-height: 640px; display: flex; align-items: center; }
 .hero-ocean::before, .hero-ocean::after { display: none; }
 .hero-ocean-bg { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
 .hero-ocean-bg canvas { display: block; width: 100%; height: 100%; }
-/* Selubung terang supaya teks tetap terbaca di atas kawanan ikan; bawahnya menyatu ke section berikutnya */
+/* Hanya pudar di tepi atas (di bawah navbar) dan bawah (menyatu ke section berikutnya) */
 .hero-ocean-bg::after { content: ""; position: absolute; inset: 0; background:
-  linear-gradient(180deg, rgba(199,226,255,.7) 0, transparent 140px),
-  linear-gradient(180deg, transparent 30%, rgba(199,226,255,.8) 42%, rgba(199,226,255,.8) 88%, var(--alt)); }
-.hero-ocean .wrap { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 8px; }
-.hero-ocean .chip { background: rgba(255,255,255,.85); backdrop-filter: blur(2px); }
+  linear-gradient(180deg, rgba(199,226,255,.7) 0, transparent 120px),
+  linear-gradient(transparent 85%, var(--alt)); }
+.hero-ocean .wrap { position: relative; z-index: 1; }
+
+/* Pita kaca buram: selebar layar, setinggi isi + sedikit ruang */
+.hero-ocean .wrap::before, .site-footer:has(.footer-ocean) .wrap::before {
+  content: ""; position: absolute; z-index: -1; left: 50%; width: 100vw; transform: translateX(-50%); pointer-events: none; }
+.hero-ocean .wrap::before {
+  top: -36px; bottom: -36px;
+  background: rgba(255,255,255,.32);
+  border-block: 1px solid rgba(255,255,255,.65);
+  -webkit-backdrop-filter: blur(12px) saturate(1.2); backdrop-filter: blur(12px) saturate(1.2); }
+.hero-ocean .chip { background: rgba(255,255,255,.85); }
 .hero-ocean .btn-ghost { background: rgba(255,255,255,.85); }
-
-.hero-coin { order: -1; width: min(56vw, 230px); aspect-ratio: 1; flex: none; }
-
-@media (min-width: 980px) {
-  .hero-ocean-bg::after { background:
-    linear-gradient(180deg, rgba(199,226,255,.7) 0, transparent 140px),
-    linear-gradient(90deg, rgba(199,226,255,.9) 0, rgba(199,226,255,.65) 38%, transparent 62%),
-    linear-gradient(transparent 82%, var(--alt)); }
-  .hero-ocean .wrap { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: clamp(24px, 4vw, 64px); align-items: center; }
-  .hero-ocean .hero-in { justify-items: start; text-align: left; margin: 0; max-width: none; }
-  .hero-ocean .hero-actions, .hero-ocean .hero-picks { justify-content: flex-start; }
-  .hero-coin { order: 0; width: min(100%, 440px); justify-self: center; }
-}
 
 /* CTA di atas footer: gradient dari biru muda ke biru tua, lalu footer melanjutkannya ke navy gelap */
 .cta-sec { background:
@@ -31,19 +28,21 @@
   radial-gradient(45% 60% at 92% 30%, rgba(59,130,246,.35) 0%, transparent 70%),
   linear-gradient(180deg, #3F80E4 0%, #2A5FC0 48%, #13306B 100%); }
 
-/* Footer: laut ASCII gelap (gradient sama dengan canvas) + isi footer di panel kaca buram */
+/* Footer: laut ASCII gelap (gradient sama dengan latar canvas) */
 .site-footer:has(.footer-ocean) { background: linear-gradient(180deg, #13306B, #081530); }
 .footer-ocean { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
 .footer-ocean canvas { display: block; width: 100%; height: 100%; }
 .footer-ocean::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, #13306B 0, rgba(19,48,107,0) 64px); }
 .site-footer .sf-mark { z-index: 0; }
-.site-footer:has(.footer-ocean) .wrap, .site-footer.flush:has(.footer-ocean) .wrap {
-  background: rgba(10,27,61,.5); border: 1px solid rgba(255,255,255,.12); border-radius: 28px;
-  padding: clamp(24px, 4vw, 48px); box-shadow: 0 24px 60px -30px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.08);
+.site-footer.flush:has(.footer-ocean) .wrap { border-top: 0; }
+.site-footer:has(.footer-ocean) .wrap::before {
+  top: -28px; bottom: -32px;
+  background: rgba(10,27,61,.5);
+  border-top: 1px solid rgba(255,255,255,.12);
   -webkit-backdrop-filter: blur(14px) saturate(1.3); backdrop-filter: blur(14px) saturate(1.3); }
-.site-footer:has(.footer-ocean) .sf-base { margin-top: 24px; }
-/* HP: blur di atas canvas yang bergerak itu mahal, jadi panelnya cukup lebih pekat tanpa blur */
+
+/* HP: blur di atas canvas yang bergerak itu mahal, jadi pitanya cukup lebih pekat tanpa blur */
 @media (max-width: 767px) {
-  .site-footer:has(.footer-ocean) .wrap, .site-footer.flush:has(.footer-ocean) .wrap {
-    -webkit-backdrop-filter: none; backdrop-filter: none; background: rgba(10,27,61,.84); border-radius: 22px; }
+  .hero-ocean .wrap::before { -webkit-backdrop-filter: none; backdrop-filter: none; background: rgba(232,243,255,.82); }
+  .site-footer:has(.footer-ocean) .wrap::before { -webkit-backdrop-filter: none; backdrop-filter: none; background: rgba(10,27,61,.86); }
 }

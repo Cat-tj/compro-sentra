@@ -1,9 +1,7 @@
-// Laut ASCII di dua tempat:
-// - hero beranda: hiu + kawanan ikan, dengan logo Sentra sebagai koin ASCII yang berputar.
-// - footer semua halaman: kawanan ikan "><>" saja.
+// Laut ASCII di dua tempat: hero beranda (light mode) dan footer semua halaman (gelap).
 // Gambar dan simulasi berjalan di Web Worker (ocean-worker.js) supaya scroll tetap mulus.
 // Browser tanpa OffscreenCanvas memakai cadangan di thread utama dengan kualitas lebih rendah.
-var V = "20261029g";
+var V = "20261029h";
 
 function weakDevice() {
   var c = navigator.connection;
@@ -15,19 +13,7 @@ function phone() {
   return window.matchMedia("(max-width: 767px), (hover: none) and (pointer: coarse)").matches;
 }
 
-function logoTexture(src, n, done) {
-  var img = new Image();
-  img.onload = function () {
-    var c = document.createElement("canvas");
-    c.width = c.height = n;
-    var g = c.getContext("2d", { willReadFrequently: true });
-    g.drawImage(img, 0, 0, n, n);
-    done({ data: g.getImageData(0, 0, n, n).data, n: n });
-  };
-  img.src = src;
-}
-
-function mount(canvas, preset, slot) {
+function mount(canvas, preset) {
   var weak = weakDevice(), reducedMq = window.matchMedia("(prefers-reduced-motion: reduce)");
   var hero = preset === "hero", mobile = phone();
   var level = weak ? (hero && !mobile ? 2 : 1) : 0;
@@ -38,10 +24,6 @@ function mount(canvas, preset, slot) {
   function size() {
     var r = canvas.getBoundingClientRect();
     return { w: r.width, h: r.height, dpr: window.devicePixelRatio || 1 };
-  }
-  function coinGeom() {
-    var c = canvas.getBoundingClientRect(), s = slot.getBoundingClientRect();
-    return { cx: s.left - c.left + s.width / 2, cy: s.top - c.top + s.height / 2, r: Math.min(s.width, s.height) / 2 };
   }
   function local(e) {
     var r = canvas.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
@@ -56,7 +38,6 @@ function mount(canvas, preset, slot) {
       send = function (m) {
         switch (m.type) {
           case "resize": scene.resize(m.w, m.h, m.dpr); break;
-          case "coin": scene.setCoin(m.geom, m.tex); break;
           case "visible": scene.setVisible(m.visible); break;
           case "reduced": scene.setReduced(m.reduced); break;
           case "pointer": scene.pointer(m.x, m.y, m.active); break;
@@ -102,15 +83,8 @@ function mount(canvas, preset, slot) {
   function resized() {
     var s = size();
     post({ type: "resize", w: s.w, h: s.h, dpr: s.dpr });
-    if (slot) post({ type: "coin", geom: coinGeom() });
   }
   new ResizeObserver(resized).observe(canvas);
-  if (slot) {
-    new ResizeObserver(resized).observe(slot);
-    logoTexture(slot.getAttribute("data-logo"), 256, function (tex) {
-      post({ type: "coin", geom: coinGeom(), tex: tex }, [tex.data.buffer]);
-    });
-  }
 
   var onScreen = true;
   function visibility() { post({ type: "visible", visible: onScreen && document.visibilityState === "visible" }); }
@@ -132,5 +106,5 @@ function mount(canvas, preset, slot) {
 }
 
 var hero = document.querySelector(".hero-ocean canvas"), footer = document.querySelector(".footer-ocean canvas");
-if (hero && hero.getContext) mount(hero, "hero", document.querySelector(".hero-coin"));
-if (footer && footer.getContext) mount(footer, "footer", null);
+if (hero && hero.getContext) mount(hero, "hero");
+if (footer && footer.getContext) mount(footer, "footer");
