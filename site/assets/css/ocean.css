@@ -1,24 +1,17 @@
 /* Laut ASCII (lihat /assets/js/ocean.js), gaya ascii-sharks.
    Hero beranda: light mode, air biru terang. Footer semua halaman: laut navy.
-   Di keduanya, isi berada di atas pita kaca buram selebar layar; laut tetap terlihat jelas di atas dan bawah pita. */
+   Seluruh area laut ditutup kaca buram: canvas diberi blur langsung (lebih ringan daripada backdrop-filter)
+   dan lapisan warna tipis di atasnya. */
 .hero-ocean { --aqua: #C7E2FF; background: var(--aqua); isolation: isolate; min-height: 640px; display: flex; align-items: center; }
 .hero-ocean::before, .hero-ocean::after { display: none; }
-.hero-ocean-bg { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
-.hero-ocean-bg canvas { display: block; width: 100%; height: 100%; }
-/* Hanya pudar di tepi atas (di bawah navbar) dan bawah (menyatu ke section berikutnya) */
+.hero-ocean-bg { position: absolute; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+.hero-ocean-bg canvas, .footer-ocean canvas { display: block; width: 100%; height: 100%; filter: blur(5px) saturate(1.15); transform: scale(1.02); }
+/* Kaca: warna tipis di seluruh area, pudar ke navbar di atas dan ke section berikutnya di bawah */
 .hero-ocean-bg::after { content: ""; position: absolute; inset: 0; background:
-  linear-gradient(180deg, rgba(199,226,255,.7) 0, transparent 120px),
-  linear-gradient(transparent 85%, var(--alt)); }
+  linear-gradient(180deg, rgba(199,226,255,.6) 0, transparent 120px),
+  linear-gradient(transparent 85%, var(--alt)),
+  rgba(255,255,255,.28); }
 .hero-ocean .wrap { position: relative; z-index: 1; }
-
-/* Pita kaca buram: selebar layar, setinggi isi + sedikit ruang */
-.hero-ocean .wrap::before, .site-footer:has(.footer-ocean) .wrap::before {
-  content: ""; position: absolute; z-index: -1; left: 50%; width: 100vw; transform: translateX(-50%); pointer-events: none; }
-.hero-ocean .wrap::before {
-  top: -36px; bottom: -36px;
-  background: rgba(255,255,255,.32);
-  border-block: 1px solid rgba(255,255,255,.65);
-  -webkit-backdrop-filter: blur(12px) saturate(1.2); backdrop-filter: blur(12px) saturate(1.2); }
 .hero-ocean .chip { background: rgba(255,255,255,.85); }
 .hero-ocean .btn-ghost { background: rgba(255,255,255,.85); }
 
@@ -30,19 +23,12 @@
 
 /* Footer: laut ASCII gelap (gradient sama dengan latar canvas) */
 .site-footer:has(.footer-ocean) { background: linear-gradient(180deg, #13306B, #081530); }
-.footer-ocean { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
-.footer-ocean canvas { display: block; width: 100%; height: 100%; }
-.footer-ocean::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, #13306B 0, rgba(19,48,107,0) 64px); }
+.footer-ocean { position: absolute; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+.footer-ocean::after { content: ""; position: absolute; inset: 0; background:
+  linear-gradient(180deg, #13306B 0, rgba(19,48,107,0) 64px),
+  rgba(10,27,61,.3); }
 .site-footer .sf-mark { z-index: 0; }
-.site-footer.flush:has(.footer-ocean) .wrap { border-top: 0; }
-.site-footer:has(.footer-ocean) .wrap::before {
-  top: -28px; bottom: -32px;
-  background: rgba(10,27,61,.5);
-  border-top: 1px solid rgba(255,255,255,.12);
-  -webkit-backdrop-filter: blur(14px) saturate(1.3); backdrop-filter: blur(14px) saturate(1.3); }
 
-/* HP: blur di atas canvas yang bergerak itu mahal, jadi pitanya cukup lebih pekat tanpa blur */
 @media (max-width: 767px) {
-  .hero-ocean .wrap::before { -webkit-backdrop-filter: none; backdrop-filter: none; background: rgba(232,243,255,.82); }
-  .site-footer:has(.footer-ocean) .wrap::before { -webkit-backdrop-filter: none; backdrop-filter: none; background: rgba(10,27,61,.86); }
+  .hero-ocean-bg canvas, .footer-ocean canvas { filter: blur(4px); }
 }
