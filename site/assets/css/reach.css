@@ -1,0 +1,54 @@
+/* Peta jangkauan Sentra (section "Pusat teknologi dari Samarinda" di beranda).
+   Peta titik = gambar SVG statis yang di-cache; garis, pin, dan label di lapisan atas.
+   Animasi hanya stroke-dashoffset (sekali saat tampil), transform, dan opacity. */
+.reach { background: #fff; border: 1px solid var(--line); border-radius: var(--r-lg); box-shadow: var(--shadow-2); padding: 14px; display: grid; gap: 12px; }
+.reach-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding: 5px; border-radius: 16px; background: var(--alt); }
+.reach-tabs button { display: grid; gap: 2px; justify-items: start; text-align: left; padding: 10px 14px; border: 0; border-radius: 12px; background: transparent; cursor: pointer; color: var(--text); transition: background .2s, color .2s, box-shadow .2s; }
+.reach-tabs button b { font: 600 .95rem/1.2 var(--head); color: var(--ink); }
+.reach-tabs button span { font-size: .8rem; color: var(--muted); }
+.reach-tabs button[aria-selected="true"] { background: #fff; box-shadow: 0 1px 2px rgba(10,27,61,.06), 0 6px 16px -10px rgba(10,27,61,.35); }
+.reach-tabs button[aria-selected="true"] b { color: var(--blue-deep); }
+.reach-tabs button:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+
+.reach-map { position: relative; aspect-ratio: 1000 / 620; border-radius: 16px; overflow: hidden; background: linear-gradient(180deg, #F6F9FE, #EEF3FB); }
+.reach-view { position: absolute; inset: 0; margin: 0; opacity: 0; visibility: hidden; transition: opacity .45s ease, visibility 0s linear .45s; }
+.reach[data-mode="hw"] .reach-view.hw, .reach[data-mode="sw"] .reach-view.sw { opacity: 1; visibility: visible; transition: opacity .45s ease; }
+.reach-view > img, .reach-view > svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.reach-view .arc { fill: none; stroke: var(--blue); stroke-width: 2.4; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 0; opacity: .75; }
+.reach-view.sw .arc { stroke: #3B82F6; stroke-width: 2; }
+
+/* Pin: titik + label HTML, diposisikan dalam persen agar ikut skala peta */
+.pin { position: absolute; left: var(--x); top: var(--y); width: 0; height: 0; padding: 0; border: 0; background: none; cursor: default; }
+.pin i { position: absolute; left: -5px; top: -5px; width: 10px; height: 10px; border-radius: 50%; background: var(--blue); box-shadow: 0 0 0 3px #fff; }
+.pin.hq i { left: -7px; top: -7px; width: 14px; height: 14px; background: var(--navy); }
+.pin.hq i::after { content: ""; position: absolute; inset: -7px; border-radius: 50%; border: 2px solid var(--blue); opacity: 0; animation: reach-pulse 2.4s ease-out infinite; }
+.pin .lbl { position: absolute; top: -11px; white-space: nowrap; font: 600 .72rem/1 var(--font); color: var(--ink); background: rgba(255,255,255,.92); border: 1px solid var(--line); border-radius: 999px; padding: 5px 8px; box-shadow: 0 4px 12px -8px rgba(10,27,61,.4); }
+.pin .lbl.r { left: 11px; } .pin .lbl.l { right: 11px; }
+.pin .lbl.t { left: 50%; top: -34px; transform: translateX(-50%); } .pin .lbl.b { left: 50%; top: 13px; transform: translateX(-50%); }
+.pin.hq .lbl { background: var(--navy); color: #fff; border-color: var(--navy); }
+.reach-cap { margin: 0 4px; font-size: .9rem; line-height: 1.55; color: var(--text); min-height: 2.9em; }
+.reach-cap span { display: none; }
+.reach[data-mode="hw"] .reach-cap .hw, .reach[data-mode="sw"] .reach-cap .sw { display: inline; }
+
+/* Animasi masuk: garis tergambar berurutan, lalu pin muncul */
+.reach.play .reach-view .arc { animation: reach-draw .9s cubic-bezier(.3,.7,.3,1) both; animation-delay: calc(var(--i) * 110ms); }
+.reach.play .reach-view .pin:not(.hq) { animation: reach-pop .45s cubic-bezier(.3,1.4,.5,1) both; animation-delay: calc(var(--i) * 110ms + 450ms); }
+.reach:not(.in-view) .pin.hq i::after { animation-play-state: paused; }
+@keyframes reach-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes reach-pop { from { opacity: 0; transform: scale(.4); } to { opacity: 1; transform: none; } }
+@keyframes reach-pulse { 0% { opacity: .9; transform: scale(.6); } 100% { opacity: 0; transform: scale(2.4); } }
+
+/* HP: label selain markas disembunyikan agar tidak bertumpuk; muncul saat pin disentuh */
+@media (max-width: 640px) {
+  .reach { padding: 10px; }
+  .pin:not(.hq) .lbl { opacity: 0; pointer-events: none; transition: opacity .2s; }
+  .pin:not(.hq) { width: 28px; height: 28px; margin: -14px 0 0 -14px; }
+  .pin:not(.hq) i { left: 9px; top: 9px; }
+  .pin:not(.hq) .lbl.r { left: 25px; } .pin:not(.hq) .lbl.l { right: 25px; }
+  .pin:not(.hq):focus .lbl, .pin:not(.hq):hover .lbl { opacity: 1; }
+  .pin:not(.hq) { cursor: pointer; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reach.play .reach-view .arc, .reach.play .reach-view .pin, .pin.hq i::after { animation: none; }
+  .reach-view { transition: none; }
+}

@@ -27,7 +27,7 @@
     els.forEach(function (el) { el.classList.add('in'); });
   }
   // tab solusi di beranda
-  document.querySelectorAll('[role="tablist"]').forEach(function (list) {
+  document.querySelectorAll('[role="tablist"]:not(.reach-tabs)').forEach(function (list) {
     var tabs = [].slice.call(list.querySelectorAll('[role="tab"]'));
     var pick = function (t, focus) {
       tabs.forEach(function (x) {
