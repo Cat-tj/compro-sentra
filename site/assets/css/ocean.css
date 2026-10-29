@@ -32,3 +32,10 @@
   .hero-ocean .hero-actions, .hero-ocean .hero-picks { justify-content: flex-start; }
   .hero-coin { order: 0; width: min(100%, 440px); justify-self: center; }
 }
+
+/* Footer semua halaman: kawanan ikan ASCII di belakang isi footer */
+.site-footer:has(.footer-ocean) { background: #06122B; }
+.footer-ocean { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+.footer-ocean canvas { display: block; width: 100%; height: 100%; font-family: var(--mono); }
+.footer-ocean::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, #06122B 0, rgba(6,18,43,.35) 90px, rgba(6,18,43,.35) calc(100% - 90px), rgba(6,18,43,.7)); }
+.site-footer .sf-mark { z-index: 0; }

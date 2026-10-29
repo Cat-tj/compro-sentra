@@ -544,6 +544,7 @@ export class AsciiRenderer {
     const u = s * L;
     const shape = this.shape;
     const w = shape.halfWidth(s) * L;
+    this.hitW = w;
     this.hitDist = a;
     this.hitS = s;
     this.hitV = a * bestSign;
@@ -710,6 +711,7 @@ export class AsciiRenderer {
       if (c0 > c1 || r0 > r1) continue;
 
       const skipBeyond = reach + Math.hypot(cw, ch);
+      const inner = Math.hypot(cw, ch) * 0.5;
       const shadowDc = Math.round((L * 0.035) / cw) + 1;
       const shadowDr = Math.round((L * 0.02) / ch) + 1;
 
@@ -725,7 +727,9 @@ export class AsciiRenderer {
           const v = this.hitV;
 
           let hits = centerHit ? 1 : 0;
-          for (let k = 0; k < SUBSAMPLES.length; k += 2) {
+          // Sentra: sel yang seluruhnya di dalam badan tidak perlu disampel ulang; hanya tepi yang butuh antialias.
+          if (centerHit && this.hitDist < this.hitW - inner) hits = 5;
+          else for (let k = 0; k < SUBSAMPLES.length; k += 2) {
             if (this.sampleShark(x + SUBSAMPLES[k] * cw, y + SUBSAMPLES[k + 1] * ch, L)) hits++;
           }
           if (hits === 0) continue;
