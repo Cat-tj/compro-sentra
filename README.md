@@ -6,8 +6,7 @@ Website company profile PT. Sentra Visi Teknologi. Situs statis (HTML/CSS/JS) da
 
 - `site/` — seluruh isi website, disajikan apa adanya oleh Vercel.
 - `vercel.json` — tanpa build. Mengatur URL bersih (`/about` → `site/about.html`, `/about.html` → 308 ke `/about`), cache aset, dan halaman 404 per bahasa.
-- `site/assets/js/ocean.js` (+ `ocean-worker.js`, `ocean/scene.js`) dan `site/assets/css/ocean.css` — laut ASCII bergaya ascii-sharks (hiu berwarna, ikan `-` `><` `<=>` `<>`): hero beranda versi light mode (air biru terang, ikan warna-warni) dan footer semua halaman versi gelap (gradient biru tua ke navy yang menyambung CTA di atasnya). Seluruh area laut di hero dan footer tertutup kaca buram (blur di canvas + lapisan warna tipis). Digambar di Web Worker lewat OffscreenCanvas supaya thread utama tetap bebas. HP memakai preset lebih ringan (hiu lebih sedikit, fps lebih rendah), dan kualitas turun otomatis sampai gambar diam kalau perangkat kewalahan. Saat mengubah file di `assets/js/ocean*`, naikkan versi `?v=` di semua import dan di HTML, karena `/assets/*` di-cache setahun.
-- `site/assets/js/ocean/` — engine laut ASCII dari [ascii-sharks](https://github.com/stackedlol/ascii-sharks) (MIT, lihat `LICENSE.txt` di folder itu), dikonversi ke JS biasa, ditambah tema (warna hiu, glyph ikan) dan dukungan Web Worker.
+- `site/assets/css/aurora.css` — background "Soft Aurora" di hero beranda (light mode, biru terang) dan footer semua halaman (navy): cahaya warna-warni lembut yang melayang pelan. Murni CSS (gradient radial + animasi transform), tanpa JavaScript, canvas, atau filter blur, jadi ringan di HP murah; berhenti otomatis kalau pengunjung memilih "kurangi gerakan". Saat mengubah file di `/assets`, naikkan versi `?v=` di HTML, karena `/assets/*` di-cache setahun.
 
 ## Jalankan lokal
 
