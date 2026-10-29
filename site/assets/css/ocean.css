@@ -1,17 +1,25 @@
 /* Medan ASCII (lihat /assets/js/field.js): gumpalan glyph yang pelan-pelan berubah bentuk, digambar di GPU.
-   Hero beranda: light mode, glyph biru di atas biru terang. Footer semua halaman: glyph biru di atas navy. */
+   Hero beranda: light mode, glyph biru di atas biru terang. Footer semua halaman: glyph biru di atas navy.
+   Isi hero dan footer duduk di atas pita kaca buram selebar layar; medan tetap terlihat di atas dan bawahnya. */
 .hero-ocean { --aqua: #D6E8FF; background: var(--aqua); isolation: isolate; min-height: 640px; display: flex; align-items: center; }
 .hero-ocean::before, .hero-ocean::after { display: none; }
 .hero-ocean-bg { position: absolute; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
 .hero-ocean-bg canvas, .footer-ocean canvas { display: block; width: 100%; height: 100%; }
-/* Sorotan lembut di belakang teks, pudar ke navbar di atas dan ke section berikutnya di bawah */
+/* Pudar ke navbar di atas dan ke section berikutnya di bawah */
 .hero-ocean-bg::after { content: ""; position: absolute; inset: 0; background:
-  radial-gradient(ellipse 52% 46% at 50% 50%, rgba(214,232,255,.94), rgba(214,232,255,.6) 62%, transparent),
   linear-gradient(180deg, rgba(214,232,255,.7) 0, transparent 120px),
   linear-gradient(transparent 85%, var(--alt)); }
 .hero-ocean .wrap { position: relative; z-index: 1; }
 .hero-ocean .chip { background: rgba(255,255,255,.85); }
 .hero-ocean .btn-ghost { background: rgba(255,255,255,.85); }
+
+/* Pita kaca buram: selebar layar, setinggi isi + sedikit ruang */
+.hero-ocean .wrap::before, .site-footer:has(.footer-ocean) .wrap::before {
+  content: ""; position: absolute; z-index: -1; left: 50%; width: 100vw; transform: translateX(-50%); pointer-events: none; }
+.hero-ocean .wrap::before {
+  top: -40px; bottom: -40px;
+  background: rgba(232,242,255,.55); border-block: 1px solid rgba(255,255,255,.75);
+  -webkit-backdrop-filter: blur(10px) saturate(1.1); backdrop-filter: blur(10px) saturate(1.1); }
 
 /* CTA di atas footer: gradient dari biru muda ke biru tua, lalu footer melanjutkannya ke navy gelap */
 .cta-sec { background:
@@ -19,14 +27,20 @@
   radial-gradient(45% 60% at 92% 30%, rgba(59,130,246,.35) 0%, transparent 70%),
   linear-gradient(180deg, #3F80E4 0%, #2A5FC0 48%, #13306B 100%); }
 
-/* Footer: gradient sama dengan latar canvas; lapisan tipis menjaga teks tetap terbaca */
+/* Footer: gradient sama dengan latar canvas */
 .site-footer:has(.footer-ocean) { background: linear-gradient(180deg, #13306B, #081530); }
 .footer-ocean { position: absolute; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
-.footer-ocean::after { content: ""; position: absolute; inset: 0; background:
-  linear-gradient(180deg, #13306B 0, rgba(19,48,107,0) 64px),
-  rgba(8,21,48,.35); }
-.site-footer .sf-mark { z-index: 0; }
-/* HP: teks footer memenuhi lebar layar, jadi glyph di belakangnya dibuat lebih samar */
+.footer-ocean::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, #13306B 0, rgba(19,48,107,0) 64px); }
+/* Watermark logo besar bertumpuk dengan pola glyph; logo utama di atas kaca sudah cukup */
+.site-footer:has(.footer-ocean) .sf-mark { display: none; }
+.site-footer.flush:has(.footer-ocean) .wrap { border-top: 0; }
+.site-footer:has(.footer-ocean) .wrap::before {
+  top: -28px; bottom: -32px;
+  background: rgba(10,27,61,.55); border-top: 1px solid rgba(255,255,255,.12);
+  -webkit-backdrop-filter: blur(12px) saturate(1.2); backdrop-filter: blur(12px) saturate(1.2); }
+
+/* HP: blur di atas canvas yang bergerak itu mahal, jadi pitanya cukup lebih pekat tanpa blur */
 @media (max-width: 640px) {
-  .footer-ocean::after { background: linear-gradient(180deg, #13306B 0, rgba(19,48,107,0) 64px), rgba(8,21,48,.6); }
+  .hero-ocean .wrap::before { -webkit-backdrop-filter: none; backdrop-filter: none; background: rgba(232,242,255,.88); }
+  .site-footer:has(.footer-ocean) .wrap::before { -webkit-backdrop-filter: none; backdrop-filter: none; background: rgba(10,27,61,.88); }
 }
