@@ -3,11 +3,16 @@
 // - footer semua halaman: kawanan ikan "><>" saja.
 // Gambar dan simulasi berjalan di Web Worker (ocean-worker.js) supaya scroll tetap mulus.
 // Browser tanpa OffscreenCanvas memakai cadangan di thread utama dengan kualitas lebih rendah.
-var V = "20261029c";
+var V = "20261029e";
 
 function weakDevice() {
   var c = navigator.connection;
   return (navigator.hardwareConcurrency || 8) <= 4 || (navigator.deviceMemory || 8) <= 4 || !!(c && c.saveData);
+}
+
+// HP dan tablet: layar sempit, atau layar sentuh tanpa hover.
+function phone() {
+  return window.matchMedia("(max-width: 767px), (hover: none) and (pointer: coarse)").matches;
 }
 
 function logoTexture(src, n, done) {
@@ -24,7 +29,9 @@ function logoTexture(src, n, done) {
 
 function mount(canvas, preset, slot) {
   var weak = weakDevice(), reducedMq = window.matchMedia("(prefers-reduced-motion: reduce)");
-  var level = weak ? (preset === "hero" ? 2 : 1) : 0;
+  var hero = preset === "hero", mobile = phone();
+  var level = weak ? (hero && !mobile ? 2 : 1) : 0;
+  if (mobile) preset += "-mobile";
   var send = null, queue = [];
 
   function post(m, transfer) { if (send) send(m, transfer); else queue.push([m, transfer]); }
@@ -44,7 +51,7 @@ function mount(canvas, preset, slot) {
   // Cadangan: jalankan scene langsung di thread utama, paling tinggi 30 fps.
   function inline(target) {
     import("./ocean/scene.js?v=" + V).then(function (mod) {
-      var scene = new mod.Scene(target, { preset: preset, level: Math.max(level, preset === "hero" ? 1 : 0) });
+      var scene = new mod.Scene(target, { preset: preset, level: Math.max(level, hero ? 1 : 0) });
       scene.reduced = reducedMq.matches;
       send = function (m) {
         switch (m.type) {

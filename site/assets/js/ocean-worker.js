@@ -1,5 +1,5 @@
 // Web Worker laut ASCII: semua simulasi dan gambar terjadi di sini, thread utama tetap bebas untuk scroll dan klik.
-import { Scene } from "./ocean/scene.js?v=20261029c";
+import { Scene } from "./ocean/scene.js?v=20261029e";
 
 var scene = null;
 

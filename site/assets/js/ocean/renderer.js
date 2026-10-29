@@ -7,8 +7,8 @@
  *   4. sharks rasterised cell-by-cell with supersampled edges: grey blocks
  *      shaded by the light, dense glyphs, and shimmering accent colours
  */
-import { clamp, hash3, smoothstep } from "./math.js?v=20261029c";
-import { SHARK_NODES,                                        } from "./world.js?v=20261029c";
+import { clamp, hash3, smoothstep } from "./math.js?v=20261029e";
+import { SHARK_NODES,                                        } from "./world.js?v=20261029e";
 
 export const BG = "#06122B";
 const ALPHA_LEVELS = 6;
@@ -250,9 +250,9 @@ function inTriangle(
 }
 
 /** Visible dark-grey cell grid, snapped to device pixels. Shared with the sidebar backdrop. */
-export function paintGrid(g                          , W        , H        , cw        , ch        , dpr        ) {
+export function paintGrid(g                          , W        , H        , cw        , ch        , dpr        , color = "rgba(255,255,255,0.055)") {
   g.setTransform(1, 0, 0, 1, 0, 0);
-  g.strokeStyle = "rgba(255,255,255,0.055)";
+  g.strokeStyle = color;
   g.lineWidth = 1;
   g.beginPath();
   for (let c = 0; c <= Math.ceil(W / cw); c++) {
@@ -379,6 +379,7 @@ export class AsciiRenderer {
       this.sharkKey = new Uint32Array(n);
       this.sharkDepth = new Float32Array(n);
       this.sharkKind = new Uint8Array(n);
+      this.sharkSlot = new Uint8Array(n);
       this.sharkShadow = new Uint8Array(n);
       this.fishStamp = new Uint32Array(n);
       this.fishDir = new Int8Array(n);
@@ -400,9 +401,33 @@ export class AsciiRenderer {
     if (!g) return;
     const { width: W, height: H, dpr, cw, ch } = this;
     g.setTransform(dpr, 0, 0, dpr, 0, 0);
-    g.fillStyle = BG;
+    g.fillStyle = this.bgColor || BG;
     g.fillRect(0, 0, W, H);
-    paintGrid(g, W, H, cw, ch, dpr);
+    paintGrid(g, W, H, cw, ch, dpr, this.gridColor);
+  }
+
+  /** Sentra: tema warna. bg/grid: latar; wake: [r,g,b] jejak air; fish: glyph + warna per spesies; sharks: tint [r,g,b] per hiu. */
+  setTheme(theme) {
+    this.bgColor = theme.bg;
+    this.gridColor = theme.grid;
+    if (theme.wake) {
+      const [r, g, b] = theme.wake;
+      for (let l = 0; l < ALPHA_LEVELS; l++) {
+        this.dotStyles[WAKE * ALPHA_LEVELS + l] = `rgba(${r},${g},${b},${((l + 1) / ALPHA_LEVELS * (theme.wakeAlpha || 1)).toFixed(3)})`;
+      }
+    }
+    if (theme.fish) {
+      // Satu entri per spesies: { glyph, far, near } — glyph dan warna jauh/dekat.
+      this.fishKinds = theme.fish;
+      this.fishBuckets = [];
+      this.fishStyles = [];
+      for (const k of theme.fish) {
+        this.fishBuckets.push([], []);
+        this.fishStyles.push(k.far, k.near);
+      }
+    }
+    if (theme.sharks) this.sharkTints = theme.sharks;
+    if (this.width) this.paintBackground();
   }
 
   render(world       , dt        ) {
@@ -655,7 +680,8 @@ export class AsciiRenderer {
     sharkFlag.fill(0);
     sharkShadow.fill(0);
 
-    for (const sh of sharks) {
+    for (let slot = 0; slot < sharks.length; slot++) {
+      const sh = sharks[slot];
       const L = sh.length;
       const N = SHARK_NODES;
       const n = sh.nodes;
@@ -742,6 +768,7 @@ export class AsciiRenderer {
           sharkKey[i] = key;
           sharkDepth[i] = sh.depth;
           sharkKind[i] = kindIndex;
+          this.sharkSlot[i] = slot;
 
           if (centerHit && coverage >= 0.6) {
             sharkFlag[i] = flag;
@@ -772,7 +799,8 @@ export class AsciiRenderer {
       const key = sharkKey[i];
       const shade = sharkShade[i];
       const dim = 0.7 + 0.3 * sharkDepth[i];
-      const [tr, tg, tb] = SHAPES[KINDS[sharkKind[i]]].tint;
+      // Sentra: tema bisa memberi tiap hiu warna sendiri (oranye, biru, ...), selain tint bawaan per jenis.
+      const [tr, tg, tb] = this.sharkTints ? this.sharkTints[this.sharkSlot[i] % this.sharkTints.length] : SHAPES[KINDS[sharkKind[i]]].tint;
 
       // Colours re-roll on a staggered clock so the hide shimmers.
       const tick = Math.floor(t * 2.4 + (key % 997) / 97);
@@ -843,6 +871,10 @@ export class AsciiRenderer {
         if (i < 0 || fishStamp[i] === frame || sharkFlag[i]) continue;
         fishStamp[i] = frame;
         this.fishDir[i] = f.vx < 0 ? -1 : 1;
+        if (this.fishKinds) {
+          fishBuckets[(f.species % this.fishKinds.length) * 2 + (f.depth > 0.78 ? 1 : 0)].push(i);
+          continue;
+        }
         const glint = clamp(Math.abs(f.turn) / 3.5, 0, 1);
         const v = 0.3 + (0.4 * (f.depth - 0.55)) / 0.45 + 0.3 * Math.max(glint, f.alarm);
         fishBuckets[clamp(Math.floor(v * FISH_ALPHAS.length), 0, FISH_ALPHAS.length - 1)].push(i);
@@ -861,7 +893,7 @@ export class AsciiRenderer {
       ctx.fillStyle = this.fishStyles[b];
       for (const i of bucket) {
         const g = this.fishGlyphs;
-        ctx.fillText(g ? g[this.fishDir[i] < 0 ? 0 : 1] : "-", (i % cols) * cw + cw / 2, ((i / cols) | 0) * ch + ch / 2 + 1);
+        ctx.fillText(this.fishKinds ? this.fishKinds[b >> 1].glyph : g ? g[this.fishDir[i] < 0 ? 0 : 1] : "-", (i % cols) * cw + cw / 2, ((i / cols) | 0) * ch + ch / 2 + 1);
       }
     }
     ctx.font = font;

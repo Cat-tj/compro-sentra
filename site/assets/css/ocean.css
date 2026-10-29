@@ -1,12 +1,13 @@
-/* Hero beranda: laut ASCII + koin logo Sentra (lihat /assets/js/hero-ocean.js) */
-.hero-ocean { --ocean: #06122B; background: var(--ocean); isolation: isolate; min-height: 640px; display: flex; align-items: center; }
+/* Laut ASCII (lihat /assets/js/ocean.js): gaya ascii-sharks, latar hitam, hiu berwarna.
+   Hero beranda: laut + koin logo Sentra. Footer semua halaman: laut yang sama tanpa koin. */
+.hero-ocean { --ocean: #000; background: var(--ocean); isolation: isolate; min-height: 640px; display: flex; align-items: center; }
 .hero-ocean::before, .hero-ocean::after { display: none; }
 .hero-ocean-bg { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
-.hero-ocean-bg canvas { display: block; width: 100%; height: 100%; font-family: var(--mono); }
+.hero-ocean-bg canvas { display: block; width: 100%; height: 100%; }
 /* Selubung tipis supaya teks tetap terbaca di atas kawanan ikan */
 .hero-ocean-bg::after { content: ""; position: absolute; inset: 0; background:
-  linear-gradient(180deg, rgba(6,18,43,.55) 0, transparent 140px),
-  linear-gradient(180deg, transparent 30%, rgba(6,18,43,.8) 42%, rgba(6,18,43,.8) 88%, var(--ocean)); }
+  linear-gradient(180deg, rgba(0,0,0,.55) 0, transparent 140px),
+  linear-gradient(180deg, transparent 30%, rgba(0,0,0,.72) 42%, rgba(0,0,0,.72) 88%, var(--ocean)); }
 .hero-ocean .wrap { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 8px; }
 
 .hero-ocean h1 { color: #fff; }
@@ -17,15 +18,15 @@
 .hero-ocean .btn-ghost { background: rgba(255,255,255,.04); color: #fff; border-color: rgba(255,255,255,.3); }
 .hero-ocean .btn-ghost:hover { border-color: #8FB8FF; color: #fff; background: rgba(143,184,255,.1); }
 .hero-ocean .hero-picks b { color: rgba(220,230,250,.62); }
-.hero-ocean .chip { background: rgba(6,18,43,.55); border-color: rgba(255,255,255,.18); color: #E6EDFA; backdrop-filter: blur(2px); }
+.hero-ocean .chip { background: rgba(0,0,0,.6); border-color: rgba(255,255,255,.18); color: #E6EDFA; backdrop-filter: blur(2px); }
 .hero-ocean .chip:hover { border-color: #8FB8FF; color: #fff; }
 
 .hero-coin { order: -1; width: min(56vw, 230px); aspect-ratio: 1; flex: none; }
 
 @media (min-width: 980px) {
   .hero-ocean-bg::after { background:
-    linear-gradient(180deg, rgba(6,18,43,.55) 0, transparent 140px),
-    linear-gradient(90deg, rgba(6,18,43,.85) 0, rgba(6,18,43,.6) 38%, transparent 62%),
+    linear-gradient(180deg, rgba(0,0,0,.55) 0, transparent 140px),
+    linear-gradient(90deg, rgba(0,0,0,.8) 0, rgba(0,0,0,.55) 38%, transparent 62%),
     linear-gradient(transparent 82%, var(--ocean)); }
   .hero-ocean .wrap { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: clamp(24px, 4vw, 64px); align-items: center; }
   .hero-ocean .hero-in { justify-items: start; text-align: left; margin: 0; max-width: none; }
@@ -33,9 +34,8 @@
   .hero-coin { order: 0; width: min(100%, 440px); justify-self: center; }
 }
 
-/* Footer semua halaman: kawanan ikan ASCII di belakang isi footer */
-.site-footer:has(.footer-ocean) { background: #06122B; }
+.site-footer:has(.footer-ocean) { background: #000; }
 .footer-ocean { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
-.footer-ocean canvas { display: block; width: 100%; height: 100%; font-family: var(--mono); }
-.footer-ocean::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, #06122B 0, rgba(6,18,43,.12) 70px, rgba(6,18,43,.12) calc(100% - 70px), rgba(6,18,43,.5)); }
+.footer-ocean canvas { display: block; width: 100%; height: 100%; }
+.footer-ocean::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, #000 0, rgba(0,0,0,.4) 70px, rgba(0,0,0,.4) calc(100% - 70px), rgba(0,0,0,.7)); }
 .site-footer .sf-mark { z-index: 0; }

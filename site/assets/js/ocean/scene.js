@@ -1,7 +1,7 @@
 // Inti laut ASCII Sentra: simulasi, render, koin logo, dan kualitas adaptif.
 // Tanpa DOM, jadi bisa jalan di Web Worker (OffscreenCanvas) maupun di thread utama sebagai cadangan.
-import { World } from "./world.js?v=20261029c";
-import { AsciiRenderer, BG } from "./renderer.js?v=20261029c";
+import { World } from "./world.js?v=20261029e";
+import { AsciiRenderer } from "./renderer.js?v=20261029e";
 
 var STEP = 1 / 60, MAX_STEPS = 4;
 var SPIN = 5.2;            // detik per putaran koin
@@ -15,25 +15,55 @@ export var FONT = "ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mo
 
 // Tingkat kualitas, dari terbaik ke teringan; null = satu frame diam.
 // slow: median waktu frame (ms) yang membuat scene turun satu tingkat.
+// Hero dan footer memakai laut yang sama; footer tanpa koin dan lebih hemat.
 export var PRESETS = {
   hero: [
-    { fps: 60, dpr: 2, sharks: 4, slow: 10 },
+    { fps: 60, dpr: 2, sharks: 3, slow: 10 },
     { fps: 30, dpr: 2, sharks: 3, slow: 20 },
     { fps: 20, dpr: 1, sharks: 2, slow: 32 },
     null,
   ],
   footer: [
-    { fps: 30, dpr: 2, sharks: 0, slow: 14 },
-    { fps: 20, dpr: 1, sharks: 0, slow: 32 },
+    { fps: 30, dpr: 2, sharks: 3, slow: 14 },
+    { fps: 20, dpr: 1, sharks: 2, slow: 32 },
     null,
+  ],
+  // HP: hiu lebih sedikit (hiu adalah bagian termahal) dan fps lebih rendah.
+  "hero-mobile": [
+    { fps: 30, dpr: 2, sharks: 2, slow: 20 },
+    { fps: 20, dpr: 1, sharks: 1, slow: 32 },
+    null,
+  ],
+  "footer-mobile": [
+    { fps: 20, dpr: 2, sharks: 1, slow: 30 },
+    { fps: 15, dpr: 1, sharks: 0, slow: 45 },
+    null,
+  ],
+};
+
+// Gaya ascii-sharks asli: latar hitam, hiu berwarna solid, ikan sebagai -, ><, <=>, <>.
+var THEME = {
+  bg: "#000",
+  sharks: [
+    [1.55, 0.88, 0.26],    // oranye
+    [0.32, 0.45, 1.5],     // biru
+    [0.55, 0.85, 1.3],     // biru muda
+  ],
+  fish: [                  // urutan = spesies di species.js
+    { glyph: "-", far: "rgba(230,238,255,.38)", near: "rgba(230,238,255,.8)" },     // sardine
+    { glyph: "-", far: "rgba(230,238,255,.38)", near: "rgba(230,238,255,.8)" },     // anchovy
+    { glyph: "><", far: "rgba(150,156,170,.55)", near: "rgba(170,176,190,.9)" },    // silverside
+    { glyph: "<=>", far: "rgba(80,96,220,.6)", near: "rgba(96,112,240,.95)" },      // mackerel
+    { glyph: "<>", far: "rgba(160,170,195,.5)", near: "rgba(180,190,215,.85)" },    // goby
   ],
 };
 
 var raf = typeof requestAnimationFrame === "function" ? requestAnimationFrame.bind(self) : function (cb) { return setTimeout(function () { cb(performance.now()); }, 16); };
 var caf = typeof cancelAnimationFrame === "function" ? cancelAnimationFrame.bind(self) : clearTimeout;
 
-function Coin(tex) {
+function Coin(tex, bg) {
   this.tex = tex;          // { data: Uint8ClampedArray RGBA, n: sisi tekstur }
+  this.bg = bg;            // warna latar laut; menutup ikan dan hiu yang lewat di belakang koin
   this.cx = 0; this.cy = 0; this.r = 0;
   this.rows = []; this.palette = []; this.styles = {}; this.buckets = {};
   this.cw = 0; this.ch = 0;
@@ -106,7 +136,7 @@ Coin.prototype.draw = function (ctx, cw, ch, t) {
   var rimGlyph = a < cw ? "|" : null;
 
   for (var key in this.buckets) this.buckets[key].length = 0;
-  ctx.fillStyle = BG;
+  ctx.fillStyle = this.bg;
   for (var ri = 0; ri < this.rows.length; ri++) {
     var L = this.rows[ri], v = L.v, y = L.row * ch + ch / 2, half = a * L.w;
     var lo = Math.min(0, -d) - half, hi = Math.max(0, -d) + half;
@@ -158,21 +188,16 @@ Coin.prototype.draw = function (ctx, cw, ch, t) {
   }
 };
 
-// opts: { preset: "hero" | "footer", level: tingkat awal, fish: "dash" | "arrow" }
+// opts: { preset: nama di PRESETS, level: tingkat awal }
 export function Scene(canvas, opts) {
   this.canvas = canvas;
   this.quality = PRESETS[opts.preset];
   this.level = Math.min(opts.level || 0, this.quality.length - 2);
-  this.footer = opts.preset === "footer";
   this.world = new World();
   this.sharkSpecs = this.world.sharkSpecs;   // hiu dipanggil ulang tiap resize; tingkat kualitas memangkas jumlahnya
   this.renderer = new AsciiRenderer(canvas);
   this.renderer.setFontFamily(FONT);
-  if (this.footer) {
-    this.renderer.fishGlyphs = ["<><", "><>"];
-    this.renderer.fishScale = 1.6;
-    this.renderer.fishStyles = [0.22, 0.32, 0.42, 0.52, 0.62].map(function (a) { return "rgba(169,203,255," + a + ")"; });
-  }
+  this.renderer.setTheme(THEME);
   this.ctx = canvas.getContext("2d");
   this.coin = null;
   this.w = 0; this.h = 0; this.dpr = 1;
@@ -185,7 +210,7 @@ export function Scene(canvas, opts) {
 Scene.prototype.still = function () { return this.reduced || !this.quality[this.level]; };
 
 Scene.prototype.setCoin = function (geom, tex) {
-  if (tex) this.coin = new Coin(tex);
+  if (tex) this.coin = new Coin(tex, THEME.bg);
   if (this.coin && geom) this.coin.place(geom);
   if (this.still()) this.paintStill();
 };
@@ -195,12 +220,9 @@ Scene.prototype.resize = function (w, h, dpr) {
   this.w = w; this.h = h; this.dpr = dpr;
   var q = this.quality[this.level] || this.quality[this.quality.length - 2];
   this.world.sharkSpecs = this.sharkSpecs.slice(0, q.sharks);
-  // Footer: ikan "><>" butuh ruang, jadi kawanannya lebih jarang daripada di hero.
-  if (this.footer) this.world.fishCount = Math.max(40, Math.min(160, Math.round(w * h / 5500)));
   this.renderer.resize(w, h, Math.min(dpr, q.dpr));
-  // Jarak antarikan dihitung dalam sel; di footer selnya diperlebar supaya ikan "><>" tidak saling tumpuk.
-  var sx = this.footer ? 3.2 * this.renderer.fishScale / 1.6 : 1, sy = this.footer ? 1.4 : 1;
-  this.world.resize(w, h, this.renderer.cellWidth * sx, this.renderer.cellHeight * sy);
+  // Jarak antarikan dihitung dalam sel; sedikit diperlebar supaya ikan "<=>" dan "><" tidak saling tumpuk.
+  this.world.resize(w, h, this.renderer.cellWidth * 1.4, this.renderer.cellHeight);
   if (this.coin) this.coin.cw = 0;
   if (this.still()) this.paintStill(); else this.schedule();
 };
