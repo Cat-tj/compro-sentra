@@ -20,6 +20,7 @@ Key facts:
 - [CCTV Analytics](https://www.sentratechnology.com/en/services/cctv-analytics): AI layer on existing CCTV that detects people, vehicles, restricted zones, and incidents, with real-time alerts.
 - [Computer Vision](https://www.sentratechnology.com/en/services/computer-vision): PPE/safety detection, face recognition, and text reading from cameras, trained on Indonesian field data.
 - [Private LLM](https://www.sentratechnology.com/en/services/private-llm): internal AI assistant that answers from company documents and runs on the client's own servers.
+- [Infrastructure Installation](https://www.sentratechnology.com/en/services/instalasi-infrastruktur): LAN and WiFi networks, fiber optics, server racks, device power, CCTV, and videotrons installed and maintained by Sentra's own field team in East Kalimantan.
 - [IoT & Hardware](https://www.sentratechnology.com/en/services/iot-hardware): smartlocks, fleet telematics, sensors, gateways, and networking, from site survey to maintenance.
 - [Custom Software](https://www.sentratechnology.com/en/services/custom-software): web and mobile applications built around a team's workflow.
 - [System Integration](https://www.sentratechnology.com/en/services/integrasi-sistem): connects ERP, HRIS, CCTV, and legacy databases via APIs, connectors, and SSO.
