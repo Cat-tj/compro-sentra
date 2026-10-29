@@ -14,8 +14,9 @@
 .reach-view { position: absolute; inset: 0; margin: 0; opacity: 0; visibility: hidden; transition: opacity .45s ease, visibility 0s linear .45s; }
 .reach[data-mode="hw"] .reach-view.hw, .reach[data-mode="sw"] .reach-view.sw { opacity: 1; visibility: visible; transition: opacity .45s ease; }
 .reach-view > img, .reach-view > svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
-.reach-view .arc { fill: none; stroke: var(--blue); stroke-width: 2.4; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 0; opacity: .75; }
-.reach-view.sw .arc { stroke: #3B82F6; stroke-width: 2; }
+/* Garis putih dengan pinggiran navy tipis: tegas di atas titik biru Kaltim maupun di latar terang */
+.reach-view .arc { fill: none; stroke: #fff; stroke-width: 2.6; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 0; }
+.reach-view .arc-c { stroke: var(--navy); stroke-width: 5.6; opacity: .35; }
 
 /* Pin: titik + label HTML, diposisikan dalam persen agar ikut skala peta */
 .pin { position: absolute; left: var(--x); top: var(--y); width: 0; height: 0; padding: 0; border: 0; background: none; cursor: default; }
@@ -52,3 +53,27 @@
   .reach.play .reach-view .arc, .reach.play .reach-view .pin, .pin.hq i::after { animation: none; }
   .reach-view { transition: none; }
 }
+
+/* Section beranda: peta penuh tanpa kartu. Desktop: setengah kanan section sampai tepi layar.
+   HP: selebar layar di bawah teks. Peta di-crop menutup area dengan titik fokus Samarinda/Kaltim. */
+.reach-sec { position: relative; overflow: hidden; }
+.reach-sec .reach { position: relative; display: block; height: 480px; margin-top: 32px; padding: 0; border: 0; border-radius: 0; box-shadow: none; background: linear-gradient(180deg, #F2F7FE, #E4EDFA); }
+.reach-sec .reach-map { position: absolute; inset: 0; aspect-ratio: auto; border-radius: 0; background: none; container-type: size; }
+.reach-sec .reach-view { inset: auto; top: 50%; width: max(100cqw, 100cqh * 1.6129); aspect-ratio: 1000 / 620;
+  left: clamp(100cqw - max(100cqw, 100cqh * 1.6129), 50cqw - var(--fx) * max(100cqw, 100cqh * 1.6129), 0px); transform: translateY(-50%); }
+.reach-sec .reach-view.hw { --fx: .64; }
+.reach-sec .reach-view.sw { --fx: .5; }
+.reach-sec .reach-tabs { position: absolute; z-index: 3; top: 20px; left: 20px; width: min(420px, calc(100% - 40px)); background: rgba(255,255,255,.72); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); box-shadow: 0 10px 30px -18px rgba(10,27,61,.45); }
+.reach-sec .reach-cap { position: absolute; z-index: 3; left: 20px; right: 20px; bottom: 20px; margin: 0; min-height: 0; padding: 12px 16px; border-radius: 14px; background: rgba(255,255,255,.82); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); box-shadow: 0 10px 30px -18px rgba(10,27,61,.45); }
+
+@media (min-width: 980px) {
+  .reach-sec .split { grid-template-columns: 1fr 1fr; min-height: 600px; }
+  .reach-sec .reach { position: absolute; top: 0; right: 0; bottom: 0; width: 50%; height: auto; margin: 0; }
+  /* sambungan halus dari latar section ke peta */
+  .reach-sec .reach::before { content: ""; position: absolute; z-index: 2; top: 0; bottom: 0; left: 0; width: 72px; background: linear-gradient(90deg, var(--alt), rgba(244,246,249,0)); pointer-events: none; }
+  .reach-sec .reach-tabs { top: 32px; left: 48px; }
+  .reach-sec .reach-cap { left: 48px; right: 32px; bottom: 32px; max-width: 520px; }
+}
+/* Peta dunia jauh lebih lebar daripada tinggi; di area potret dimuatkan selebar area supaya semua kota terlihat,
+   dan ruang di atas/bawahnya dipakai tab dan keterangan */
+.reach-sec .reach-view.sw { width: 100cqw; left: 0; }
