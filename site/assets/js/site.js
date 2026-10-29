@@ -37,6 +37,9 @@
         if (pnl) pnl.hidden = !on;
       });
       if (focus) t.focus();
+      // di layar sempit deretan tab bisa digeser; pastikan tab terpilih terlihat utuh
+      var l = t.offsetLeft - list.offsetLeft, r = l + t.offsetWidth;
+      if (l < list.scrollLeft || r > list.scrollLeft + list.clientWidth) list.scrollTo({ left: l - 5, behavior: 'smooth' });
     };
     tabs.forEach(function (t, i) {
       t.addEventListener('click', function () { pick(t); });
