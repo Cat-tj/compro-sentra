@@ -14,8 +14,8 @@
  * so stragglers get picked off. Eaten fish come back later as new schools
  * swimming in from the edges, which keeps the population steady.
  */
-import { angleDiff, clamp, current, rand, randInt, TAU } from "./math.js?v=20261029f";
-import { pickSpecies, SPECIES } from "./species.js?v=20261029f";
+import { angleDiff, clamp, current, rand, randInt, TAU } from "./math.js?v=20261029g";
+import { pickSpecies, SPECIES } from "./species.js?v=20261029g";
 
 export const SHARK_NODES = 20;
 

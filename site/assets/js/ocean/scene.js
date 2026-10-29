@@ -1,7 +1,7 @@
 // Inti laut ASCII Sentra: simulasi, render, koin logo, dan kualitas adaptif.
 // Tanpa DOM, jadi bisa jalan di Web Worker (OffscreenCanvas) maupun di thread utama sebagai cadangan.
-import { World } from "./world.js?v=20261029f";
-import { AsciiRenderer } from "./renderer.js?v=20261029f";
+import { World } from "./world.js?v=20261029g";
+import { AsciiRenderer } from "./renderer.js?v=20261029g";
 
 var STEP = 1 / 60, MAX_STEPS = 4;
 var SPIN = 5.2;            // detik per putaran koin
@@ -42,9 +42,10 @@ export var PRESETS = {
 };
 
 // Gaya ascii-sharks asli: hiu berwarna solid, ikan sebagai -, ><, <=>, <>.
-// Footer: latar hitam seperti aslinya.
+// Footer: laut gelap, gradient dari biru tua (menyambung CTA di atasnya) ke navy gelap, tidak hitam pekat.
 var DARK = {
-  bg: "#000",
+  bg: "#0E2150",
+  bgGradient: ["#13306B", "#081530"],
   sharks: [
     [1.55, 0.88, 0.26],    // oranye
     [0.32, 0.45, 1.5],     // biru

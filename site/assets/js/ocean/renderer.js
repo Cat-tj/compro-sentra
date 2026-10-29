@@ -7,8 +7,8 @@
  *   4. sharks rasterised cell-by-cell with supersampled edges: grey blocks
  *      shaded by the light, dense glyphs, and shimmering accent colours
  */
-import { clamp, hash3, smoothstep } from "./math.js?v=20261029f";
-import { SHARK_NODES,                                        } from "./world.js?v=20261029f";
+import { clamp, hash3, smoothstep } from "./math.js?v=20261029g";
+import { SHARK_NODES,                                        } from "./world.js?v=20261029g";
 
 export const BG = "#06122B";
 const ALPHA_LEVELS = 6;
@@ -401,7 +401,13 @@ export class AsciiRenderer {
     if (!g) return;
     const { width: W, height: H, dpr, cw, ch } = this;
     g.setTransform(dpr, 0, 0, dpr, 0, 0);
-    g.fillStyle = this.bgColor || BG;
+    // Sentra: latar bisa gradient vertikal [atas, bawah].
+    if (this.bgGradient) {
+      const lg = g.createLinearGradient(0, 0, 0, H);
+      lg.addColorStop(0, this.bgGradient[0]);
+      lg.addColorStop(1, this.bgGradient[1]);
+      g.fillStyle = lg;
+    } else g.fillStyle = this.bgColor || BG;
     g.fillRect(0, 0, W, H);
     paintGrid(g, W, H, cw, ch, dpr, this.gridColor);
   }
@@ -409,6 +415,7 @@ export class AsciiRenderer {
   /** Sentra: tema warna. bg/grid: latar; wake: [r,g,b] jejak air; fish: glyph + warna per spesies; sharks: tint [r,g,b] per hiu. */
   setTheme(theme) {
     this.bgColor = theme.bg;
+    this.bgGradient = theme.bgGradient;
     this.gridColor = theme.grid;
     if (theme.wake) {
       const [r, g, b] = theme.wake;
