@@ -1,0 +1,56 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "",
+  "buildCommand": "",
+  "outputDirectory": "site",
+  "routes": [
+    {
+      "src": "^/(.*)\\.html$",
+      "status": 308,
+      "headers": {
+        "Location": "/$1"
+      }
+    },
+    {
+      "src": "^/index$",
+      "status": 308,
+      "headers": {
+        "Location": "/"
+      }
+    },
+    {
+      "src": "^/assets/(.*)$",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      },
+      "continue": true
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "^/(.+?)/?$",
+      "dest": "/$1.html",
+      "check": true
+    },
+    {
+      "src": "^/(.+?)/?$",
+      "dest": "/$1/index.html",
+      "check": true
+    },
+    {
+      "handle": "error"
+    },
+    {
+      "status": 404,
+      "src": "^/(zh|ko|en|ms)(/.*)?$",
+      "dest": "/$1/404.html"
+    },
+    {
+      "status": 404,
+      "src": "^.*$",
+      "dest": "/404.html"
+    }
+  ]
+}

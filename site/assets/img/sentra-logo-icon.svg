@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="700" viewBox="30 10 640 660">
+<title>Sentra Technology</title>
+<defs><linearGradient id="ribbonGradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#3D6FC8"/><stop offset="100%" stop-color="#2C5BB8"/></linearGradient>
+<radialGradient id="navyGradient" cx="40%" cy="35%" r="70%"><stop offset="0%" stop-color="#6B7280"/><stop offset="100%" stop-color="#3A4150"/></radialGradient></defs>
+<path fill="url(#ribbonGradient)" fill-rule="evenodd" d="M 49,238 A 76,76 0 1,1 201,238 A 76,76 0 1,1 49,238 Z M 64,238 A 61,61 0 1,0 186,238 A 61,61 0 1,0 64,238 Z"/>
+<path fill="url(#ribbonGradient)" fill-rule="evenodd" d="M 494,238 A 76,76 0 1,1 646,238 A 76,76 0 1,1 494,238 Z M 509,238 A 61,61 0 1,0 631,238 A 61,61 0 1,0 509,238 Z"/>
+<path fill="url(#ribbonGradient)" fill-rule="evenodd" d="M 49,461 A 76,76 0 1,1 201,461 A 76,76 0 1,1 49,461 Z M 64,461 A 61,61 0 1,0 186,461 A 61,61 0 1,0 64,461 Z"/>
+<path fill="url(#ribbonGradient)" fill-rule="evenodd" d="M 494,461 A 76,76 0 1,1 646,461 A 76,76 0 1,1 494,461 Z M 509,461 A 61,61 0 1,0 631,461 A 61,61 0 1,0 509,461 Z"/>
+<path fill="url(#ribbonGradient)" fill-rule="evenodd" d="M 276,580 A 76,76 0 1,1 428,580 A 76,76 0 1,1 276,580 Z M 291,580 A 61,61 0 1,0 413,580 A 61,61 0 1,0 291,580 Z"/>
+<path fill="url(#ribbonGradient)" fill-rule="evenodd" d="M 425.4,83.3 A 76,76 0 1,1 371.7,29.6 L 367.8,44.1 A 61,61 0 1,0 410.9,87.2 Z"/>
+<path fill="url(#navyGradient)" d="M 245,250 A 42,42 0 1,1 329,250 A 42,42 0 1,1 245,250 Z"/>
+<path fill="url(#navyGradient)" d="M 373,250 A 42,42 0 1,1 457,250 A 42,42 0 1,1 373,250 Z"/>
+<path fill="url(#navyGradient)" d="M 190,348 A 42,42 0 1,1 274,348 A 42,42 0 1,1 190,348 Z"/>
+<path fill="url(#navyGradient)" d="M 425,348 A 42,42 0 1,1 509,348 A 42,42 0 1,1 425,348 Z"/>
+<path fill="url(#navyGradient)" d="M 245,445 A 42,42 0 1,1 329,445 A 42,42 0 1,1 245,445 Z"/>
+<path fill="url(#navyGradient)" d="M 373,445 A 42,42 0 1,1 457,445 A 42,42 0 1,1 373,445 Z"/>
+</svg>
