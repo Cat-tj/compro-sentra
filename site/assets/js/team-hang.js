@@ -34,6 +34,7 @@
     }
     prep() {
       if (this.ready) return true;
+      if (!this.btn.offsetWidth) return false;
       if (!this.img.complete || !this.img.naturalWidth) return false;
       const W = this.W = this.btn.offsetWidth, H = this.H = this.btn.offsetHeight;
       this.cv.width = W * DPR; this.cv.height = H * DPR;
@@ -74,7 +75,7 @@
         const q = clamp((p - th[i]) / 0.28, 0, 1);
         if (q <= 0) continue;
         const x = c * CELL, y = r * CELL;
-        ctx.fillStyle = `rgba(14,37,86,${0.15 + 0.85 * q})`;
+        ctx.fillStyle = `rgba(22,52,127,${0.15 + 0.85 * q})`;
         ctx.fillRect(x, y, CELL, CELL);
         const o = i * 4, lum = (px[o] * 0.3 + px[o + 1] * 0.59 + px[o + 2] * 0.11) / 255;
         const ch = GL[Math.round(clamp(lum * 1.15, 0, 1) * (GL.length - 1))];
@@ -133,17 +134,43 @@
     if (t.img.complete) t.prep(); else t.img.addEventListener("load", () => t.prep(), { once: true });
   });
 
-  // tab divisi: kartu lain meredup, urutan dan ukuran grid tidak berubah
+  // tab divisi: kartu yang tidak sesuai disembunyikan, sisanya masuk berurutan dari kiri
   const tabs = [...document.querySelectorAll(".tg-filter button")];
+  const apply = (f) => {
+    let i = 0;
+    tiles.forEach((t) => {
+      t.setOn(false);
+      const show = f === "all" || t.li.dataset.div === f;
+      t.li.hidden = !show;
+      if (show) t.li.style.setProperty("--i", i++);
+    });
+    grid.scrollLeft = 0;
+    grid.classList.remove("go"); void grid.offsetWidth; grid.classList.add("go");
+    sync();
+  };
   tabs.forEach((tb) => tb.addEventListener("click", () => {
     tabs.forEach((o) => o.setAttribute("aria-pressed", o === tb));
-    grid.dataset.f = tb.dataset.f;
-    tiles.forEach((t) => t.setOn(false));
+    apply(tb.dataset.f);
   }));
+
+  // panah dan garis progres
+  const prev = document.querySelector(".tc-prev"), next = document.querySelector(".tc-next"), thumb = document.querySelector(".tc-thumb");
+  const sync = () => {
+    const max = grid.scrollWidth - grid.clientWidth;
+    const frac = grid.clientWidth / Math.max(grid.scrollWidth, 1);
+    thumb.style.width = Math.min(100, frac * 100) + "%";
+    thumb.style.left = (max > 1 ? (grid.scrollLeft / max) * (100 - frac * 100) : 0) + "%";
+    prev.disabled = grid.scrollLeft < 8; next.disabled = grid.scrollLeft > max - 8;
+  };
+  const step = () => (grid.querySelector(".tile:not([hidden])")?.offsetWidth || 240) + 16;
+  prev.addEventListener("click", () => grid.scrollBy({ left: -step() * 2, behavior: reduce ? "auto" : "smooth" }));
+  next.addEventListener("click", () => grid.scrollBy({ left: step() * 2, behavior: reduce ? "auto" : "smooth" }));
+  grid.addEventListener("scroll", () => requestAnimationFrame(sync), { passive: true });
+  sync();
 
   let rz;
   addEventListener("resize", () => {
     clearTimeout(rz);
-    rz = setTimeout(() => tiles.forEach((t) => { t.ready = false; t.prep(); if (t.on) { t.thresholds(); t.paint(); } }), 200);
+    rz = setTimeout(() => { sync(); tiles.forEach((t) => { t.ready = false; t.prep(); if (t.on) { t.thresholds(); t.paint(); } }); }, 200);
   });
 })();
