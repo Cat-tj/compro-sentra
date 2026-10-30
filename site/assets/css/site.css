@@ -673,11 +673,9 @@ a.card.card-feature:hover { border-color: #3F80E4; box-shadow: 0 18px 40px -22px
 
 /* Tim: section gelap, tiga grup (Leadership, Infra, Software). Hover/tap: foto dimakan glyph ASCII lalu bio muncul (team-hang.js). */
 .sec-team { --tp: clamp(104px, 10vw, 150px); padding-top: var(--tp); position: relative; clip-path: inset(0); background: #1B4A6B; isolation: isolate; }
-/* Kolam koi di belakang section: kanvas selebar layar yang menempel (sticky) selama section lewat, jadi yang digambar GPU
-   hanya satu layar, bukan seluruh tinggi section (di HP lebih dari 2000px). */
-.koi-bg { position: sticky; top: 0; height: 100vh; margin: calc(-1 * var(--tp)) 0 calc(var(--tp) - 100vh); z-index: -1; pointer-events: none; }
-.koi-bg canvas { display: block; width: 100%; height: 100%; filter: blur(2.5px); transform: scale(1.02); }
-.koi-bg::after { content: ""; position: absolute; inset: 0; background: rgba(44,110,146,.14); }
+/* Latar section tim: gambar kolam koi statis (dirender sekali dari mesin koi), tanpa animasi dan tanpa WebGL. */
+.koi-bg { position: absolute; inset: 0; z-index: -1; pointer-events: none; background: #1B4A6B url(/assets/img/art/team-pond.webp) center top / cover no-repeat; }
+@media (max-width: 760px) { .koi-bg { background-image: none; background: linear-gradient(#2C6E92, #1B4A6B); } }
 .sec-team .wrap { position: relative; }
 .sec-team .sec-head h2 { color: #fff; }
 .sec-team .sec-head h2 .tm-acc { display: block; color: #9DD0F0; }

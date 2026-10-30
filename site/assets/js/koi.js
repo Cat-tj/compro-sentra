@@ -172,4 +172,4 @@ Pond.prototype.tick = function (now) {
   this.draw();
 };
 
-document.querySelectorAll(".koi-pond canvas, .koi-bg canvas").forEach(function (c) { c._pond = new Pond(c); });
+document.querySelectorAll(".koi-pond canvas").forEach(function (c) { c._pond = new Pond(c); });
