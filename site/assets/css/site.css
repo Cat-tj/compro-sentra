@@ -672,21 +672,19 @@ a.card:hover, .card.hover:hover { border-color: #C6D4EC; box-shadow: var(--shado
 a.card.card-feature:hover { border-color: #3F80E4; box-shadow: 0 18px 40px -22px rgba(10,27,61,.6); }
 
 /* Tim: section gelap, tiga grup (Leadership, Infra, Software). Hover/tap: foto dimakan glyph ASCII lalu bio muncul (team-hang.js). */
-.sec-team { --tp: clamp(104px, 10vw, 150px); padding-top: var(--tp); position: relative; clip-path: inset(0); background: #1B4A6B; isolation: isolate; }
-/* Latar section tim: gambar kolam koi statis (dirender sekali dari mesin koi), tanpa animasi dan tanpa WebGL. */
-.koi-bg { position: absolute; inset: 0; z-index: -1; pointer-events: none; background: #1B4A6B url(/assets/img/art/team-pond.webp) center top / cover no-repeat; }
-@media (max-width: 760px) { .koi-bg { background-image: none; background: linear-gradient(#2C6E92, #1B4A6B); } }
+.sec-team { --tp: clamp(104px, 10vw, 150px); padding-top: var(--tp); position: relative; clip-path: inset(0); background: var(--bg); isolation: isolate; }
+/* Latar section tim: grafis garis statis (riak air, kisi titik, dua koi garis), satu file SVG, tanpa animasi. */
+.koi-bg { position: absolute; inset: 0; z-index: -1; pointer-events: none; background: #fff url(/assets/img/art/team-lines.svg) center top / cover no-repeat; }
+@media (max-width: 760px) { .koi-bg { background: radial-gradient(circle, #D5E1F4 1.1px, transparent 1.6px) 0 0 / 28px 28px, linear-gradient(#EEF4FD, #fff 18%, #fff 86%, #EEF4FD); } }
 .sec-team .wrap { position: relative; }
-.sec-team .sec-head h2 { color: #fff; }
-.sec-team .sec-head h2 .tm-acc { display: block; color: #9DD0F0; }
-.sec-team .sec-head .lead { color: rgba(255,255,255,.82); }
+.sec-team .sec-head h2 .tm-acc { display: block; color: var(--blue); }
 .tgroups { display: grid; gap: 34px; margin-top: 38px; }
-.tg-h { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 0 0 18px; font: 500 .78rem/1 'JetBrains Mono', ui-monospace, monospace; letter-spacing: .16em; text-transform: uppercase; color: #E3F1FB; }
-.tg-h::before { content: ""; flex: 1; height: 8px; max-width: 260px; margin-left: auto; background: radial-gradient(circle at right center, var(--dot, var(--blue)) 4px, transparent 4.5px) right / 8px 8px no-repeat, linear-gradient(90deg, transparent, rgba(157,208,240,.55)) left center / calc(100% - 12px) 1px no-repeat; }
-.tg-h em { font-style: normal; padding: 4px 8px; border-radius: 6px; background: rgba(255,255,255,.14); letter-spacing: .06em; }
+.tg-h { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 0 0 18px; font: 500 .78rem/1 'JetBrains Mono', ui-monospace, monospace; letter-spacing: .16em; text-transform: uppercase; color: var(--blue-deep); }
+.tg-h::before { content: ""; flex: 1; height: 8px; max-width: 260px; margin-left: auto; background: radial-gradient(circle at right center, var(--dot, var(--blue)) 4px, transparent 4.5px) right / 8px 8px no-repeat, linear-gradient(90deg, transparent, rgba(44,91,184,.35)) left center / calc(100% - 12px) 1px no-repeat; }
+.tg-h em { font-style: normal; padding: 4px 8px; border-radius: 6px; background: #fff; box-shadow: 0 0 0 1px #E1EAF7; letter-spacing: .06em; }
 .tg-h em::before { content: "["; opacity: .5; margin-right: 2px; } .tg-h em::after { content: "]"; opacity: .5; margin-left: 2px; }
-.tg-h::after { content: ""; flex: 1; height: 1px; max-width: 260px; margin-right: auto; background: linear-gradient(90deg, rgba(157,208,240,.55), transparent); }
-.tg[data-code="lead"] { --dot: #FFFFFF; } .tg[data-code="in"] { --dot: #F2A93B; } .tg[data-code="sw"] { --dot: #7DB4D4; }
+.tg-h::after { content: ""; flex: 1; height: 1px; max-width: 260px; margin-right: auto; background: linear-gradient(90deg, rgba(44,91,184,.35), transparent); }
+.tg[data-code="lead"] { --dot: #0A1B3D; } .tg[data-code="in"] { --dot: #3F80E4; } .tg[data-code="sw"] { --dot: #2C5BB8; }
 .tg-grid { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
 .tile { width: calc((100% - 5 * 14px) / 6); }
 .tile-btn { display: block; position: relative; width: 100%; aspect-ratio: 1 / 1.12; padding: 0; border: 0; border-radius: 16px; overflow: hidden; cursor: pointer; text-align: left; color: #fff; font: inherit; background: #16347F;
