@@ -672,29 +672,26 @@ a.card:hover, .card.hover:hover { border-color: #C6D4EC; box-shadow: var(--shado
 a.card.card-feature:hover { border-color: #3F80E4; box-shadow: 0 18px 40px -22px rgba(10,27,61,.6); }
 
 /* Tim: section gelap, tiga grup (Leadership, Infra, Software). Hover/tap: foto dimakan glyph ASCII lalu bio muncul (team-hang.js). */
-.sec-team { position: relative; overflow: hidden; background: radial-gradient(60% 50% at 50% 0%, rgba(63,128,228,.28), transparent 70%), linear-gradient(180deg, #0B1B3F, #081530); color: #fff; }
-.sec-team::before { content: ""; position: absolute; left: 50%; top: -30%; width: 120vmin; height: 120vmin; transform: translateX(-50%); border-radius: 50%; border: 1px solid rgba(141,182,255,.12); pointer-events: none; }
+.sec-team { position: relative; clip-path: inset(0); background: var(--bg); isolation: isolate; }
+/* Kolam koi di belakang section: kanvas selebar layar yang menempel (sticky) selama section lewat, jadi yang digambar GPU
+   hanya satu layar, bukan seluruh tinggi section (di HP lebih dari 2000px). */
+.koi-bg { position: sticky; top: 0; height: 100vh; margin-bottom: -100vh; z-index: -1; pointer-events: none; }
+.sec-team::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: linear-gradient(var(--bg), transparent 100px, transparent calc(100% - 100px), var(--bg)); }
+.koi-bg canvas { display: block; width: 100%; height: 100%; }
 .sec-team .wrap { position: relative; }
-.sec-team .sec-head h2 { color: #fff; }
-.sec-team .sec-head h2 .tm-acc { display: block; color: #8DB6FF; }
-.sec-team .sec-head .lead { color: rgba(255,255,255,.72); }
-.tg-filter { margin: 30px 0 30px; }
-.sec-team .tg-filter button { background: rgba(255,255,255,.07); border-color: rgba(255,255,255,.18); color: #DCE8FF; }
-.sec-team .tg-filter button:hover { border-color: #8DB6FF; color: #fff; }
-.sec-team .tg-filter button[aria-pressed="true"] { background: #fff; border-color: #fff; color: #0B1B3F; }
-.tg-filter button small { margin-left: 6px; font: 500 .7rem/1 'JetBrains Mono', ui-monospace, monospace; opacity: .6; }
+.sec-team .sec-head h2 .tm-acc { display: block; color: var(--blue); }
 .tgroups { display: grid; gap: 34px; margin-top: 38px; }
-.tg-h { display: flex; align-items: center; gap: 12px; margin: 0 0 16px; font: 500 .78rem/1 'JetBrains Mono', ui-monospace, monospace; letter-spacing: .16em; text-transform: uppercase; color: #CFE0FF; }
-.tg-h::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--dot, #fff); box-shadow: 0 0 0 3px rgba(255,255,255,.1); }
-.tg-h em { font-style: normal; padding: 4px 8px; border-radius: 6px; background: rgba(255,255,255,.1); letter-spacing: .06em; }
+.tg-h { display: flex; align-items: center; gap: 12px; margin: 0 0 16px; font: 500 .78rem/1 'JetBrains Mono', ui-monospace, monospace; letter-spacing: .16em; text-transform: uppercase; color: var(--blue-deep); }
+.tg-h::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--dot, var(--blue)); box-shadow: 0 0 0 3px rgba(255,255,255,.7); }
+.tg-h em { font-style: normal; padding: 4px 8px; border-radius: 6px; background: rgba(255,255,255,.85); letter-spacing: .06em; }
 .tg-h em::before { content: "["; opacity: .5; margin-right: 2px; } .tg-h em::after { content: "]"; opacity: .5; margin-left: 2px; }
-.tg-h::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, rgba(141,182,255,.35), transparent); }
-.tg[data-code="lead"] { --dot: #FFFFFF; } .tg[data-code="in"] { --dot: #7FB0FF; } .tg[data-code="sw"] { --dot: #3F80E4; }
+.tg-h::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, rgba(44,91,184,.35), transparent); }
+.tg[data-code="lead"] { --dot: #0A1B3D; } .tg[data-code="in"] { --dot: #3F80E4; } .tg[data-code="sw"] { --dot: #2C5BB8; }
 .tg-grid { list-style: none; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 14px; }
 .tile-btn { display: block; position: relative; width: 100%; aspect-ratio: 1 / 1.12; padding: 0; border: 0; border-radius: 16px; overflow: hidden; cursor: pointer; text-align: left; color: #fff; font: inherit; background: #16347F;
-  box-shadow: 0 22px 34px -26px rgba(63,128,228,.7), 0 0 0 1px rgba(141,182,255,.16); transition: transform .3s cubic-bezier(.2,.7,.2,1), box-shadow .3s; -webkit-tap-highlight-color: transparent; }
-.tile-btn:hover, .tile-btn[aria-pressed="true"] { transform: translateY(-5px); box-shadow: 0 30px 40px -26px rgba(63,128,228,.9), 0 0 0 1px rgba(141,182,255,.5); }
-.tile-btn:focus-visible { outline: 3px solid #8DB6FF; outline-offset: 3px; }
+  box-shadow: 0 18px 30px -20px rgba(10,27,61,.55), 0 0 0 4px #fff; transition: transform .3s cubic-bezier(.2,.7,.2,1), box-shadow .3s; -webkit-tap-highlight-color: transparent; }
+.tile-btn:hover, .tile-btn[aria-pressed="true"] { transform: translateY(-5px); box-shadow: 0 28px 38px -20px rgba(10,27,61,.6), 0 0 0 4px #fff; }
+.tile-btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 .tile-photo, .tile-photo img, .tile-photo canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
 .tile-photo img { object-fit: cover; object-position: 50% 20%; filter: saturate(.9); }
 .tile-photo::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(90% 55% at 50% 0%, rgba(63,128,228,.26), transparent 70%); mix-blend-mode: screen; }

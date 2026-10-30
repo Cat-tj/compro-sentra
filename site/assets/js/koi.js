@@ -1,4 +1,5 @@
-// Kolam koi ASCII (hero halaman Tentang): tiga koi berenang di air biru dalam, digambar sebagai glyph di GPU.
+// Kolam koi ASCII (hero halaman Tentang dan latar section tim): tiga koi berenang, digambar sebagai glyph di GPU.
+// Warna air dan ukuran bisa diatur per kanvas lewat data-water, data-water2, data-ripple, data-scale, data-dpr.
 // JS hanya menghitung titik tulang punggung tiap koi (3 x 10 titik); shader mengisi setiap sel grid.
 import { NOISE, atlas, hex } from "./field.js?v=20261029w";
 
@@ -72,7 +73,8 @@ var PATHS = [
 function Pond(canvas) {
   this.canvas = canvas;
   var gl = canvas.getContext("webgl", { antialias: false, alpha: false, powerPreference: "low-power" });
-  if (!gl) { canvas.style.background = "linear-gradient(#2C6E92,#1B4A6B)"; return; }
+  var D = canvas.dataset;
+  if (!gl) { canvas.style.background = "linear-gradient(" + (D.water || "#2C6E92") + "," + (D.water2 || "#1B4A6B") + ")"; return; }
   this.gl = gl;
   function sh(type, src) { var s = gl.createShader(type); gl.shaderSource(s, src); gl.compileShader(s); if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(s)); return s; }
   var pr = gl.createProgram();
@@ -83,13 +85,16 @@ function Pond(canvas) {
   var loc = gl.getAttribLocation(pr, "p"); gl.enableVertexAttribArray(loc); gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
   var u = this.u = {};
   ["res", "t", "cell", "n", "atlas", "K", "len", "water", "water2", "ripple", "white", "red", "gold", "ink"].forEach(function (k) { u[k] = gl.getUniformLocation(pr, k); });
-  var C = { water: "#2C6E92", water2: "#1B4A6B", ripple: "#7DB4D4", white: "#FFFDF8", red: "#E2482F", gold: "#F2A93B", ink: "#1E2433" };
+  var C = { water: D.water || "#2C6E92", water2: D.water2 || "#1B4A6B", ripple: D.ripple || "#7DB4D4", white: "#FFFDF8", red: "#E2482F", gold: "#F2A93B", ink: "#1E2433" };
   for (var k in C) gl.uniform3fv(u[k], hex(C[k]));
   gl.uniform1f(u.n, GLYPHS.length); gl.uniform1i(u.atlas, 0);
 
   this.pos = PATHS.map(function () { return 0; });
   this.K = new Float32Array(NK * NODES * 2);
   this.last = 0; this.t = 0; this.raf = 0; this.visible = true;
+  this.scale = parseFloat(D.scale) || 1; this.maxDpr = parseFloat(D.dpr) || 2;
+  // HP lemah (RAM kecil atau sedikit core): 20 fps cukup, dan jarang terasa bedanya untuk ikan yang berenang pelan
+  this.minDt = 1 / ((navigator.deviceMemory && navigator.deviceMemory <= 2) || (navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4) ? 20 : 30);
   this.reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var self = this;
   this.frame = function (now) { self.tick(now); };
@@ -99,7 +104,7 @@ function Pond(canvas) {
 }
 
 Pond.prototype.resize = function () {
-  var gl = this.gl, r = this.canvas.getBoundingClientRect(), dpr = Math.min(window.devicePixelRatio || 1, 2);
+  var self = this, gl = this.gl, r = this.canvas.getBoundingClientRect(), dpr = Math.min(window.devicePixelRatio || 1, this.maxDpr);
   if (!gl || r.width < 1) return;
   this.w = r.width * dpr; this.h = r.height * dpr; this.dpr = dpr;
   this.canvas.width = Math.round(this.w); this.canvas.height = Math.round(this.h);
@@ -108,7 +113,7 @@ Pond.prototype.resize = function () {
   atlas(gl, cellPx, GLYPHS);
   gl.uniform2f(this.u.res, this.canvas.width, this.canvas.height);
   gl.uniform1f(this.u.cell, cellPx);
-  gl.uniform1fv(this.u.len, PATHS.map(function (p) { return p.L * Math.min(r.width, r.height) * dpr; }));
+  gl.uniform1fv(this.u.len, PATHS.map(function (p) { return p.L * self.scale * Math.min(r.width, r.height) * dpr; }));
   this.step(0); this.draw();
   this.schedule();
 };
@@ -126,7 +131,7 @@ Pond.prototype.step = function (dt) {
     var s = self.pos[k], h = self.head(p, s), h2 = self.head(p, s + 0.001);
     var speed = Math.hypot(h2[0] - h[0], h2[1] - h[1]) / 0.001 || 1;
     s = self.pos[k] = s + p.v * self.dpr * dt / speed;
-    var L = p.L * Math.min(self.w, self.h), seg = L / (NODES - 1);
+    var L = p.L * self.scale * Math.min(self.w, self.h), seg = L / (NODES - 1);
     var prev = self.head(p, s), j = 0, acc = 0, cur = s;
     self.K[(k * NODES) * 2] = prev[0]; self.K[(k * NODES) * 2 + 1] = prev[1];
     for (var n = 1; n < NODES; n++) {
@@ -159,7 +164,7 @@ Pond.prototype.schedule = function () {
 Pond.prototype.tick = function (now) {
   this.raf = requestAnimationFrame(this.frame);
   var dt = (now - this.last) / 1000;
-  if (dt < 1 / 30 - 0.002) return;   // 30 fps cukup untuk ikan yang berenang pelan
+  if (dt < this.minDt - 0.002) return;   // 20-30 fps cukup untuk ikan yang berenang pelan
   this.last = now;
   dt = Math.min(dt, 0.1);
   this.t += dt;
@@ -167,5 +172,4 @@ Pond.prototype.tick = function (now) {
   this.draw();
 };
 
-var pond = document.querySelector(".koi-pond canvas");
-if (pond) new Pond(pond);
+document.querySelectorAll(".koi-pond canvas, .koi-bg canvas").forEach(function (c) { c._pond = new Pond(c); });
