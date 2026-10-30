@@ -671,30 +671,38 @@ a.card:hover, .card.hover:hover { border-color: #C6D4EC; box-shadow: var(--shado
 .card-feature .tag { background: rgba(255,255,255,.12); color: #fff; }
 a.card.card-feature:hover { border-color: #3F80E4; box-shadow: 0 18px 40px -22px rgba(10,27,61,.6); }
 
-/* Tim: struktur ASCII (Leadership di atas, garis titik bercabang ke Hardware dan Software). Foto tetap asli. */
-.team-org { margin-top: 30px; display: grid; justify-items: center; }
-.team-org .team-div { margin: 0; position: relative; border-radius: var(--r-lg); padding: 22px clamp(14px, 2.4vw, 26px) 26px; background-size: cover; background-position: center; border: 1px solid var(--line-2); width: 100%; }
-.team-org .team-div::before, .team-org .team-div::after { content: ""; position: absolute; width: 14px; height: 14px; border: 2px solid var(--accent); pointer-events: none; }
-.team-org .team-div::before { top: 8px; left: 8px; border-right: 0; border-bottom: 0; }
-.team-org .team-div::after { right: 8px; bottom: 8px; border-left: 0; border-top: 0; }
-.team-lead { max-width: 440px; background-image: url(/assets/img/art/team-lead.webp); }
-.team-hw { background-image: url(/assets/img/art/team-hw.webp); }
-.team-sw { background-image: url(/assets/img/art/team-sw.webp); border-color: #13306B; }
-.team-org .team-div h3 { display: flex; align-items: center; gap: 10px; font: 500 .8rem/1 'JetBrains Mono', ui-monospace, monospace; letter-spacing: .14em; text-transform: uppercase; color: var(--blue-deep); margin: 0 0 16px; }
-.team-sw h3 { color: #fff !important; }
-.team-org h3 em { font-style: normal; padding: 4px 8px; border-radius: 6px; background: rgba(255,255,255,.85); color: var(--blue-deep); letter-spacing: .06em; }
-.team-org h3 em::before { content: "["; opacity: .5; margin-right: 2px; } .team-org h3 em::after { content: "]"; opacity: .5; margin-left: 2px; }
-.team-lead .team { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.team-divs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; width: 100%; }
-.team-divs .team { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; align-content: start; }
-.team-link { width: 100%; height: 54px; }
-.team-link svg { width: 100%; height: 100%; display: block; overflow: visible; }
-.team-link path { fill: none; stroke: var(--accent); stroke-width: 3; stroke-linecap: round; stroke-dasharray: .1 9; vector-effect: non-scaling-stroke; }
-.team-org .team li { position: relative; }
-.team-org .team img { border-radius: 14px; width: 84px; height: 84px; box-shadow: 0 0 0 3px #fff, 0 0 0 4px var(--line-2); }
-@media (max-width: 900px) {
-  .team-divs { grid-template-columns: 1fr; }
-  .team-link { width: 2px; height: 36px; } .team-link svg { display: none; }
-  .team-link { background: radial-gradient(circle, var(--accent) 1.5px, transparent 2px) center / 2px 9px repeat-y; width: 4px; }
-}
-@media (max-width: 640px) { .team-divs .team, .team-lead .team { grid-template-columns: 1fr 1fr; } }
+/* Tim: kartu ID menggantung dari rel garis titik. Hover/tap: foto dimakan glyph ASCII lalu bio muncul (lihat team-hang.js). */
+.hang { margin-top: 34px; display: grid; gap: 30px; }
+.hang-h { display: flex; align-items: center; gap: 10px; font: 500 .8rem/1 'JetBrains Mono', ui-monospace, monospace; letter-spacing: .14em; text-transform: uppercase; color: var(--blue-deep); margin: 0 0 14px; }
+.hang-h em { font-style: normal; padding: 4px 8px; border-radius: 6px; background: var(--tint); letter-spacing: .06em; }
+.hang-h em::before { content: "["; opacity: .5; margin-right: 2px; } .hang-h em::after { content: "]"; opacity: .5; margin-left: 2px; }
+.hang-rail { overflow-x: auto; overflow-y: hidden; padding: 0 4px 22px; margin: 0 -4px; scroll-snap-type: x proximity; scrollbar-width: none; overscroll-behavior-x: contain; }
+.hang-rail::-webkit-scrollbar { display: none; }
+.hang-track { list-style: none; position: relative; display: flex; gap: 18px; width: max-content; min-width: 100%; padding: 0; }
+.hang-track::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 4px; background: radial-gradient(circle, var(--accent) 1.5px, transparent 2px) 0 50% / 10px 4px repeat-x; }
+.hcard:first-child { margin-left: auto; } .hcard:last-child { margin-right: auto; }
+.hcard { width: 160px; flex: none; scroll-snap-align: start; transform-origin: 50% 0; animation: hc-sway 6.5s ease-in-out infinite; animation-delay: var(--d, 0s); }
+@keyframes hc-sway { 0%, 100% { transform: rotate(-.8deg); } 50% { transform: rotate(.8deg); } }
+.hc-swing { position: relative; padding-top: 44px; transform-origin: 50% 0; will-change: transform; }
+.hc-wire { position: absolute; left: 0; top: 0; width: 100%; height: 44px; overflow: visible; pointer-events: none; }
+.hc-wire line { stroke: #8FB0E8; stroke-width: 1.4; vector-effect: non-scaling-stroke; }
+.hc-wire circle { fill: var(--accent); }
+.hc-tilt { display: block; position: relative; width: 160px; height: 216px; padding: 0; border: 0; border-radius: 18px; overflow: hidden; cursor: pointer; text-align: left; color: #fff; font: inherit; background: #0E2556;
+  box-shadow: 0 18px 28px -18px rgba(10,27,61,.55), 0 0 0 1px rgba(19,48,107,.14);
+  transform: perspective(700px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)); transition: transform .28s ease-out, box-shadow .28s; -webkit-tap-highlight-color: transparent; }
+.hc-tilt:hover, .hc-tilt[aria-pressed="true"] { box-shadow: 0 26px 36px -18px rgba(10,27,61,.7), 0 0 0 1px rgba(63,128,228,.5); }
+.hc-tilt:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.hc-photo, .hc-photo img, .hc-photo canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.hc-photo img { object-fit: cover; object-position: 50% 20%; }
+.hc-info { position: absolute; left: 0; right: 0; bottom: 0; padding: 46px 13px 13px; background: linear-gradient(transparent, rgba(8,21,48,.92) 55%); }
+.hc-info b { display: block; font: 600 .9rem/1.2 var(--head); }
+.hc-info span { display: block; margin-top: 3px; font-size: .74rem; opacity: .82; }
+.hc-bio { position: absolute; inset: 0; padding: 14px 13px; display: flex; flex-direction: column; justify-content: flex-end; opacity: 0; pointer-events: none; }
+.hc-bio small { font: 500 .62rem/1 'JetBrains Mono', ui-monospace, monospace; letter-spacing: .14em; text-transform: uppercase; color: #8DB6FF; margin-bottom: 8px; }
+.hc-bio b { font: 600 .95rem/1.2 var(--head); }
+.hc-bio em { font-style: normal; font-size: .76rem; color: #9DC0FF; margin-top: 3px; }
+.hc-bio p { margin-top: 8px; font-size: .74rem; line-height: 1.45; color: rgba(255,255,255,.9); }
+.hc-tilt::after { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity .25s; background: radial-gradient(circle at var(--mx, 50%) var(--my, 30%), rgba(255,255,255,.2), transparent 55%); }
+.hc-tilt:hover::after { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .hcard { animation: none; } .hc-tilt { transition: none; } }
+@media (max-width: 640px) { .hang-rail { padding-bottom: 26px; } }
