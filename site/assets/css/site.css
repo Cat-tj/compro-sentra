@@ -1,7 +1,7 @@
 /* ============================================================
    Sentra Technology — sistem desain situs (gaya minimal & slick, referensi: digifren.com)
    Brand Sentra (compro): navy #0A1B3D · primary #2C5BB8 · accent #3B82F6 · paper #F7F9FC
-   Font: Space Grotesk (judul) · Inter (teks) · JetBrains Mono (label teknis)
+   Font: Geist (judul) · IBM Plex Sans (teks) · JetBrains Mono (label teknis)
    Satu aksen biru, latar putih / abu sangat muda bergantian, kartu tipis, label pil, judul dengan kata kunci berwarna.
    ============================================================ */
 
@@ -13,16 +13,16 @@
   --line: #E5E9F0; --line-2: #D7DEEA;
   --bg: #FFFFFF; --alt: #F4F6F9;
   --wa: #16A34A;
-  --font: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --head: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  --font: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --head: 'Geist', 'IBM Plex Sans', system-ui, sans-serif;
   --mono: 'JetBrains Mono', ui-monospace, monospace;
   --r: 18px; --r-lg: 26px;
   --shadow: 0 1px 2px rgba(10,27,61,.04), 0 12px 32px -20px rgba(10,27,61,.22);
   --shadow-2: 0 2px 4px rgba(10,27,61,.04), 0 24px 48px -24px rgba(10,27,61,.32);
   --wrap: 1200px;
 }
-:lang(zh) { --font: 'Inter', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', system-ui, sans-serif; --head: 'Space Grotesk', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif; }
-:lang(ko) { --font: 'Inter', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', system-ui, sans-serif; --head: 'Space Grotesk', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif; }
+:lang(zh) { --font: 'IBM Plex Sans', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', system-ui, sans-serif; --head: 'Geist', 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif; }
+:lang(ko) { --font: 'IBM Plex Sans', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', system-ui, sans-serif; --head: 'Geist', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif; }
 
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 96px; -webkit-text-size-adjust: 100%; }
@@ -157,7 +157,7 @@ button { font: inherit; }
 .logos .word { font: 600 1rem/1 var(--head); color: #7C859B; letter-spacing: -.01em; }
 .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 44px; }
 .stat { display: flex; align-items: center; gap: 14px; padding: 18px 20px; background: #fff; border: 1px solid var(--line); border-radius: var(--r); }
-.stat-ico { flex: none; width: 46px; height: 46px; border-radius: 14px; display: grid; place-items: center; background: var(--tint); color: var(--blue); }
+.stat-ico { flex: none; width: 34px; height: 34px; display: grid; place-items: center; color: var(--blue); }
 .stat-ico svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .stat b { display: block; font: 600 1.5rem/1.1 var(--head); color: var(--ink); letter-spacing: -.02em; }
 .stat span { color: var(--muted); font-size: .9rem; }
@@ -173,8 +173,8 @@ a.card:hover, .card.hover:hover { border-color: #C6D4EC; box-shadow: var(--shado
 .card h3 { font-size: 1.12rem; }
 .card p { font-size: .94rem; color: var(--text); }
 .card .link { margin-top: auto; padding-top: 6px; }
-.ico-tile { width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center; background: var(--tint); color: var(--blue); flex: none; }
-.ico-tile svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.ico-tile { width: 32px; height: 32px; display: grid; place-items: center; color: var(--blue); flex: none; }
+.ico-tile svg { width: 28px; height: 28px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; }
 .tag { padding: 4px 10px; border-radius: 999px; background: var(--alt); color: var(--text); font-size: .76rem; font-weight: 500; }
 .num { font: 500 .78rem/1 var(--mono); color: var(--blue); letter-spacing: .04em; }
@@ -403,7 +403,8 @@ a.card:hover, .card.hover:hover { border-color: #C6D4EC; box-shadow: var(--shado
 .icon-hero svg { width: 30%; height: 30%; fill: none; stroke: currentColor; stroke-width: 1.4; }
 .mini-card { display: grid; grid-template-columns: 56px 1fr; gap: 12px; align-items: center; padding: 12px; background: #fff; border: 1px solid var(--line); border-radius: 16px; text-decoration: none; color: inherit; transition: box-shadow .2s, border-color .2s; }
 .mini-card:hover { border-color: #C6D4EC; box-shadow: var(--shadow); }
-.mini-card img, .mini-card .mc-ico { width: 56px; height: 56px; border-radius: 12px; object-fit: cover; background: var(--tint); display: grid; place-items: center; color: var(--blue); }
+.mini-card img { width: 56px; height: 56px; border-radius: 12px; object-fit: cover; }
+.mini-card .mc-ico { width: 28px; height: 28px; display: grid; place-items: center; color: var(--blue); }
 .mini-card .mc-ico svg { width: 26px; height: 26px; fill: none; stroke: currentColor; stroke-width: 1.7; }
 .mini-card b { display: block; font: 600 .96rem/1.25 var(--head); color: var(--ink); } .mini-card small { color: var(--muted); font-size: .8rem; }
 .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; }
@@ -661,3 +662,11 @@ a.card:hover, .card.hover:hover { border-color: #C6D4EC; box-shadow: var(--shado
   .float-chip { font-size: .8rem; }
   .hwi-more, .hwi-allvigi { flex-direction: column; align-items: flex-start; }
 }
+
+/* Layanan unggulan: satu kartu penuh dan gelap di atas, sisanya kartu biasa */
+.card-feature { grid-column: 1 / -1; background: var(--navy); border-color: var(--navy); color: #fff; padding: clamp(26px, 3.4vw, 40px); }
+.card-feature h3 { color: #fff; font-size: clamp(1.4rem, 1rem + 1.4vw, 2rem); max-width: 22ch; }
+.card-feature p { color: rgba(255,255,255,.82); font-size: 1.02rem; max-width: 60ch; }
+.card-feature .ico-tile, .card-feature .link, .card-feature .num { color: #9DC0FF; }
+.card-feature .tag { background: rgba(255,255,255,.12); color: #fff; }
+a.card.card-feature:hover { border-color: #3F80E4; box-shadow: 0 18px 40px -22px rgba(10,27,61,.6); }
