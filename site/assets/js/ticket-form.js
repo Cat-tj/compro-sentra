@@ -4,7 +4,7 @@
 (()=>{
   const form=document.querySelector('[data-ticket-form]');
   if(!form)return;
-  const WA='6282255443380';
+  const WA='628170822552';
   const D={
     sending:'Membuka WhatsApp…',submit:'Kirim via WhatsApp',
     generic:'Periksa kembali isian yang diberi tanda merah, lalu kirim ulang.',

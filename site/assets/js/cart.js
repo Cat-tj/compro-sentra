@@ -5,7 +5,7 @@
 (function () {
   'use strict';
   var KEY = 'sentra-cart-v1';
-  var WA = '6282255443380';
+  var WA = '628170822552';
   var D = {
     fab: 'Daftar minat', fab_aria: 'Buka daftar minat', title: 'Daftar minat', close: 'Tutup', empty: 'Daftar masih kosong.', see: 'Lihat produk',
     form_title: 'Data untuk demo', optional: '(opsional)', name: 'Nama', org: 'Instansi / perusahaan', loc: 'Lokasi', loc_ph: 'mis. Samarinda',
