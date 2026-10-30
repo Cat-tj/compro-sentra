@@ -1,12 +1,12 @@
-/* Kartu tim menggantung. Ayunan pegas ringan, miring mengikuti kursor, dan saat disentuh foto "dimakan" glyph ASCII
-   sampai habis lalu bio muncul. Satu loop animasi dipakai bersama dan berhenti sendiri saat semua kartu diam. */
+/* Section tim: grid kartu seragam dengan tab divisi. Saat disentuh, foto "dimakan" glyph ASCII mulai dari titik
+   kursor masuk sampai habis, lalu bio muncul. Satu loop animasi dipakai bersama dan berhenti sendiri saat diam. */
 (() => {
-  const cards = [...document.querySelectorAll(".hcard")];
-  if (!cards.length) return;
+  const grid = document.querySelector(".tgrid");
+  if (!grid) return;
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const GL = " .:-=+*#%@";
   const CELL = 7;
-  const DUR = 0.75;
+  const DUR = 0.7;
   const DPR = Math.min(2, window.devicePixelRatio || 1);
   const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
   const smooth = (x, a, b) => { const t = clamp((x - a) / (b - a), 0, 1); return t * t * (3 - 2 * t); };
@@ -20,34 +20,29 @@
     if (active.size) requestAnimationFrame(tick); else running = false;
   };
 
-  class Card {
+  class Tile {
     constructor(li) {
       this.li = li;
-      this.swing = li.querySelector(".hc-swing");
-      this.btn = li.querySelector(".hc-tilt");
+      this.btn = li.querySelector(".tile-btn");
       this.img = li.querySelector("img");
       this.cv = li.querySelector("canvas");
-      this.nameEl = li.querySelector(".hc-info");
-      this.bioEl = li.querySelector(".hc-bio");
-      this.a = 0; this.v = 0;
-      this.p = 0; this.target = 0;
-      this.ox = 0.5; this.oy = 0.4;
-      this.ready = false;
-      this.on = false;
+      this.info = li.querySelector(".tile-info");
+      this.tag = li.querySelector(".tile-div");
+      this.bio = li.querySelector(".tile-bio");
+      this.p = 0; this.target = 0; this.ox = 0.5; this.oy = 0.4;
+      this.ready = false; this.on = false;
     }
     prep() {
-      if (this.ready || !this.img.complete || !this.img.naturalWidth) return this.ready;
+      if (this.ready) return true;
+      if (!this.img.complete || !this.img.naturalWidth) return false;
       const W = this.W = this.btn.offsetWidth, H = this.H = this.btn.offsetHeight;
       this.cv.width = W * DPR; this.cv.height = H * DPR;
       this.ctx = this.cv.getContext("2d");
-      this.ctx.scale(DPR, DPR);
+      this.ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
       this.cols = Math.ceil(W / CELL); this.rows = Math.ceil(H / CELL);
-      const s = this.cover = (() => {
-        const k = Math.max(W / this.img.naturalWidth, H / this.img.naturalHeight);
-        const w = this.img.naturalWidth * k, h = this.img.naturalHeight * k;
-        return { x: (W - w) / 2, y: (H - h) * 0.2, w, h };
-      })();
-      // contoh warna per sel dari versi kecil foto yang sama
+      const k = Math.max(W / this.img.naturalWidth, H / this.img.naturalHeight);
+      const w = this.img.naturalWidth * k, h = this.img.naturalHeight * k;
+      const s = this.cover = { x: (W - w) / 2, y: (H - h) * 0.2, w, h };
       const tiny = document.createElement("canvas");
       tiny.width = this.cols; tiny.height = this.rows;
       const tc = tiny.getContext("2d", { willReadFrequently: true });
@@ -92,9 +87,10 @@
     }
     paint() {
       const p = this.p;
-      this.nameEl.style.opacity = 1 - smooth(p, 0.15, 0.55);
-      this.bioEl.style.opacity = smooth(p, 0.75, 1.15);
-      this.bioEl.style.transform = `translateY(${(1 - smooth(p, 0.75, 1.2)) * 8}px)`;
+      const fade = 1 - smooth(p, 0.15, 0.55);
+      this.info.style.opacity = fade; this.tag.style.opacity = fade;
+      this.bio.style.opacity = smooth(p, 0.75, 1.15);
+      this.bio.style.transform = `translateY(${(1 - smooth(p, 0.75, 1.2)) * 8}px)`;
       if (this.ready) this.draw();
     }
     setOn(on, e) {
@@ -103,75 +99,51 @@
       this.btn.setAttribute("aria-pressed", on);
       if (on) {
         this.prep();
-        if (e && this.ready) {
+        this.ox = 0.5; this.oy = 0.4;
+        if (e && typeof e.clientX === "number" && e.clientX + e.clientY > 0) {
           const b = this.btn.getBoundingClientRect();
           this.ox = clamp((e.clientX - b.left) / b.width, 0, 1);
           this.oy = clamp((e.clientY - b.top) / b.height, 0, 1);
-        } else { this.ox = 0.5; this.oy = 0.4; }
+        }
         if (this.ready) this.thresholds();
       }
       this.target = on ? 1.28 : 0;
       if (reduce) { this.p = this.target; this.paint(); return; }
       active.add(this); kick();
     }
-    impulse(dv) { if (reduce) return; this.v = clamp(this.v + dv, -22, 22); active.add(this); kick(); }
     step(dt) {
-      let busy = false;
-      if (this.v || this.a) {
-        this.v += (-46 * this.a - 3.4 * this.v) * dt;
-        this.a += this.v * dt;
-        if (Math.abs(this.a) < 0.03 && Math.abs(this.v) < 0.12) { this.a = 0; this.v = 0; this.swing.style.transform = ""; }
-        else { this.swing.style.transform = `rotate(${this.a.toFixed(3)}deg)`; busy = true; }
-      }
-      if (this.p !== this.target) {
-        const d = (this.target ? 1 : -1) * dt / DUR * 1.28;
-        this.p = this.target ? Math.min(this.target, this.p + d) : Math.max(0, this.p + d * 1.4);
-        this.paint(); busy = true;
-      }
-      if (!busy) active.delete(this);
+      if (this.p === this.target) { active.delete(this); return; }
+      const d = dt / DUR * 1.28;
+      this.p = this.target ? Math.min(this.target, this.p + d) : Math.max(0, this.p - d * 1.4);
+      this.paint();
     }
   }
 
-  const list = cards.map((li) => new Card(li));
-  list.forEach((c) => {
-    const b = c.btn;
-    b.addEventListener("pointerenter", (e) => { if (e.pointerType === "mouse") c.setOn(true, e); });
-    b.addEventListener("pointerleave", (e) => {
-      if (e.pointerType === "mouse") c.setOn(false);
-      b.style.setProperty("--rx", "0deg"); b.style.setProperty("--ry", "0deg");
-    });
-    b.addEventListener("pointermove", (e) => {
-      if (e.pointerType !== "mouse") return;
-      const r = b.getBoundingClientRect();
-      const mx = (e.clientX - r.left) / r.width, my = (e.clientY - r.top) / r.height;
-      if (!reduce) {
-        b.style.setProperty("--rx", `${((0.5 - my) * 9).toFixed(2)}deg`);
-        b.style.setProperty("--ry", `${((mx - 0.5) * 11).toFixed(2)}deg`);
-      }
-      b.style.setProperty("--mx", `${(mx * 100).toFixed(1)}%`);
-      b.style.setProperty("--my", `${(my * 100).toFixed(1)}%`);
-      c.impulse(e.movementX * 0.35);
-    });
+  const tiles = [...grid.querySelectorAll(".tile")].map((li) => new Tile(li));
+  tiles.forEach((t) => {
+    const b = t.btn;
+    b.addEventListener("pointerenter", (e) => { if (e.pointerType === "mouse") t.setOn(true, e); });
+    b.addEventListener("pointerleave", (e) => { if (e.pointerType === "mouse") t.setOn(false); });
     b.addEventListener("click", (e) => {
       if (e.pointerType === "mouse" && e.detail > 0) return; // di mouse, hover sudah mengurus
-      list.forEach((o) => o !== c && o.setOn(false));
-      c.setOn(!c.on, e);
+      tiles.forEach((o) => o !== t && o.setOn(false));
+      t.setOn(!t.on, e);
     });
-    b.addEventListener("keydown", (e) => { if (e.key === "Escape") c.setOn(false); });
+    b.addEventListener("keydown", (e) => { if (e.key === "Escape") t.setOn(false); });
+    if (t.img.complete) t.prep(); else t.img.addEventListener("load", () => t.prep(), { once: true });
   });
 
-  // rel yang bisa digeser: kartu ikut berayun berlawanan arah geseran
-  document.querySelectorAll(".hang-rail").forEach((rail) => {
-    let x0 = rail.scrollLeft;
-    const mine = list.filter((c) => rail.contains(c.li));
-    rail.addEventListener("scroll", () => {
-      const d = rail.scrollLeft - x0; x0 = rail.scrollLeft;
-      mine.forEach((c) => c.impulse(-d * 0.22));
-    }, { passive: true });
-  });
+  // tab divisi: kartu lain meredup, urutan dan ukuran grid tidak berubah
+  const tabs = [...document.querySelectorAll(".tg-filter button")];
+  tabs.forEach((tb) => tb.addEventListener("click", () => {
+    tabs.forEach((o) => o.setAttribute("aria-pressed", o === tb));
+    grid.dataset.f = tb.dataset.f;
+    tiles.forEach((t) => t.setOn(false));
+  }));
 
-  // muat gambar lalu siapkan canvas; ukuran dihitung ulang kalau jendela berubah
-  list.forEach((c) => { if (c.img.complete) c.prep(); else c.img.addEventListener("load", () => c.prep(), { once: true }); });
   let rz;
-  addEventListener("resize", () => { clearTimeout(rz); rz = setTimeout(() => list.forEach((c) => { c.ready = false; if (c.on) { c.prep(); c.thresholds(); c.paint(); } }), 200); });
+  addEventListener("resize", () => {
+    clearTimeout(rz);
+    rz = setTimeout(() => tiles.forEach((t) => { t.ready = false; t.prep(); if (t.on) { t.thresholds(); t.paint(); } }), 200);
+  });
 })();
