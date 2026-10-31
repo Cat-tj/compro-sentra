@@ -8,7 +8,7 @@ cd "$(dirname "$0")/.."
 [ -f .env ] && { set -a; . ./.env; set +a; }
 SCOPE="${VERCEL_SCOPE:-sentratech}"
 TOKEN_ARGS=(); [ -n "${VERCEL_TOKEN:-}" ] && TOKEN_ARGS=(--token "$VERCEL_TOKEN")
-V=(vercel ${TOKEN_ARGS[@]+"${TOKEN_ARGS[@]}"} --scope "$SCOPE")
+V=("${VERCEL_BIN:-vercel}" ${TOKEN_ARGS[@]+"${TOKEN_ARGS[@]}"} --scope "$SCOPE")
 case "${1:-}" in
   preview)
     git diff --quiet && git diff --cached --quiet || { echo "Ada perubahan yang belum di-commit; commit dulu." >&2; exit 1; }
