@@ -14,7 +14,7 @@ case "${1:-}" in
     git diff --quiet && git diff --cached --quiet || { echo "Ada perubahan yang belum di-commit; commit dulu." >&2; exit 1; }
     tmp="$(mktemp -d)"; trap 'rm -rf "$tmp"' EXIT
     git archive HEAD | tar -x -C "$tmp"
-    ( cd "$tmp" && VERCEL_ORG_ID="${VERCEL_ORG_ID:?}" VERCEL_PROJECT_ID="${VERCEL_PROJECT_ID:?}" "${V[@]}" deploy --yes ) | tail -1
+    ( cd "$tmp" && VERCEL_ORG_ID="${VERCEL_ORG_ID:?}" VERCEL_PROJECT_ID="${VERCEL_PROJECT_ID:?}" "${V[@]}" deploy --yes 2>&1 ) | grep -oE "https://[a-z0-9-]+-sentratech\.vercel\.app" | head -1
     ;;
   promote)
     url="${2:?usage: tools/deploy.sh promote <preview-url>}"
