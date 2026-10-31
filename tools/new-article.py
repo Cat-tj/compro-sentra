@@ -16,6 +16,7 @@ MONTHS = {
     "ms": "Januari Februari Mac April Mei Jun Julai Ogos September Oktober November Disember".split(),
     "en": "January February March April May June July August September October November December".split(),
 }
+FAQ_TITLE = {"": "Pertanyaan yang sering diajukan", "ms": "Soalan lazim", "en": "Frequently asked questions", "zh": "常见问题", "ko": "자주 묻는 질문"}
 READ = {"": "{} menit baca", "ms": "{} minit bacaan", "en": "{} min read", "zh": "{} 分钟阅读", "ko": "{} 분 소요"}
 
 
@@ -46,6 +47,15 @@ def e(s):
 
 def main(path):
     c = runpy.run_path(path)
+    extra_path = path[:-3] + ".extra.py"
+    if os.path.exists(extra_path):
+        for lang, x in runpy.run_path(extra_path)["EXTRA"].items():
+            t = c["LANGS"][lang]
+            if x.get("extra"):
+                i = t["body"].rfind("<p>")
+                t["body"] = t["body"][:i] + x["extra"] + t["body"][i:]
+            if x.get("faq"):
+                t["faq"] = x["faq"]
     slug, date = c["SLUG"], c["DATE"]
     sitemap_path = os.path.join(SITE, "sitemap.xml")
     sitemap = open(sitemap_path, encoding="utf-8").read()
@@ -67,8 +77,17 @@ def main(path):
         for name in ("article:published_time", "article:modified_time"):
             head = re.sub(r'<meta content="[^"]*" property="%s"/>' % name, f'<meta content="{date}T08:00:00+07:00" property="{name}"/>', head, count=1)
 
+        if t.get("faq") and "faq-rendered" not in t:
+            t["body"] += ('<h2 id="faq">' + FAQ_TITLE[prefix] + '</h2><div class="faq">'
+                          + "".join(f"<details><summary>{e(q)}</summary><p>{e(a)}</p></details>" for q, a in t["faq"]) + "</div>")
+            t["faq-rendered"] = True
+
         def ld(m):
             data = json.loads(m.group(1))
+            if t.get("faq"):
+                data["@graph"] = [n for n in data["@graph"] if n.get("@type") != "FAQPage"]
+                data["@graph"].append({"@type": "FAQPage", "mainEntity": [
+                    {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in t["faq"]]})
             for node in data["@graph"]:
                 if node.get("@type") in ("BlogPosting", "NewsArticle"):
                     node.update(headline=t["title"], description=t["description"], datePublished=date, dateModified=date,
