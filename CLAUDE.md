@@ -47,10 +47,10 @@ Static site, no build step. Everything served lives in `site/`. Vercel project `
 - About page team section: three groups (Leadership, Infra, Software; "Hardware" was renamed "Infra"),
   big equal photo cards centered per group, hover/tap eats the photo into ASCII then shows the bio (`js/team-hang.js`),
   white background with static ripple-circle line art (`img/art/team-lines-v2.svg`). No fish in that section.
-- Team photos live in `img/team/` as 400x400 webp. Only Ilham still uses an initial avatar. Richard Chandra's photo had its background replaced with plain white (Apple Vision subject mask).
+- Team photos live in `img/team/` as 400x400 webp. All team members now have real photos. Ilham's and Richard Chandra's photo had its background replaced with plain white (Apple Vision subject mask).
 - Team bios are drafts written from job titles; replace when real bios arrive.
 
 ## Open items
 - Owner is looking for a new reference for the About hero ASCII; hero and footer animations may become static.
-- Real photo for Ilham; real bios; whether Adam's title becomes "Infra Lead".
+- Real bios; whether Adam's title becomes "Infra Lead".
 - PR https://github.com/Sentra-Technology/compro-sentra/pull/2 needs a repo writer to merge.
