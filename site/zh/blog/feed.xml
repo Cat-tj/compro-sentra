@@ -5,8 +5,24 @@
 <link>https://www.sentratechnology.com/zh/blog</link>
 <description>Sentra 团队关于 CCTV 分析、人脸考勤、PPE 检测、私有化 LLM 及组织数字化转型的指南。</description>
 <language>zh-CN</language>
-<lastBuildDate>Fri, 30 Oct 2026 08:00:00 +0700</lastBuildDate>
+<lastBuildDate>Sat, 31 Oct 2026 08:00:00 +0700</lastBuildDate>
 <atom:link href="https://www.sentratechnology.com/zh/blog/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>地方政府的 WebGIS 与专题地图：北巴里托县 POMPy BATARA 的启示</title>
+<link>https://www.sentratechnology.com/zh/blog/webgis-peta-tematik-pemda</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/webgis-peta-tematik-pemda</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0700</pubDate>
+<description>地方政府如何建设 WebGIS 与专题地图：常见数据图层、建设步骤、常见错误，并以北巴里托县的 POMPy BATARA 为例。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-webgis.webp" medium="image"/>
+</item>
+<item>
+<title>什么是 SPBE？地方政府需要做哪些准备</title>
+<link>https://www.sentratechnology.com/zh/blog/spbe-pemda-persiapan</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/spbe-pemda-persiapan</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0700</pubDate>
+<description>面向地方政府的 SPBE（印尼电子政务体系）说明：法律依据、评估内容、准备清单，以及建设地方应用时常见的错误。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-spbe.webp" medium="image"/>
+</item>
 <item>
 <title>矿区 Starlink：套件选择、安装与偏远站点网络</title>
 <link>https://www.sentratechnology.com/zh/blog/starlink-untuk-tambang</link>

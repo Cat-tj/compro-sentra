@@ -5,8 +5,24 @@
 <link>https://www.sentratechnology.com/ko/blog</link>
 <description>CCTV 분석, 얼굴 인식 출퇴근, 개인보호구 감지, 프라이빗 LLM, 조직의 디지털 전환에 관한 Sentra 팀의 가이드.</description>
 <language>ko</language>
-<lastBuildDate>Fri, 30 Oct 2026 08:00:00 +0700</lastBuildDate>
+<lastBuildDate>Sat, 31 Oct 2026 08:00:00 +0700</lastBuildDate>
 <atom:link href="https://www.sentratechnology.com/ko/blog/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>지방정부를 위한 WebGIS와 주제도: 북바리토군 POMPy BATARA에서 배우기</title>
+<link>https://www.sentratechnology.com/ko/blog/webgis-peta-tematik-pemda</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/webgis-peta-tematik-pemda</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0700</pubDate>
+<description>지방정부가 WebGIS와 주제도를 만드는 방법: 흔한 데이터 레이어, 구축 단계, 자주 하는 실수, 북바리토군 POMPy BATARA 사례.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-webgis.webp" medium="image"/>
+</item>
+<item>
+<title>SPBE란 무엇이며 지방정부는 무엇을 준비해야 할까</title>
+<link>https://www.sentratechnology.com/ko/blog/spbe-pemda-persiapan</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/spbe-pemda-persiapan</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0700</pubDate>
+<description>지방정부를 위한 SPBE(인도네시아 전자정부 체계) 설명: 법적 근거, 평가 항목, 준비 체크리스트, 지역 애플리케이션을 만들 때 흔한 실수.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-spbe.webp" medium="image"/>
+</item>
 <item>
 <title>칼리만탄 지점과 현장을 위한 Starlink vs VSAT vs 광케이블</title>
 <link>https://www.sentratechnology.com/ko/blog/starlink-vs-vsat-vs-fiber</link>

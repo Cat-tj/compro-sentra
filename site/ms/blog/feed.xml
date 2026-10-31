@@ -5,8 +5,24 @@
 <link>https://www.sentratechnology.com/ms/blog</link>
 <description>Panduan daripada pasukan Sentra tentang CCTV analytics, kehadiran wajah, pengesanan PPE, private LLM dan pendigitalan operasi organisasi.</description>
 <language>ms</language>
-<lastBuildDate>Fri, 30 Oct 2026 08:00:00 +0700</lastBuildDate>
+<lastBuildDate>Sat, 31 Oct 2026 08:00:00 +0700</lastBuildDate>
 <atom:link href="https://www.sentratechnology.com/ms/blog/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>WebGIS dan Peta Tematik untuk Kerajaan Daerah: Pengajaran daripada POMPy BATARA Barito Utara</title>
+<link>https://www.sentratechnology.com/ms/blog/webgis-peta-tematik-pemda</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ms/blog/webgis-peta-tematik-pemda</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0700</pubDate>
+<description>Cara kerajaan daerah membina WebGIS dan peta tematik: lapisan data lazim, langkah membina, kesilapan yang kerap berlaku, dengan contoh POMPy BATARA di Daerah Barito Utara.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-webgis.webp" medium="image"/>
+</item>
+<item>
+<title>Apakah SPBE dan Apa yang Perlu Disediakan Kerajaan Daerah</title>
+<link>https://www.sentratechnology.com/ms/blog/spbe-pemda-persiapan</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ms/blog/spbe-pemda-persiapan</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0700</pubDate>
+<description>Penjelasan SPBE (sistem kerajaan berasaskan elektronik Indonesia) untuk kerajaan daerah: asas undang-undang, apa yang dinilai, senarai semak persediaan, dan kesilapan lazim.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-spbe.webp" medium="image"/>
+</item>
 <item>
 <title>Starlink vs VSAT vs Gentian Optik untuk Pejabat Cawangan dan Tapak di Kalimantan</title>
 <link>https://www.sentratechnology.com/ms/blog/starlink-vs-vsat-vs-fiber</link>

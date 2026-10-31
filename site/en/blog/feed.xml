@@ -5,8 +5,24 @@
 <link>https://www.sentratechnology.com/en/blog</link>
 <description>Guides from the Sentra team on CCTV analytics, face attendance, PPE detection, private LLMs, and digitizing operations.</description>
 <language>en</language>
-<lastBuildDate>Fri, 30 Oct 2026 08:00:00 +0700</lastBuildDate>
+<lastBuildDate>Sat, 31 Oct 2026 08:00:00 +0700</lastBuildDate>
 <atom:link href="https://www.sentratechnology.com/en/blog/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>What Is SPBE and What Local Governments Need to Prepare</title>
+<link>https://www.sentratechnology.com/en/blog/spbe-pemda-persiapan</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/spbe-pemda-persiapan</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0700</pubDate>
+<description>An explanation of SPBE (Indonesia&#x27;s electronic-based government system) for local governments: the legal basis, what is assessed, a preparation checklist, and common mistakes.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-spbe.webp" medium="image"/>
+</item>
+<item>
+<title>WebGIS and Thematic Maps for Local Governments: Lessons from POMPy BATARA in Barito Utara</title>
+<link>https://www.sentratechnology.com/en/blog/webgis-peta-tematik-pemda</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/webgis-peta-tematik-pemda</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0700</pubDate>
+<description>How local governments build WebGIS and thematic maps: common data layers, the steps, frequent mistakes, with the POMPy BATARA example from Barito Utara Regency.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-webgis.webp" medium="image"/>
+</item>
 <item>
 <title>Starlink vs VSAT vs Fiber for Branch Offices and Sites in Kalimantan</title>
 <link>https://www.sentratechnology.com/en/blog/starlink-vs-vsat-vs-fiber</link>
