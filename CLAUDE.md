@@ -47,7 +47,7 @@ Static site, no build step. Everything served lives in `site/`. Vercel project `
 - About page team section: three groups (Leadership, Infra, Software; "Hardware" was renamed "Infra"),
   big equal photo cards centered per group, hover/tap eats the photo into ASCII then shows the bio (`js/team-hang.js`),
   white background with static ripple-circle line art (`img/art/team-lines-v2.svg`). No fish in that section.
-- Team photos live in `img/team/` as 400x400 webp. All team members now have real photos. Ilham's and Richard Chandra's photo had its background replaced with plain white (Apple Vision subject mask).
+- Team photos live in `img/team/` as 400x400 webp. All team members now have real photos. Richard Chandra's background was replaced with plain white and Ilham's with lamp-colored yellow (Apple Vision subject mask).
 - Team bios are drafts written from job titles; replace when real bios arrive.
 
 ## Open items
