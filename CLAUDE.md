@@ -3,6 +3,8 @@
 Static site, no build step. Everything served lives in `site/`. Vercel project `sentratech/compro-sentra`
 (`vercel.json`: framework null, `outputDirectory: site`, clean URLs, `/assets/*` cached 1 year immutable).
 
+> Melanjutkan pekerjaan sebagai agent lain? Baca `HANDOFF.md` dan `docs/seo/` dulu.
+
 ## Structure
 - 5 languages: Indonesian at the root, plus `en/`, `zh/`, `ko/`, `ms/`. Every page change must be made in all 5.
 - Shared assets in `site/assets/` (`css/site.css`, `css/ocean.css`, `js/*.js`, `img/`).
