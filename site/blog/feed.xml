@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+<title>Artikel Sentra Technology</title>
+<link>https://www.sentratechnology.com/blog</link>
+<description>Panduan dari tim Sentra tentang CCTV analytics, absensi wajah, deteksi APD, private LLM, dan digitalisasi operasional organisasi.</description>
+<language>id</language>
+<lastBuildDate>Fri, 30 Oct 2026 08:00:00 +0700</lastBuildDate>
+<atom:link href="https://www.sentratechnology.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>Starlink vs VSAT vs Fiber untuk Kantor Cabang dan Site di Kalimantan</title>
+<link>https://www.sentratechnology.com/blog/starlink-vs-vsat-vs-fiber</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/starlink-vs-vsat-vs-fiber</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>Perbandingan Starlink, VSAT, fiber optik, dan seluler untuk kantor cabang, site tambang, dan kebun di Kalimantan: latensi, stabilitas, instalasi, dan kapan memakai kombinasi.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/infra.webp" medium="image"/>
+</item>
+<item>
+<title>Starlink untuk Tambang: Memilih Kit, Instalasi, dan Jaringan di Site Remote</title>
+<link>https://www.sentratechnology.com/blog/starlink-untuk-tambang</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/starlink-untuk-tambang</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>Panduan Starlink untuk site tambang: kit yang cocok, titik pasang, membawa WiFi ke mess dan workshop, sumber listrik, keamanan jaringan, dan komponen biaya.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/infra.webp" medium="image"/>
+</item>
+<item>
+<title>Pengadaan Laptop Perusahaan: Beli, Sewa, atau Leasing?</title>
+<link>https://www.sentratechnology.com/blog/pengadaan-laptop-perusahaan</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/pengadaan-laptop-perusahaan</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>Perbandingan beli, sewa, dan leasing laptop untuk perusahaan dan instansi, cara memilih spesifikasi per peran, komponen biaya total, dan checklist pengadaan.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/it-procurement.webp" medium="image"/>
+</item>
+<item>
+<title>Fleet Management Tambang Batubara: Cara Kerja GPS, Sensor BBM, dan Laporan</title>
+<link>https://www.sentratechnology.com/blog/fleet-management-tambang</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/fleet-management-tambang</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>Cara kerja fleet management untuk tambang dan hauling batubara: GPS dan replay, sensor BBM, data CAN-Bus alat berat, geofence, perilaku operator, pengingat servis, dan laporan harian.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-fleet.webp" medium="image"/>
+</item>
+<item>
+<title>Biaya Pasang CCTV Kantor: Komponen Biaya dan Cara Menghitung per Titik</title>
+<link>https://www.sentratechnology.com/blog/biaya-pasang-cctv-kantor</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/biaya-pasang-cctv-kantor</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>Apa saja yang menentukan biaya pasang CCTV kantor: jumlah titik, jenis kamera, kabel, NVR, kapasitas hardisk, jaringan, dan perawatan. Lengkap dengan cara menghitung penyimpanan.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/cctv-gal-dashboard.webp" medium="image"/>
+</item>
+<item>
+<title>Biaya Membuat Aplikasi Android: Faktor Penentu dari Versi Awal sampai Skala Perusahaan</title>
+<link>https://www.sentratechnology.com/blog/biaya-membuat-aplikasi-android</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/biaya-membuat-aplikasi-android</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>Apa saja yang menentukan biaya pembuatan aplikasi Android untuk perusahaan dan instansi: peran pengguna, fitur, integrasi, mode offline, dashboard, keamanan, dan biaya setelah rilis.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-integrasi.webp" medium="image"/>
+</item>
+<item>
+<title>POMPy BATARA Mengantar Barito Utara Meraih Digital Innovation Award 2026</title>
+<link>https://www.sentratechnology.com/blog/pompy-batara-digital-innovation-award-2026</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/pompy-batara-digital-innovation-award-2026</guid>
+<pubDate>Tue, 20 Oct 2026 08:00:00 +0700</pubDate>
+<description>Portal peta tematik POMPy BATARA membantu Kabupaten Barito Utara meraih Digital Innovation Award 2026. Apa itu POMPy BATARA dan peran Sentra.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/projects/barito-dash.webp" medium="image"/>
+</item>
+<item>
+<title>Kapan Organisasi Membutuhkan Private LLM On-Premise?</title>
+<link>https://www.sentratechnology.com/blog/private-llm-on-premise</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/private-llm-on-premise</guid>
+<pubDate>Sun, 18 Oct 2026 08:00:00 +0700</pubDate>
+<description>Asisten AI yang menjawab dari dokumen internal tanpa mengirim data keluar. Kapan perlu, apa yang disiapkan, dan bagaimana memulainya.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-sentrai.webp" medium="image"/>
+</item>
+<item>
+<title>Mengubah CCTV yang Sudah Ada Menjadi Sistem yang Memahami Konteks</title>
+<link>https://www.sentratechnology.com/blog/cctv-analytics-kamera-existing</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/cctv-analytics-kamera-existing</guid>
+<pubDate>Thu, 15 Oct 2026 08:00:00 +0700</pubDate>
+<description>Apa itu CCTV analytics, apa bedanya dengan sensor gerak biasa, dan bagaimana menambahkan lapisan AI di atas kamera yang sudah terpasang.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/cctv-hero-v2.webp" medium="image"/>
+</item>
+<item>
+<title>Absensi Face Recognition dari CCTV: Cara Kerja, Syarat Kamera, dan Batasannya</title>
+<link>https://www.sentratechnology.com/blog/absensi-face-recognition-cctv</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/absensi-face-recognition-cctv</guid>
+<pubDate>Sun, 11 Oct 2026 08:00:00 +0700</pubDate>
+<description>Bisakah CCTV yang sudah terpasang dipakai untuk absensi wajah? Cara kerja, syarat kamera, batasan, dan hal penting soal data pribadi.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-attendance-v2.webp" medium="image"/>
+</item>
+<item>
+<title>Absensi Wajah vs Fingerprint: Mana yang Cocok untuk Kantor dan Pabrik?</title>
+<link>https://www.sentratechnology.com/blog/absensi-wajah-vs-fingerprint</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/absensi-wajah-vs-fingerprint</guid>
+<pubDate>Sat, 10 Oct 2026 08:00:00 +0700</pubDate>
+<description>Perbandingan absensi face recognition dan fingerprint dari sisi kecepatan, kebersihan, titip absen, perangkat, dan integrasi HRIS.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/projects/attendance.webp" medium="image"/>
+</item>
+<item>
+<title>Deteksi APD Otomatis dari CCTV: Cara Kerja dan Persiapannya</title>
+<link>https://www.sentratechnology.com/blog/deteksi-apd-otomatis-dari-cctv</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/deteksi-apd-otomatis-dari-cctv</guid>
+<pubDate>Fri, 02 Oct 2026 08:00:00 +0700</pubDate>
+<description>Bagaimana AI mendeteksi helm, rompi, dan atribut keselamatan dari CCTV, apa yang perlu disiapkan, dan bagaimana alert dipakai tim HSE.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-safety.webp" medium="image"/>
+</item>
+</channel>
+</rss>

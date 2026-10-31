@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+<title>Sentra Technology 文章</title>
+<link>https://www.sentratechnology.com/zh/blog</link>
+<description>Sentra 团队关于 CCTV 分析、人脸考勤、PPE 检测、私有化 LLM 及组织数字化转型的指南。</description>
+<language>zh-CN</language>
+<lastBuildDate>Fri, 30 Oct 2026 08:00:00 +0700</lastBuildDate>
+<atom:link href="https://www.sentratechnology.com/zh/blog/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>矿区 Starlink：套件选择、安装与偏远站点网络</title>
+<link>https://www.sentratechnology.com/zh/blog/starlink-untuk-tambang</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/starlink-untuk-tambang</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>矿区 Starlink 指南：适合的套件、安装位置、把 WiFi 延伸到宿舍和车间、供电、网络安全以及成本构成。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/infra.webp" medium="image"/>
+</item>
+<item>
+<title>煤矿车队管理：GPS、油量传感器与报表如何运作</title>
+<link>https://www.sentratechnology.com/zh/blog/fleet-management-tambang</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/fleet-management-tambang</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>煤矿与运输车队管理的工作原理：GPS 与轨迹回放、油量传感器、重型设备 CAN 总线数据、电子围栏、驾驶行为、保养提醒和每日报表。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-fleet.webp" medium="image"/>
+</item>
+<item>
+<title>加里曼丹分支机构与站点：Starlink、VSAT 与光纤对比</title>
+<link>https://www.sentratechnology.com/zh/blog/starlink-vs-vsat-vs-fiber</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/starlink-vs-vsat-vs-fiber</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>比较 Starlink、VSAT、光纤和蜂窝网络在加里曼丹分支机构、矿区和种植园的适用性：时延、稳定性、安装以及何时组合使用。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/infra.webp" medium="image"/>
+</item>
+<item>
+<title>办公室 CCTV 安装费用：成本构成与按点位计算方法</title>
+<link>https://www.sentratechnology.com/zh/blog/biaya-pasang-cctv-kantor</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/biaya-pasang-cctv-kantor</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>影响办公室 CCTV 安装费用的因素：点位数量、摄像机类型、布线、NVR、硬盘容量、网络和维护，并附存储容量计算方法。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/cctv-gal-dashboard.webp" medium="image"/>
+</item>
+<item>
+<title>企业笔记本采购：购买、租赁还是融资租赁？</title>
+<link>https://www.sentratechnology.com/zh/blog/pengadaan-laptop-perusahaan</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/pengadaan-laptop-perusahaan</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>比较企业和机构购买、租赁与融资租赁笔记本的方式，按岗位选择配置，总成本构成以及采购清单。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/it-procurement.webp" medium="image"/>
+</item>
+<item>
+<title>Android 应用开发费用：从首个版本到企业规模的决定因素</title>
+<link>https://www.sentratechnology.com/zh/blog/biaya-membuat-aplikasi-android</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/biaya-membuat-aplikasi-android</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>企业和机构开发 Android 应用的费用由什么决定：用户角色、功能、集成、离线模式、后台、安全以及上线后的费用。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-integrasi.webp" medium="image"/>
+</item>
+<item>
+<title>POMPy BATARA 助力北巴里托县荣获 2026 年 Digital Innovation Award</title>
+<link>https://www.sentratechnology.com/zh/blog/pompy-batara-digital-innovation-award-2026</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/pompy-batara-digital-innovation-award-2026</guid>
+<pubDate>Tue, 20 Oct 2026 08:00:00 +0700</pubDate>
+<description>专题地图门户 POMPy BATARA 帮助北巴里托县（Kabupaten Barito Utara）荣获 2026 年 Digital Innovation Award。POMPy BATARA 是什么，Sentra 发挥了什么作用。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/projects/barito-dash.webp" medium="image"/>
+</item>
+<item>
+<title>组织何时需要本地部署的私有化 LLM？</title>
+<link>https://www.sentratechnology.com/zh/blog/private-llm-on-premise</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/private-llm-on-premise</guid>
+<pubDate>Sun, 18 Oct 2026 08:00:00 +0700</pubDate>
+<description>依据内部文档作答、数据不外传的 AI 助手。何时需要、需要准备什么，以及如何起步。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-sentrai.webp" medium="image"/>
+</item>
+<item>
+<title>让现有 CCTV 成为能理解场景的系统</title>
+<link>https://www.sentratechnology.com/zh/blog/cctv-analytics-kamera-existing</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/cctv-analytics-kamera-existing</guid>
+<pubDate>Thu, 15 Oct 2026 08:00:00 +0700</pubDate>
+<description>什么是 CCTV 分析，它与普通移动侦测有何不同，以及如何在已安装的摄像头上叠加 AI 层。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/cctv-hero-v2.webp" medium="image"/>
+</item>
+<item>
+<title>基于 CCTV 的人脸识别考勤：工作原理、摄像头要求与局限</title>
+<link>https://www.sentratechnology.com/zh/blog/absensi-face-recognition-cctv</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/absensi-face-recognition-cctv</guid>
+<pubDate>Sun, 11 Oct 2026 08:00:00 +0700</pubDate>
+<description>已安装的 CCTV 能否用于人脸考勤？本文介绍工作原理、摄像头要求、局限，以及个人数据方面的要点。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-attendance-v2.webp" medium="image"/>
+</item>
+<item>
+<title>人脸考勤与指纹考勤：哪种更适合办公室和工厂？</title>
+<link>https://www.sentratechnology.com/zh/blog/absensi-wajah-vs-fingerprint</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/absensi-wajah-vs-fingerprint</guid>
+<pubDate>Sat, 10 Oct 2026 08:00:00 +0700</pubDate>
+<description>从速度、卫生、代打卡、设备和 HRIS 集成等方面，对比人脸识别考勤与指纹考勤。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/projects/attendance.webp" medium="image"/>
+</item>
+<item>
+<title>通过 CCTV 自动检测 PPE：工作原理与准备工作</title>
+<link>https://www.sentratechnology.com/zh/blog/deteksi-apd-otomatis-dari-cctv</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/deteksi-apd-otomatis-dari-cctv</guid>
+<pubDate>Fri, 02 Oct 2026 08:00:00 +0700</pubDate>
+<description>AI 如何从 CCTV 画面中检测安全帽、反光背心等安全装备，需要做哪些准备，以及 HSE 团队如何使用告警。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-safety.webp" medium="image"/>
+</item>
+</channel>
+</rss>

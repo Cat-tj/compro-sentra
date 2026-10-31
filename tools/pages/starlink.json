@@ -1,0 +1,283 @@
+{
+  "slug": "starlink",
+  "template": "instalasi-infrastruktur",
+  "hero_img": "/assets/img/art/infra.webp",
+  "og_img": "/assets/og/art-infra.jpg",
+  "catalog_ids": ["starlink-mini", "starlink-v4", "starlink-enterprise", "starlink-performance-3"],
+  "do_icons": ["box", "pin", "wifi", "sun", "shuffle", "wrench"],
+  "sector_icons": ["pick", "leaf", "crane", "ship", "gov", "office"],
+  "sector_links": ["/industri/pertambangan", "/portfolio/iot-monitoring-lahan", "/services/instalasi-infrastruktur", "/produk/fleet", "/industri/pemerintahan", "/industri/korporasi"],
+  "related_links": ["/produk#v-internet", "/services/instalasi-infrastruktur", "/services/iot-hardware"],
+  "langs": {
+    "": {
+      "title": "Starlink untuk Perusahaan, Tambang & Site Remote | Sentra",
+      "description": "Pengadaan, instalasi, dan perawatan Starlink untuk tambang, perkebunan, proyek, kapal, pemda, dan kantor cabang. Termasuk WiFi site, off-grid panel surya, dan backup internet.",
+      "name": "Starlink untuk Bisnis",
+      "crumb_home": "Beranda", "crumb_services": "Layanan",
+      "h1": "Internet Starlink untuk site yang tidak terjangkau fiber.",
+      "lead": "Sentra menyediakan kit Starlink, memasangnya di lokasi, lalu menyambungkan internetnya ke kantor site, mess, pos jaga, dan perangkat Anda. Cocok untuk tambang, perkebunan, proyek konstruksi, kapal, dan desa terpencil.",
+      "wa_text": "Halo Sentra, saya ingin konsultasi Starlink untuk lokasi kami.",
+      "btn_consult": "Konsultasi gratis", "btn_kits": "Lihat pilihan kit",
+      "chips": ["Survei & mounting", "WiFi sampai ke mess", "Off-grid panel surya"],
+      "pains_h2": "Masalah yang sering kami temui",
+      "pains": [
+        ["Site jauh dari fiber dan sinyal seluler", "Laporan produksi, absensi, dan CCTV tidak bisa dikirim tepat waktu."],
+        ["Satu antena, WiFi hanya sampai satu ruangan", "Mess, workshop, dan pos jaga tetap tanpa internet."],
+        ["Tidak ada listrik PLN di titik pasang", "Perangkat mati saat genset dimatikan malam hari."]
+      ],
+      "do_h2": "Yang kami kerjakan",
+      "do": [
+        ["Pengadaan kit Starlink", "Mini, Standard, Enterprise, sampai Performance untuk kondisi ekstrem, dipilih sesuai lokasi dan jumlah pengguna."],
+        ["Survei titik & mounting", "Cek pandangan langit, pilih tiang atau atap, dan pasang mounting yang tahan angin dan getaran."],
+        ["WiFi & jaringan site", "Router, access point, dan kabel atau radio link supaya internet sampai ke mess, workshop, dan pos jaga."],
+        ["Off-grid panel surya", "Panel surya, baterai, dan inverter untuk titik tanpa PLN atau yang bergantung pada genset."],
+        ["Backup internet kantor", "Starlink sebagai jalur cadangan otomatis saat fiber kantor putus."],
+        ["Perawatan & pendampingan", "Pemeriksaan berkala, penggantian perangkat, dan bantuan aktivasi serta pemilihan paket."]
+      ],
+      "kits_h2": "Pilihan kit",
+      "kits_lead": "Kit yang paling sering kami pasang. Daftar lengkap ada di katalog perangkat.",
+      "sectors_h2": "Dipakai di",
+      "sector_link": "Lihat solusi",
+      "sectors": [
+        ["Tambang", "Kantor site, pit, dan mess terhubung untuk laporan produksi, fleet, dan CCTV."],
+        ["Perkebunan", "Kantor kebun dan pos panen bisa mengirim data sensor dan absensi."],
+        ["Proyek konstruksi & IKN", "Internet sementara di site proyek sebelum jaringan permanen tersedia."],
+        ["Kapal & kendaraan", "Kit Performance untuk dipasang permanen dan dipakai sambil bergerak."],
+        ["Pemda & desa terpencil", "Internet untuk kantor desa, sekolah, dan puskesmas di wilayah tanpa fiber."],
+        ["Kantor cabang", "Jalur cadangan supaya operasional tetap jalan saat fiber putus."]
+      ],
+      "steps_h2": "Alur kerja",
+      "steps": ["Survei lokasi", "Pilih kit & desain jaringan", "Pengadaan perangkat", "Instalasi & uji koneksi", "Serah terima & perawatan"],
+      "related_h2": "Terkait",
+      "related": ["Katalog: Starlink & internet", "Layanan: Instalasi Infrastruktur", "Layanan: IoT & Hardware"],
+      "faq_h2": "Pertanyaan umum",
+      "faq": [
+        ["Kit Starlink mana yang cocok untuk tambang?", "Untuk kantor site yang tetap, biasanya Starlink Enterprise atau Standard. Untuk lokasi dengan angin kencang, panas, dan getaran, atau yang dipasang di kendaraan, kami sarankan Starlink Performance."],
+        ["Bisakah dipasang di lokasi tanpa listrik PLN?", "Bisa. Kami menyiapkan panel surya, baterai, dan inverter sesuai daya kit dan jam pemakaian."],
+        ["Apakah WiFi bisa sampai ke beberapa bangunan?", "Bisa, dengan router dan access point tambahan, lalu kabel atau radio link antar bangunan. Jangkauannya kami hitung saat survei."],
+        ["Bagaimana dengan biaya langganan bulanan?", "Langganan ditagih oleh Starlink sesuai paket yang dipilih. Kami bantu memilih paket, aktivasi, dan pengaturan akunnya."],
+        ["Area mana yang dilayani?", "Tim lapangan kami berbasis di Samarinda dan melayani Kalimantan Timur. Lokasi lain di Kalimantan dan Indonesia bisa dibahas per proyek."]
+      ],
+      "cta_h2": "Siap menghubungkan site Anda?",
+      "cta_p": "Ceritakan lokasi, jumlah pengguna, dan sumber listrik yang tersedia. Diskusi awal gratis.",
+      "cta_wa": "Chat WhatsApp", "cta_msg": "Kirim pesan",
+      "cta_trust": ["Diskusi awal gratis", "Survei lokasi", "Dipasang & didampingi"]
+    },
+    "en": {
+      "title": "Starlink for Business, Mining & Remote Sites | Sentra",
+      "description": "Starlink procurement, installation, and maintenance for mines, plantations, construction sites, vessels, local government, and branch offices. Includes site WiFi, off-grid solar, and backup internet.",
+      "name": "Starlink for Business",
+      "crumb_home": "Home", "crumb_services": "Services",
+      "h1": "Starlink internet for sites that fiber does not reach.",
+      "lead": "Sentra supplies Starlink kits, installs them on site, and extends the connection to your site office, mess, guard posts, and devices. Built for mines, plantations, construction projects, vessels, and remote villages.",
+      "wa_text": "Hello Sentra, I would like to discuss Starlink for our site.",
+      "btn_consult": "Free consultation", "btn_kits": "See kit options",
+      "chips": ["Survey & mounting", "WiFi to the mess", "Off-grid solar"],
+      "pains_h2": "Problems we often see",
+      "pains": [
+        ["The site is far from fiber and mobile signal", "Production reports, attendance, and CCTV cannot be sent on time."],
+        ["One dish, WiFi reaches one room", "The mess, workshop, and guard posts stay offline."],
+        ["No grid power at the mounting point", "Devices go down when the generator is switched off at night."]
+      ],
+      "do_h2": "What we do",
+      "do": [
+        ["Starlink kit procurement", "Mini, Standard, Enterprise, and Performance for extreme conditions, chosen by location and number of users."],
+        ["Site survey & mounting", "Check the sky view, choose a pole or roof, and fit mounts that withstand wind and vibration."],
+        ["Site WiFi & network", "Routers, access points, and cable or radio links so the internet reaches the mess, workshop, and guard posts."],
+        ["Off-grid solar", "Solar panels, batteries, and inverters for points without grid power or that rely on a generator."],
+        ["Office backup internet", "Starlink as an automatic backup line when the office fiber goes down."],
+        ["Maintenance & support", "Scheduled checks, device replacement, and help with activation and plan selection."]
+      ],
+      "kits_h2": "Kit options",
+      "kits_lead": "The kits we install most often. The full list is in the device catalog.",
+      "sectors_h2": "Used in",
+      "sector_link": "See solution",
+      "sectors": [
+        ["Mining", "Site office, pit, and mess connected for production reports, fleet, and CCTV."],
+        ["Plantations", "Estate offices and harvest posts can send sensor and attendance data."],
+        ["Construction & IKN", "Temporary internet on project sites before permanent networks arrive."],
+        ["Vessels & vehicles", "Performance kits for permanent mounting and use in motion."],
+        ["Local government & villages", "Internet for village offices, schools, and clinics in areas without fiber."],
+        ["Branch offices", "A backup line so operations continue when fiber fails."]
+      ],
+      "steps_h2": "How we work",
+      "steps": ["Site survey", "Kit choice & network design", "Device procurement", "Installation & connection test", "Handover & maintenance"],
+      "related_h2": "Related",
+      "related": ["Catalog: Starlink & internet", "Service: Infrastructure Installation", "Service: IoT & Hardware"],
+      "faq_h2": "Frequently asked questions",
+      "faq": [
+        ["Which Starlink kit suits a mine?", "For a fixed site office, usually Starlink Enterprise or Standard. For locations with strong wind, heat, and vibration, or for vehicle mounting, we recommend Starlink Performance."],
+        ["Can it be installed where there is no grid power?", "Yes. We size solar panels, batteries, and an inverter to the kit's power draw and hours of use."],
+        ["Can the WiFi reach several buildings?", "Yes, with additional routers and access points plus cable or radio links between buildings. We calculate coverage during the survey."],
+        ["What about the monthly subscription?", "Starlink bills the subscription according to the chosen plan. We help with plan selection, activation, and account setup."],
+        ["Which areas do you serve?", "Our field team is based in Samarinda and serves East Kalimantan. Other locations in Kalimantan and Indonesia can be discussed per project."]
+      ],
+      "cta_h2": "Ready to connect your site?",
+      "cta_p": "Tell us the location, number of users, and available power. The first discussion is free.",
+      "cta_wa": "Chat on WhatsApp", "cta_msg": "Send a message",
+      "cta_trust": ["Free first discussion", "On-site survey", "Installed & supported"]
+    },
+    "zh": {
+      "title": "企业、矿区与偏远站点 Starlink | Sentra",
+      "description": "为矿区、种植园、施工现场、船舶、地方政府和分支机构提供 Starlink 采购、安装与维护，包括站点 WiFi、离网太阳能供电和备用网络。",
+      "name": "企业 Starlink",
+      "crumb_home": "首页", "crumb_services": "服务",
+      "h1": "为光纤到不了的站点接入 Starlink。",
+      "lead": "Sentra 提供 Starlink 套件并上门安装，再把网络延伸到现场办公室、宿舍、岗亭和各类设备。适用于矿区、种植园、施工项目、船舶和偏远村庄。",
+      "wa_text": "您好 Sentra，我想咨询我们站点的 Starlink 方案。",
+      "btn_consult": "免费咨询", "btn_kits": "查看套件",
+      "chips": ["勘测与安装支架", "WiFi 覆盖到宿舍", "离网太阳能"],
+      "pains_h2": "我们常见的问题",
+      "pains": [
+        ["站点远离光纤和手机信号", "生产报表、考勤和 CCTV 无法按时上传。"],
+        ["一台天线，WiFi 只覆盖一个房间", "宿舍、车间和岗亭依然没有网络。"],
+        ["安装点没有市电", "夜间关闭发电机后设备就断线。"]
+      ],
+      "do_h2": "我们的工作",
+      "do": [
+        ["Starlink 套件采购", "Mini、Standard、Enterprise 以及适合极端环境的 Performance，按地点和用户数选择。"],
+        ["站点勘测与支架安装", "检查天空视野，选择立杆或屋顶，安装抗风抗振的支架。"],
+        ["站点 WiFi 与网络", "路由器、无线 AP 以及网线或无线网桥，让网络覆盖宿舍、车间和岗亭。"],
+        ["离网太阳能", "为没有市电或依赖发电机的点位配置太阳能板、电池和逆变器。"],
+        ["办公室备用网络", "办公室光纤中断时，Starlink 自动作为备用线路。"],
+        ["维护与支持", "定期巡检、设备更换，并协助激活和选择套餐。"]
+      ],
+      "kits_h2": "套件选择",
+      "kits_lead": "我们最常安装的套件。完整列表请见设备目录。",
+      "sectors_h2": "应用场景",
+      "sector_link": "查看方案",
+      "sectors": [
+        ["矿区", "现场办公室、采坑和宿舍联网，用于生产报表、车队和 CCTV。"],
+        ["种植园", "园区办公室和采收点可以上传传感器与考勤数据。"],
+        ["施工项目与 IKN", "在永久网络到位前为项目现场提供临时网络。"],
+        ["船舶与车辆", "Performance 套件可永久安装并在移动中使用。"],
+        ["地方政府与偏远村庄", "为没有光纤的村办公室、学校和卫生站提供网络。"],
+        ["分支机构", "光纤中断时的备用线路，保证业务不中断。"]
+      ],
+      "steps_h2": "工作流程",
+      "steps": ["现场勘测", "选择套件与网络设计", "设备采购", "安装与连接测试", "交付与维护"],
+      "related_h2": "相关内容",
+      "related": ["目录：Starlink 与网络", "服务：基础设施安装", "服务：IoT 与硬件"],
+      "faq_h2": "常见问题",
+      "faq": [
+        ["矿区适合哪种 Starlink 套件？", "固定的现场办公室通常选 Starlink Enterprise 或 Standard。对于大风、高温、振动的地点或车载安装，我们推荐 Starlink Performance。"],
+        ["没有市电的地方可以安装吗？", "可以。我们会根据套件功耗和使用时长配置太阳能板、电池和逆变器。"],
+        ["WiFi 能覆盖多栋建筑吗？", "可以，通过增加路由器和无线 AP，并在建筑之间敷设网线或无线网桥。覆盖范围在勘测时计算。"],
+        ["每月订阅费用怎么处理？", "订阅费由 Starlink 按所选套餐收取。我们协助选择套餐、激活和设置账户。"],
+        ["服务哪些地区？", "我们的现场团队位于三马林达，服务东加里曼丹。加里曼丹及印尼其他地区可按项目商议。"]
+      ],
+      "cta_h2": "准备为站点接入网络了吗？",
+      "cta_p": "告诉我们地点、用户数量和可用电源。首次沟通免费。",
+      "cta_wa": "WhatsApp 联系", "cta_msg": "发送消息",
+      "cta_trust": ["首次沟通免费", "现场勘测", "安装并持续支持"]
+    },
+    "ko": {
+      "title": "기업·광산·원격지용 Starlink | Sentra",
+      "description": "광산, 농장, 건설 현장, 선박, 지방정부, 지점을 위한 Starlink 조달, 설치, 유지보수. 현장 WiFi, 오프그리드 태양광, 백업 인터넷 포함.",
+      "name": "기업용 Starlink",
+      "crumb_home": "홈", "crumb_services": "서비스",
+      "h1": "광케이블이 닿지 않는 현장을 위한 Starlink 인터넷.",
+      "lead": "Sentra는 Starlink 키트를 공급하고 현장에 설치한 뒤, 현장 사무실, 숙소, 경비 초소, 장비까지 인터넷을 연결합니다. 광산, 농장, 건설 프로젝트, 선박, 외딴 마을에 적합합니다.",
+      "wa_text": "안녕하세요 Sentra, 저희 현장의 Starlink 상담을 원합니다.",
+      "btn_consult": "무료 상담", "btn_kits": "키트 보기",
+      "chips": ["현장 조사 및 거치", "숙소까지 WiFi", "오프그리드 태양광"],
+      "pains_h2": "자주 보는 문제",
+      "pains": [
+        ["현장이 광케이블과 이동통신 신호에서 멀다", "생산 보고, 출퇴근 기록, CCTV를 제때 보낼 수 없습니다."],
+        ["안테나 하나, WiFi는 방 하나까지만", "숙소, 정비소, 경비 초소는 여전히 인터넷이 없습니다."],
+        ["설치 지점에 상용 전력이 없다", "밤에 발전기를 끄면 장비도 꺼집니다."]
+      ],
+      "do_h2": "제공 서비스",
+      "do": [
+        ["Starlink 키트 조달", "Mini, Standard, Enterprise, 그리고 극한 환경용 Performance를 위치와 사용자 수에 맞춰 선택합니다."],
+        ["현장 조사 및 거치", "하늘 시야를 확인하고 기둥이나 지붕을 선택해 바람과 진동에 강한 거치대를 설치합니다."],
+        ["현장 WiFi 및 네트워크", "라우터, AP, 케이블 또는 무선 링크로 숙소, 정비소, 초소까지 인터넷을 연결합니다."],
+        ["오프그리드 태양광", "상용 전력이 없거나 발전기에 의존하는 지점에 태양광 패널, 배터리, 인버터를 구성합니다."],
+        ["사무실 백업 인터넷", "사무실 광회선이 끊기면 Starlink가 자동 백업 회선이 됩니다."],
+        ["유지보수 및 지원", "정기 점검, 장비 교체, 개통과 요금제 선택 지원."]
+      ],
+      "kits_h2": "키트 선택",
+      "kits_lead": "가장 많이 설치하는 키트입니다. 전체 목록은 장비 카탈로그에 있습니다.",
+      "sectors_h2": "적용 분야",
+      "sector_link": "솔루션 보기",
+      "sectors": [
+        ["광산", "현장 사무실, 피트, 숙소를 연결해 생산 보고, 차량 관리, CCTV에 활용합니다."],
+        ["농장", "농장 사무실과 수확 초소에서 센서와 출퇴근 데이터를 보낼 수 있습니다."],
+        ["건설 프로젝트 및 IKN", "영구 네트워크가 들어오기 전 현장에 임시 인터넷을 제공합니다."],
+        ["선박 및 차량", "Performance 키트는 영구 설치와 이동 중 사용이 가능합니다."],
+        ["지방정부 및 외딴 마을", "광케이블이 없는 지역의 마을 사무소, 학교, 보건소에 인터넷을 제공합니다."],
+        ["지점", "광회선 장애 시에도 업무가 이어지도록 백업 회선을 제공합니다."]
+      ],
+      "steps_h2": "진행 절차",
+      "steps": ["현장 조사", "키트 선택 및 네트워크 설계", "장비 조달", "설치 및 연결 테스트", "인수인계 및 유지보수"],
+      "related_h2": "관련 항목",
+      "related": ["카탈로그: Starlink 및 인터넷", "서비스: 인프라 설치", "서비스: IoT 및 하드웨어"],
+      "faq_h2": "자주 묻는 질문",
+      "faq": [
+        ["광산에는 어떤 Starlink 키트가 맞나요?", "고정된 현장 사무실에는 보통 Starlink Enterprise 또는 Standard를 씁니다. 강풍, 고온, 진동이 있는 곳이나 차량 설치에는 Starlink Performance를 권합니다."],
+        ["상용 전력이 없는 곳에도 설치할 수 있나요?", "가능합니다. 키트 소비 전력과 사용 시간에 맞춰 태양광 패널, 배터리, 인버터를 구성합니다."],
+        ["WiFi를 여러 건물까지 연결할 수 있나요?", "가능합니다. 라우터와 AP를 추가하고 건물 사이를 케이블이나 무선 링크로 연결합니다. 커버리지는 현장 조사 때 계산합니다."],
+        ["월 구독료는 어떻게 되나요?", "구독료는 선택한 요금제에 따라 Starlink가 청구합니다. 저희는 요금제 선택, 개통, 계정 설정을 도와드립니다."],
+        ["어느 지역을 지원하나요?", "현장 팀은 사마린다에 있으며 동칼리만탄을 지원합니다. 칼리만탄과 인도네시아의 다른 지역은 프로젝트별로 협의합니다."]
+      ],
+      "cta_h2": "현장을 연결할 준비가 되셨나요?",
+      "cta_p": "위치, 사용자 수, 사용 가능한 전원을 알려 주세요. 첫 상담은 무료입니다.",
+      "cta_wa": "WhatsApp 상담", "cta_msg": "메시지 보내기",
+      "cta_trust": ["첫 상담 무료", "현장 조사", "설치 및 지원"]
+    },
+    "ms": {
+      "title": "Starlink untuk Perniagaan, Lombong & Tapak Terpencil | Sentra",
+      "description": "Perolehan, pemasangan dan penyelenggaraan Starlink untuk lombong, ladang, tapak pembinaan, kapal, kerajaan tempatan dan pejabat cawangan. Termasuk WiFi tapak, solar luar grid dan internet sandaran.",
+      "name": "Starlink untuk Perniagaan",
+      "crumb_home": "Laman Utama", "crumb_services": "Perkhidmatan",
+      "h1": "Internet Starlink untuk tapak yang tidak dicapai gentian optik.",
+      "lead": "Sentra membekalkan kit Starlink, memasangnya di lokasi, lalu menyambungkan internet ke pejabat tapak, asrama, pondok pengawal dan peranti anda. Sesuai untuk lombong, ladang, projek pembinaan, kapal dan kampung terpencil.",
+      "wa_text": "Halo Sentra, saya ingin berbincang tentang Starlink untuk lokasi kami.",
+      "btn_consult": "Konsultasi percuma", "btn_kits": "Lihat pilihan kit",
+      "chips": ["Tinjauan & pemasangan", "WiFi hingga ke asrama", "Solar luar grid"],
+      "pains_h2": "Masalah yang sering kami temui",
+      "pains": [
+        ["Tapak jauh dari gentian optik dan isyarat selular", "Laporan pengeluaran, kehadiran dan CCTV tidak dapat dihantar tepat pada masanya."],
+        ["Satu antena, WiFi hanya sampai satu bilik", "Asrama, bengkel dan pondok pengawal masih tanpa internet."],
+        ["Tiada bekalan elektrik grid di titik pemasangan", "Peranti padam apabila genset dimatikan pada waktu malam."]
+      ],
+      "do_h2": "Apa yang kami lakukan",
+      "do": [
+        ["Perolehan kit Starlink", "Mini, Standard, Enterprise hingga Performance untuk keadaan ekstrem, dipilih mengikut lokasi dan bilangan pengguna."],
+        ["Tinjauan tapak & pemasangan", "Semak pandangan langit, pilih tiang atau bumbung, dan pasang pendakap yang tahan angin dan getaran."],
+        ["WiFi & rangkaian tapak", "Penghala, titik akses dan kabel atau pautan radio supaya internet sampai ke asrama, bengkel dan pondok pengawal."],
+        ["Solar luar grid", "Panel solar, bateri dan penyongsang untuk titik tanpa bekalan grid atau yang bergantung pada genset."],
+        ["Internet sandaran pejabat", "Starlink sebagai talian sandaran automatik apabila gentian optik pejabat terputus."],
+        ["Penyelenggaraan & sokongan", "Pemeriksaan berkala, penggantian peranti dan bantuan pengaktifan serta pemilihan pelan."]
+      ],
+      "kits_h2": "Pilihan kit",
+      "kits_lead": "Kit yang paling kerap kami pasang. Senarai penuh ada dalam katalog peranti.",
+      "sectors_h2": "Digunakan di",
+      "sector_link": "Lihat penyelesaian",
+      "sectors": [
+        ["Perlombongan", "Pejabat tapak, lubang lombong dan asrama bersambung untuk laporan pengeluaran, armada dan CCTV."],
+        ["Perladangan", "Pejabat ladang dan pos tuaian boleh menghantar data sensor dan kehadiran."],
+        ["Pembinaan & IKN", "Internet sementara di tapak projek sebelum rangkaian kekal tersedia."],
+        ["Kapal & kenderaan", "Kit Performance untuk pemasangan kekal dan penggunaan semasa bergerak."],
+        ["Kerajaan tempatan & kampung", "Internet untuk pejabat kampung, sekolah dan klinik di kawasan tanpa gentian optik."],
+        ["Pejabat cawangan", "Talian sandaran supaya operasi berterusan apabila gentian optik terputus."]
+      ],
+      "steps_h2": "Aliran kerja",
+      "steps": ["Tinjauan lokasi", "Pilih kit & reka bentuk rangkaian", "Perolehan peranti", "Pemasangan & ujian sambungan", "Serahan & penyelenggaraan"],
+      "related_h2": "Berkaitan",
+      "related": ["Katalog: Starlink & internet", "Perkhidmatan: Pemasangan Infrastruktur", "Perkhidmatan: IoT & Perkakasan"],
+      "faq_h2": "Soalan lazim",
+      "faq": [
+        ["Kit Starlink mana yang sesuai untuk lombong?", "Untuk pejabat tapak yang tetap, biasanya Starlink Enterprise atau Standard. Untuk lokasi dengan angin kencang, panas dan getaran, atau pemasangan pada kenderaan, kami cadangkan Starlink Performance."],
+        ["Bolehkah dipasang di lokasi tanpa bekalan elektrik grid?", "Boleh. Kami menyediakan panel solar, bateri dan penyongsang mengikut kuasa kit dan jam penggunaan."],
+        ["Bolehkah WiFi sampai ke beberapa bangunan?", "Boleh, dengan penghala dan titik akses tambahan serta kabel atau pautan radio antara bangunan. Liputan dikira semasa tinjauan."],
+        ["Bagaimana dengan langganan bulanan?", "Langganan dibilkan oleh Starlink mengikut pelan yang dipilih. Kami membantu pemilihan pelan, pengaktifan dan tetapan akaun."],
+        ["Kawasan mana yang dilayani?", "Pasukan lapangan kami berpangkalan di Samarinda dan melayani Kalimantan Timur. Lokasi lain di Kalimantan dan Indonesia boleh dibincangkan mengikut projek."]
+      ],
+      "cta_h2": "Sedia menyambungkan tapak anda?",
+      "cta_p": "Beritahu kami lokasi, bilangan pengguna dan sumber kuasa yang ada. Perbincangan awal percuma.",
+      "cta_wa": "Chat WhatsApp", "cta_msg": "Hantar mesej",
+      "cta_trust": ["Perbincangan awal percuma", "Tinjauan lokasi", "Dipasang & disokong"]
+    }
+  }
+}

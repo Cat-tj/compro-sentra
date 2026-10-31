@@ -9,6 +9,21 @@ Static site, no build step. Everything served lives in `site/`. Vercel project `
 - `sitemap.xml` and `llms.txt` list every page; update them when adding pages.
 - `tools/ascii-art.py` (Lucide icon to ASCII illustration) and `tools/ascii-panel.py` (glyph field panels).
 
+## SEO upkeep
+- Every article is by **Raphael Wicaksono** (JSON-LD `Person`, visible byline, `article:author`).
+- After adding or editing an article, run `python3 tools/blog-seo.py`: sets author, `og:type` article and
+  `article:*_time`, the RSS `<link>`, rewrites `site/<lang>/blog/feed.xml`, and syncs the article's sitemap `<lastmod>`
+  to its JSON-LD `dateModified`. Keep `datePublished`/`dateModified` in the JSON-LD accurate; everything derives from them.
+- News/press items (awards, launches, partnerships) use `"@type": "NewsArticle"` instead of `BlogPosting`.
+- New service page in 5 languages: write `tools/pages/<slug>.json` (see `starlink.json`), run
+  `python3 tools/new-service-page.py tools/pages/<slug>.json`, then add its card to every `services.html`, plus
+  `sitemap.xml` and `llms.txt`.
+- New article in 5 languages: write `tools/articles/<slug>.py` (see `starlink-untuk-tambang.py`), run
+  `python3 tools/new-article.py tools/articles/<slug>.py` (page, blog.html card + category filter, sitemap), then
+  `python3 tools/blog-seo.py`. Dates are always the real publish date.
+- The keyword map and article backlog live in the "Peta Pasar & Keyword SEO Sentra" doc on claude.ai.
+- IndexNow: key file `site/d01773ca34bcf938cfbdbeff95ad2284.txt` must stay deployed. Never rename or delete it.
+
 ## Rules that bite
 - **Cache busting**: assets are immutable for a year. After editing a CSS/JS file, bump its `?v=` in every HTML file
   that references it (e.g. `site.css?v=20261031a`). For a changed image, give it a new file name (`-v2`, `-v3`),
@@ -21,8 +36,11 @@ Static site, no build step. Everything served lives in `site/`. Vercel project `
 1. Commit, push to the fork remote `fork` (Cat-tj/compro-sentra), branch `static-site-remodel`.
 2. Deploy a **preview** from a clean export (`git archive HEAD`) with `vercel deploy --yes --scope sentratech`,
    then share it with a Vercel share link.
-3. **Promote to production only after the owner explicitly says "Promote"**:
+3. **Promote right after the preview passes verification** (owner's standing instruction since 2026-10-30, "langsung
+   promote, gausah tanya"; before that, promote waited for an explicit "Promote"):
    `vercel promote <preview-url> --yes --timeout 3m --scope sentratech`, then verify with curl on www.sentratechnology.com.
+4. Ping Bing and the other IndexNow engines for the changed pages (production only):
+   `python3 tools/indexnow.py <url> ...` or `python3 tools/indexnow.py --since <YYYY-MM-DD>`.
 
 ## Design decisions so far
 - Light theme everywhere; only the footer is dark navy.

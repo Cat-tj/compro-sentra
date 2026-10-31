@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+<title>Sentra Technology 아티클</title>
+<link>https://www.sentratechnology.com/ko/blog</link>
+<description>CCTV 분석, 얼굴 인식 출퇴근, 개인보호구 감지, 프라이빗 LLM, 조직의 디지털 전환에 관한 Sentra 팀의 가이드.</description>
+<language>ko</language>
+<lastBuildDate>Fri, 30 Oct 2026 08:00:00 +0700</lastBuildDate>
+<atom:link href="https://www.sentratechnology.com/ko/blog/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>칼리만탄 지점과 현장을 위한 Starlink vs VSAT vs 광케이블</title>
+<link>https://www.sentratechnology.com/ko/blog/starlink-vs-vsat-vs-fiber</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/starlink-vs-vsat-vs-fiber</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>칼리만탄의 지점, 광산 현장, 농장을 위한 Starlink, VSAT, 광케이블, 이동통신 비교: 지연 시간, 안정성, 설치, 조합해서 쓰는 경우.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/infra.webp" medium="image"/>
+</item>
+<item>
+<title>석탄 광산 차량 관리: GPS, 연료 센서, 보고서의 작동 방식</title>
+<link>https://www.sentratechnology.com/ko/blog/fleet-management-tambang</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/fleet-management-tambang</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>석탄 광산과 운반 차량 관리의 작동 방식: GPS와 경로 재생, 연료 센서, 중장비 CAN-Bus 데이터, 지오펜스, 운전 행태, 정비 알림, 일일 보고서.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-fleet.webp" medium="image"/>
+</item>
+<item>
+<title>사무실 CCTV 설치 비용: 비용 구성과 지점별 계산 방법</title>
+<link>https://www.sentratechnology.com/ko/blog/biaya-pasang-cctv-kantor</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/biaya-pasang-cctv-kantor</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>사무실 CCTV 설치 비용을 좌우하는 요소: 설치 지점 수, 카메라 종류, 배선, NVR, 하드디스크 용량, 네트워크, 유지보수. 저장 용량 계산법 포함.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/cctv-gal-dashboard.webp" medium="image"/>
+</item>
+<item>
+<title>기업 노트북 조달: 구매, 렌탈, 리스 중 무엇이 나을까?</title>
+<link>https://www.sentratechnology.com/ko/blog/pengadaan-laptop-perusahaan</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/pengadaan-laptop-perusahaan</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>기업과 기관의 노트북 구매·렌탈·리스 비교, 역할별 사양 선택, 총비용 구성, 조달 체크리스트.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/it-procurement.webp" medium="image"/>
+</item>
+<item>
+<title>광산용 Starlink: 키트 선택, 설치, 원격지 현장 네트워크</title>
+<link>https://www.sentratechnology.com/ko/blog/starlink-untuk-tambang</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/starlink-untuk-tambang</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>광산 현장을 위한 Starlink 가이드: 맞는 키트, 설치 위치, 숙소와 정비소까지 WiFi 연결, 전원, 네트워크 보안, 비용 구성.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/infra.webp" medium="image"/>
+</item>
+<item>
+<title>Android 앱 개발 비용: 첫 버전부터 기업 규모까지 비용을 정하는 요소</title>
+<link>https://www.sentratechnology.com/ko/blog/biaya-membuat-aplikasi-android</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/biaya-membuat-aplikasi-android</guid>
+<pubDate>Fri, 30 Oct 2026 08:00:00 +0700</pubDate>
+<description>기업과 기관의 Android 앱 개발 비용을 정하는 요소: 사용자 역할, 기능, 연동, 오프라인 모드, 대시보드, 보안, 출시 후 비용.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-integrasi.webp" medium="image"/>
+</item>
+<item>
+<title>POMPy BATARA, 북바리토군의 2026 Digital Innovation Award 수상을 이끌다</title>
+<link>https://www.sentratechnology.com/ko/blog/pompy-batara-digital-innovation-award-2026</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/pompy-batara-digital-innovation-award-2026</guid>
+<pubDate>Tue, 20 Oct 2026 08:00:00 +0700</pubDate>
+<description>주제도 포털 POMPy BATARA가 북바리토군(Kabupaten Barito Utara)의 2026 Digital Innovation Award 수상에 기여했습니다. POMPy BATARA와 Sentra의 역할을 소개합니다.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/projects/barito-dash.webp" medium="image"/>
+</item>
+<item>
+<title>조직에 온프레미스 Private LLM이 필요한 때는 언제일까?</title>
+<link>https://www.sentratechnology.com/ko/blog/private-llm-on-premise</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/private-llm-on-premise</guid>
+<pubDate>Sun, 18 Oct 2026 08:00:00 +0700</pubDate>
+<description>데이터를 외부로 보내지 않고 내부 문서를 바탕으로 답하는 AI 어시스턴트. 언제 필요한지, 무엇을 준비할지, 어떻게 시작할지 정리했습니다.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-sentrai.webp" medium="image"/>
+</item>
+<item>
+<title>기존 CCTV를 맥락을 이해하는 시스템으로 바꾸기</title>
+<link>https://www.sentratechnology.com/ko/blog/cctv-analytics-kamera-existing</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/cctv-analytics-kamera-existing</guid>
+<pubDate>Thu, 15 Oct 2026 08:00:00 +0700</pubDate>
+<description>CCTV 분석이란 무엇이며 일반 동작 감지와 어떻게 다른지, 그리고 이미 설치된 카메라에 AI 계층을 더하는 방법을 소개합니다.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/cctv-hero-v2.webp" medium="image"/>
+</item>
+<item>
+<title>CCTV 기반 얼굴 인식 근태 관리: 작동 방식, 카메라 요건, 한계</title>
+<link>https://www.sentratechnology.com/ko/blog/absensi-face-recognition-cctv</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/absensi-face-recognition-cctv</guid>
+<pubDate>Sun, 11 Oct 2026 08:00:00 +0700</pubDate>
+<description>이미 설치된 CCTV로 얼굴 인식 근태를 운영할 수 있을까요? 작동 방식, 카메라 요건, 한계, 개인정보 관련 유의 사항을 정리했습니다.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-attendance-v2.webp" medium="image"/>
+</item>
+<item>
+<title>얼굴 인식 근태 vs 지문 인식: 사무실과 공장에는 무엇이 적합할까?</title>
+<link>https://www.sentratechnology.com/ko/blog/absensi-wajah-vs-fingerprint</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/absensi-wajah-vs-fingerprint</guid>
+<pubDate>Sat, 10 Oct 2026 08:00:00 +0700</pubDate>
+<description>속도, 위생, 대리 출근, 장비, HRIS 연동 측면에서 얼굴 인식 근태와 지문 인식을 비교합니다.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/projects/attendance.webp" medium="image"/>
+</item>
+<item>
+<title>CCTV 기반 보호구 자동 감지: 작동 방식과 준비 사항</title>
+<link>https://www.sentratechnology.com/ko/blog/deteksi-apd-otomatis-dari-cctv</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/deteksi-apd-otomatis-dari-cctv</guid>
+<pubDate>Fri, 02 Oct 2026 08:00:00 +0700</pubDate>
+<description>AI가 CCTV로 안전모, 조끼 등 안전 장비를 감지하는 방식, 준비해야 할 사항, 그리고 HSE 팀의 알림 활용법을 설명합니다.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/products-safety.webp" medium="image"/>
+</item>
+</channel>
+</rss>
