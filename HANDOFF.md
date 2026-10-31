@@ -2,6 +2,17 @@
 
 Untuk agent atau orang yang melanjutkan. Baca juga `CLAUDE.md` (aturan teknis dan keputusan desain) dan `docs/seo/` (peta pasar dan daftar artikel). Terakhir diperbarui 31 Okt 2026.
 
+## Kalau tidak ada agent AI sama sekali (pemilik berhenti berlangganan Claude)
+Semuanya ada di repo dan GitHub, tidak di dalam sesi chat mana pun. Satu-satunya hal yang hanya ada di akun Claude adalah dokumen peta pasar asli (sudah diekspor ke `docs/seo/`).
+
+Pengaturan sekali jalan yang paling berguna, supaya deploy tidak butuh agent lagi:
+1. Merge PR https://github.com/Sentra-Technology/compro-sentra/pull/2 (branch `static-site-remodel` ke `main`). PR ini membuat `main` sama dengan situs live; status "mergeable". Orang dengan hak tulis di org yang harus melakukannya.
+2. Klik tautan otorisasi pada status check "Vercel" di PR itu untuk menghubungkan org `Sentra-Technology` ke Vercel (status saat ini FAILURE karena belum diotorisasi).
+3. Di Vercel project `compro-sentra`: pastikan Production Branch = `main`, Framework = Other, Output Directory = `site` (sudah diatur lewat `vercel.json`).
+4. Sesudah itu, mengubah situs cukup: edit file di `site/`, naikkan `?v=` bila CSS/JS berubah, buat PR, cek preview otomatis, merge ke `main` (otomatis jadi produksi). Lalu `python3 tools/indexnow.py --since YYYY-MM-DD`.
+
+Tanpa integrasi itu, deploy manual tetap bisa lewat `tools/deploy.sh` (butuh `VERCEL_TOKEN`). Edit teks sederhana (nomor kontak, nama tim, foto) cukup dengan mencari string di `site/` dan mengubahnya di kelima bahasa (`site/`, `site/en/`, `site/zh/`, `site/ko/`, `site/ms/`), lalu commit dan deploy.
+
 ## Variabel lingkungan (env)
 Salin `.env.example` ke `.env` (sudah di-gitignore) dan isi nilai rahasia. Daftar lengkap dan komentarnya ada di `.env.example`.
 
