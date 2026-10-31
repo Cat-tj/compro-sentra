@@ -22,6 +22,7 @@ Static site, no build step. Everything served lives in `site/`. Vercel project `
   `python3 tools/new-article.py tools/articles/<slug>.py` (page, blog.html card + category filter, sitemap), then
   `python3 tools/blog-seo.py`. Dates are always the real publish date.
 - The keyword map and article backlog live in the "Peta Pasar & Keyword SEO Sentra" doc on claude.ai.
+- Brand queries: the bare word "sentra" is generic (Google shows Sentra Computer, Nissan Sentra, etc.) and is not winnable. Target "sentra technology", "sentra technology samarinda", "PT Sentra Visi Teknologi". Done on 2026-10-31: homepage FAQ "Apa itu Sentra Technology?" (visible + FAQPage JSON-LD, 5 languages), WebSite `alternateName`, ID homepage title "Sentra Technology Samarinda | ...", disambiguation line in `llms.txt`. Still needs the owner: Google Search Console verification (add the `google-site-verification` meta to the 5 homepages) + sitemap submit, Google Business Profile, social profiles for Organization `sameAs`, backlinks.
 - IndexNow: key file `site/d01773ca34bcf938cfbdbeff95ad2284.txt` must stay deployed. Never rename or delete it.
 
 ## Rules that bite
