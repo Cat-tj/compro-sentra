@@ -8,12 +8,28 @@
 <lastBuildDate>Sat, 31 Oct 2026 08:00:00 +0700</lastBuildDate>
 <atom:link href="https://www.sentratechnology.com/ko/blog/feed.xml" rel="self" type="application/rss+xml"/>
 <item>
+<title>지역 단일 데이터: 지도부용 대시보드를 만드는 단계</title>
+<link>https://www.sentratechnology.com/ko/blog/satu-data-daerah-dashboard</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/satu-data-daerah-dashboard</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0700</pubDate>
+<description>지방정부가 지역 단일 데이터와 지도부용 대시보드를 만드는 단계: 데이터 목록화, 데이터 담당자, 메타데이터, 포털, 갱신, 개인정보 보호.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-satu-data.webp" medium="image"/>
+</item>
+<item>
 <title>지방정부를 위한 WebGIS와 주제도: 북바리토군 POMPy BATARA에서 배우기</title>
 <link>https://www.sentratechnology.com/ko/blog/webgis-peta-tematik-pemda</link>
 <guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/webgis-peta-tematik-pemda</guid>
 <pubDate>Sat, 31 Oct 2026 08:00:00 +0700</pubDate>
 <description>지방정부가 WebGIS와 주제도를 만드는 방법: 흔한 데이터 레이어, 구축 단계, 자주 하는 실수, 북바리토군 POMPy BATARA 사례.</description>
 <media:content url="https://www.sentratechnology.com/assets/img/art/blog-webgis.webp" medium="image"/>
+</item>
+<item>
+<title>광산 지역 CCTV: 카메라, 네트워크, 전원, 원격 모니터링</title>
+<link>https://www.sentratechnology.com/ko/blog/cctv-area-tambang</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/cctv-area-tambang</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0700</pubDate>
+<description>광산 현장 CCTV 가이드: 먼지와 비에 강한 카메라, 유선 또는 무선 네트워크, 전원, 녹화 저장, 위성을 통한 원격 모니터링.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-cctv-tambang.webp" medium="image"/>
 </item>
 <item>
 <title>SPBE란 무엇이며 지방정부는 무엇을 준비해야 할까</title>

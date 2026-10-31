@@ -8,6 +8,22 @@
 <lastBuildDate>Sat, 31 Oct 2026 08:00:00 +0700</lastBuildDate>
 <atom:link href="https://www.sentratechnology.com/zh/blog/feed.xml" rel="self" type="application/rss+xml"/>
 <item>
+<title>矿区 CCTV：摄像机、网络、供电与远程监控</title>
+<link>https://www.sentratechnology.com/zh/blog/cctv-area-tambang</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/cctv-area-tambang</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0700</pubDate>
+<description>矿区 CCTV 指南：防尘防雨摄像机、有线或无线网络、供电、录像存储，以及通过卫星的远程监控。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-cctv-tambang.webp" medium="image"/>
+</item>
+<item>
+<title>地方统一数据：为领导搭建仪表板的步骤</title>
+<link>https://www.sentratechnology.com/zh/blog/satu-data-daerah-dashboard</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/satu-data-daerah-dashboard</guid>
+<pubDate>Sat, 31 Oct 2026 08:00:00 +0700</pubDate>
+<description>地方政府搭建地方统一数据和领导仪表板的步骤：数据盘点、数据负责人、元数据、门户、更新和个人数据保护。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-satu-data.webp" medium="image"/>
+</item>
+<item>
 <title>地方政府的 WebGIS 与专题地图：北巴里托县 POMPy BATARA 的启示</title>
 <link>https://www.sentratechnology.com/zh/blog/webgis-peta-tematik-pemda</link>
 <guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/webgis-peta-tematik-pemda</guid>
