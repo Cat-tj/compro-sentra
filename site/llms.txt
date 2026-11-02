@@ -6,7 +6,7 @@ Key facts:
 
 - Legal name: PT. Sentra Visi Teknologi. Brand: Sentra Technology (also called "Sentra" or "Sentra Technology Samarinda"). Not to be confused with other businesses that use the word "Sentra"; this one is the Samarinda technology company at https://www.sentratechnology.com.
 - Founded: 2019, Samarinda, East Kalimantan, Indonesia. Office: Kompleks Graha Indah A.13, Samarinda Kota.
-- Team: 13 in-house experts (leadership, hardware division, software division). CEO: Muhammad Nabil Akbar Pratama. COO: Richard Chandra Tjiang.
+- Team: 13 in-house experts (leadership, hardware division, software division). CEO: Muhammad Nabil Akbar Pratama. COO: Richard Chandra Tjiang. Both founders were national champions in AI machine learning and AIoT development (2019).
 - Track record: 50+ delivered projects. Clients include Pemerintah Kota Samarinda, Diskominfosandi Kabupaten Barito Utara, Universitas Mulawarman, Institut Teknologi Kalimantan, STT Migas Balikpapan, PT. Adhi Karya, PT Astra International Tbk, 1Ci Enterprise, and MBC Entertainment.
 - Award: POMPy BATARA, a thematic map portal built by Sentra for Kabupaten Barito Utara, helped the regency win the Digital Innovation Award 2026.
 - Working model: free initial consultation, then a measured 2–4 week pilot before rollout; full rollouts typically take 2–6 months. All products can run on-premise or in a private cloud; no vendor lock-in.
