@@ -67,8 +67,8 @@ P1 = terbit bulan 1–3, P2 = bulan 4–6, P3 = setelahnya.
 | 48 | Pengadaan Laptop Perusahaan: Beli, Sewa, atau Leasing? | Korporasi | pengadaan laptop perusahaan | Perbandingan | /services/pengadaan-it | P1 | TERBIT: /blog/pengadaan-laptop-perusahaan |
 | 49 | Managed IT Service: Kapan Perusahaan Lebih Untung Outsourcing IT | Korporasi | managed it service | Panduan | /layanan/managed-it | P2 | belum |
 | 50 | Integrasi ERP dengan HRIS, CCTV, dan Absensi | Korporasi | integrasi erp | Panduan | /services/integrasi-sistem | P2 | belum |
-| 51 | Video Conference On-Premise: Alternatif Zoom untuk Rapat Rahasia | Korporasi | aplikasi meeting on-premise | Perbandingan | /produk/meeting | P2 | belum |
-| 52 | Smartlock Kantor: Akses Pintu dengan Kartu, Wajah, dan HP | Korporasi | smartlock kantor | Panduan | /produk/smartlock | P3 | belum |
+| 51 | Video Conference On-Premise: Alternatif Zoom untuk Rapat Rahasia | Korporasi | aplikasi meeting on-premise | Perbandingan | /produk/meeting | P2 | TERBIT: /blog/video-conference-on-premise |
+| 52 | Smartlock Kantor: Akses Pintu dengan Kartu, Wajah, dan HP | Korporasi | smartlock kantor | Panduan | /produk/smartlock | P3 | TERBIT: /blog/smartlock-kantor |
 | 53 | Teknologi di Proyek Konstruksi: CCTV, Starlink, dan Absensi Pekerja | Konstruksi | teknologi proyek konstruksi | Panduan | /industri/konstruksi | P2 | belum |
 | 54 | Deteksi APD di Proyek Konstruksi | Konstruksi | deteksi apd proyek | Panduan | /produk/safety-ai | P3 | belum |
 | 55 | Optimasi Rute Armada: Hemat BBM dan Waktu Kirim | Logistik | optimasi rute armada | Studi kasus | /portfolio/optimasi-rute-armada | P2 | belum |
@@ -86,7 +86,7 @@ Studi kasus memakai proyek yang sudah ada di portofolio; periode proyek ditulis 
 | 61 | TP-Link VIGI vs Hikvision vs Dahua untuk Kantor dan Gudang | Semua | vigi vs hikvision | Perbandingan | /katalog-cctv-vigi | P2 | belum |
 | 62 | Starlink vs VSAT vs Fiber untuk Kantor Cabang di Kalimantan | Semua | starlink vs vsat | Perbandingan | /services/starlink | P1 | TERBIT: /blog/starlink-vs-vsat-vs-fiber |
 | 63 | Starlink Business di Indonesia: Paket, Perangkat, dan Cara Pasang | Semua | starlink business indonesia | Panduan | /services/starlink | P1 | belum |
-| 64 | Spesifikasi Laptop Kantor 2026 untuk Admin, Desain, dan Lapangan | Semua | spesifikasi laptop kantor | Panduan | /services/pengadaan-it | P2 | belum |
+| 64 | Spesifikasi Laptop Kantor 2026 untuk Admin, Desain, dan Lapangan | Semua | spesifikasi laptop kantor | Panduan | /services/pengadaan-it | P2 | TERBIT: /blog/spesifikasi-laptop-kantor-2026 |
 | 65 | Server On-Premise untuk AI: GPU, RAM, dan Penyimpanan yang Dibutuhkan | Semua | server ai on-premise | Panduan | /services/pengadaan-server | P2 | TERBIT: /blog/server-ai-on-premise |
 | 66 | Instalasi Fiber Optik Gedung: Tahapan, Alat, dan Biaya | Semua | instalasi fiber optik | Panduan | /services/instalasi-infrastruktur | P2 | TERBIT: /blog/instalasi-fiber-optik-gedung |
 | 67 | Biaya Membuat Aplikasi Android 2026: Dari MVP sampai Skala Perusahaan | Semua | biaya bikin aplikasi android | Panduan harga | /services/aplikasi-android | P1 | TERBIT: /blog/biaya-membuat-aplikasi-android |

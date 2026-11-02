@@ -32,12 +32,28 @@
 <media:content url="https://www.sentratechnology.com/assets/img/art/blog-keamanan-website.webp" medium="image"/>
 </item>
 <item>
+<title>온프레미스 화상회의: 기밀 회의를 위한 Zoom 대안</title>
+<link>https://www.sentratechnology.com/ko/blog/video-conference-on-premise</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/video-conference-on-premise</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>기업이나 기관이 자체 서버에서 화상회의를 운영해야 할 때, 필요한 네트워크와 장비, 공개 서비스와 비교한 감수 사항.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-meeting-onprem.webp" medium="image"/>
+</item>
+<item>
 <title>온프레미스 AI 서버: 필요한 GPU, RAM, 저장소</title>
 <link>https://www.sentratechnology.com/ko/blog/server-ai-on-premise</link>
 <guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/server-ai-on-premise</guid>
 <pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
 <description>자체 서버에서 언어 모델을 돌리는 데 필요한 GPU, VRAM, RAM, 저장소를 추정하는 방법.</description>
 <media:content url="https://www.sentratechnology.com/assets/img/art/blog-server-ai.webp" medium="image"/>
+</item>
+<item>
+<title>사무실 스마트 도어락: 카드, PIN, 얼굴, 휴대폰으로 출입</title>
+<link>https://www.sentratechnology.com/ko/blog/smartlock-kantor</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/smartlock-kantor</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>사무실용 스마트 도어락과 출입 통제 선택법: 출입 방식, 로그, 예비 전원, 화재 대피 안전, 근태 연동.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-smartlock-kantor.webp" medium="image"/>
 </item>
 <item>
 <title>사무실 데이터 백업: 3-2-1 규칙 실전</title>
@@ -78,6 +94,14 @@
 <pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
 <description>화질, 배선, PoE, 저장, AI 분석, 비용으로 비교한 IP와 아날로그(AHD/TVI/CVI) CCTV.</description>
 <media:content url="https://www.sentratechnology.com/assets/img/art/blog-ip-vs-analog.webp" medium="image"/>
+</item>
+<item>
+<title>2026 사무용 노트북 사양: 행정, 디자인, 현장</title>
+<link>https://www.sentratechnology.com/ko/blog/spesifikasi-laptop-kantor-2026</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/spesifikasi-laptop-kantor-2026</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>역할별 사무용 노트북 사양 선택 가이드: 프로세서, RAM, 저장소, 화면, 배터리, 내구성, 보증.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-laptop-kantor.webp" medium="image"/>
 </item>
 <item>
 <title>지역 단일 데이터: 지도부용 대시보드를 만드는 단계</title>

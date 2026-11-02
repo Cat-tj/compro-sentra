@@ -32,6 +32,14 @@
 <media:content url="https://www.sentratechnology.com/assets/img/art/blog-fiber-gedung.webp" medium="image"/>
 </item>
 <item>
+<title>本地部署视频会议：Zoom 的保密会议替代方案</title>
+<link>https://www.sentratechnology.com/zh/blog/video-conference-on-premise</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/video-conference-on-premise</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>企业或机构何时应在自有服务器上运行视频会议，需要什么网络和设备，以及与公共服务相比要接受什么。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-meeting-onprem.webp" medium="image"/>
+</item>
+<item>
 <title>本地 AI 服务器：所需 GPU、内存与存储</title>
 <link>https://www.sentratechnology.com/zh/blog/server-ai-on-premise</link>
 <guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/server-ai-on-premise</guid>
@@ -46,6 +54,14 @@
 <pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
 <description>如何确定店铺、摊位或小仓库所需摄像头数量和位置，套餐应包含什么。</description>
 <media:content url="https://www.sentratechnology.com/assets/img/art/blog-cctv-toko.webp" medium="image"/>
+</item>
+<item>
+<title>办公室智能门锁：刷卡、密码、人脸与手机开门</title>
+<link>https://www.sentratechnology.com/zh/blog/smartlock-kantor</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/smartlock-kantor</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>如何为办公室选择智能门锁和门禁：开门方式、日志、备用电源、消防疏散安全以及与考勤的集成。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-smartlock-kantor.webp" medium="image"/>
 </item>
 <item>
 <title>办公室数据备份：3-2-1 规则的实践</title>
@@ -78,6 +94,14 @@
 <pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
 <description>从画质、布线、PoE、存储、AI 分析和成本比较 IP 与模拟（AHD/TVI/CVI）监控，以及各自适用场景。</description>
 <media:content url="https://www.sentratechnology.com/assets/img/art/blog-ip-vs-analog.webp" medium="image"/>
+</item>
+<item>
+<title>2026 年办公笔记本配置：行政、设计与外勤</title>
+<link>https://www.sentratechnology.com/zh/blog/spesifikasi-laptop-kantor-2026</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/spesifikasi-laptop-kantor-2026</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>按岗位选择办公笔记本配置的指南：处理器、内存、存储、屏幕、电池、耐用性和保修。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-laptop-kantor.webp" medium="image"/>
 </item>
 <item>
 <title>矿区 CCTV：摄像机、网络、供电与远程监控</title>
