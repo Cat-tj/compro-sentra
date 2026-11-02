@@ -24,6 +24,14 @@
 <media:content url="https://www.sentratechnology.com/assets/img/art/blog-android-vs-web.webp" medium="image"/>
 </item>
 <item>
+<title>楼宇光纤安装：阶段、工具与成本构成</title>
+<link>https://www.sentratechnology.com/zh/blog/instalasi-fiber-optik-gedung</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/instalasi-fiber-optik-gedung</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>在楼宇或园区安装光纤的阶段：路由勘察、单模与多模、熔接、端接、OTDR 测试和成本构成。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-fiber-gedung.webp" medium="image"/>
+</item>
+<item>
 <title>本地 AI 服务器：所需 GPU、内存与存储</title>
 <link>https://www.sentratechnology.com/zh/blog/server-ai-on-premise</link>
 <guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/server-ai-on-premise</guid>
@@ -38,6 +46,22 @@
 <pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
 <description>如何确定店铺、摊位或小仓库所需摄像头数量和位置，套餐应包含什么。</description>
 <media:content url="https://www.sentratechnology.com/assets/img/art/blog-cctv-toko.webp" medium="image"/>
+</item>
+<item>
+<title>办公室数据备份：3-2-1 规则的实践</title>
+<link>https://www.sentratechnology.com/zh/blog/backup-data-kantor-321</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/backup-data-kantor-321</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>如何在中小型办公室应用 3-2-1 备份规则：备份什么、存在哪、多久一次、如何测试恢复。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-backup-321.webp" medium="image"/>
+</item>
+<item>
+<title>公司车辆 GPS 追踪器：功能、成本构成与司机隐私</title>
+<link>https://www.sentratechnology.com/zh/blog/gps-tracker-kendaraan-kantor</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/gps-tracker-kendaraan-kantor</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>在运营车辆上安装 GPS 追踪器前需考虑什么：功能、安装、SIM 卡、平台、成本构成和司机隐私规则。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-gps-kendaraan.webp" medium="image"/>
 </item>
 <item>
 <title>企业使用 ChatGPT：数据风险与本地部署替代方案</title>

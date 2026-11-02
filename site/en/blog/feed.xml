@@ -16,12 +16,28 @@
 <media:content url="https://www.sentratechnology.com/assets/img/art/blog-keamanan-website.webp" medium="image"/>
 </item>
 <item>
+<title>Vehicle GPS Tracker for Company Fleets: Features, Cost Components and Driver Privacy</title>
+<link>https://www.sentratechnology.com/en/blog/gps-tracker-kendaraan-kantor</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/gps-tracker-kendaraan-kantor</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>What to consider before fitting GPS trackers to operational vehicles: features, installation, SIM, platform, cost components and driver privacy rules.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-gps-kendaraan.webp" medium="image"/>
+</item>
+<item>
 <title>On-Premise AI Server: GPU, RAM and Storage You Need</title>
 <link>https://www.sentratechnology.com/en/blog/server-ai-on-premise</link>
 <guid isPermaLink="true">https://www.sentratechnology.com/en/blog/server-ai-on-premise</guid>
 <pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
 <description>How to estimate GPU, VRAM, RAM and storage needs for running a language model on your own server, with a simple formula and example model sizes.</description>
 <media:content url="https://www.sentratechnology.com/assets/img/art/blog-server-ai.webp" medium="image"/>
+</item>
+<item>
+<title>Office Data Backup: The 3-2-1 Rule in Practice</title>
+<link>https://www.sentratechnology.com/en/blog/backup-data-kantor-321</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/backup-data-kantor-321</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>How to apply the 3-2-1 backup rule in a small to mid-size office: what to back up, where to store it, how often, and how to test recovery.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-backup-321.webp" medium="image"/>
 </item>
 <item>
 <title>IP vs Analog CCTV: Which Suits Your Building</title>
@@ -46,6 +62,14 @@
 <pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
 <description>How to decide the number and position of CCTV cameras for a shop, stall or small warehouse, what a package should include, and what people often miss.</description>
 <media:content url="https://www.sentratechnology.com/assets/img/art/blog-cctv-toko.webp" medium="image"/>
+</item>
+<item>
+<title>Building Fibre Optic Installation: Stages, Tools and Cost Components</title>
+<link>https://www.sentratechnology.com/en/blog/instalasi-fiber-optik-gedung</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/instalasi-fiber-optik-gedung</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Stages of installing fibre optic in a building or campus: route survey, single-mode vs multimode, splicing, termination, OTDR testing, and cost components.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-fiber-gedung.webp" medium="image"/>
 </item>
 <item>
 <title>Android App vs Web App for Field Teams</title>
