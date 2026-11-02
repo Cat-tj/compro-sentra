@@ -5,8 +5,32 @@
 <link>https://www.sentratechnology.com/blog</link>
 <description>Panduan dari tim Sentra tentang CCTV analytics, absensi wajah, deteksi APD, private LLM, dan digitalisasi operasional organisasi.</description>
 <language>id</language>
-<lastBuildDate>Sat, 31 Oct 2026 08:00:00 +0700</lastBuildDate>
+<lastBuildDate>Mon, 02 Nov 2026 08:00:00 +0700</lastBuildDate>
 <atom:link href="https://www.sentratechnology.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>Paket CCTV untuk Toko dan UMKM: Berapa Kamera yang Cukup</title>
+<link>https://www.sentratechnology.com/blog/paket-cctv-toko-umkm</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/paket-cctv-toko-umkm</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Cara menentukan jumlah dan posisi kamera CCTV untuk toko, warung, atau gudang kecil, apa saja yang masuk paket, dan hal yang sering terlewat.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-cctv-toko.webp" medium="image"/>
+</item>
+<item>
+<title>ChatGPT untuk Perusahaan: Risiko Data dan Alternatif On-Premise</title>
+<link>https://www.sentratechnology.com/blog/chatgpt-untuk-perusahaan</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/chatgpt-untuk-perusahaan</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Apa yang perlu dicek sebelum karyawan memakai ChatGPT atau AI publik lain untuk dokumen kantor, dan kapan model on-premise atau private LLM lebih masuk akal.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-chatgpt-perusahaan.webp" medium="image"/>
+</item>
+<item>
+<title>CCTV IP vs Analog: Mana yang Cocok untuk Gedung Anda</title>
+<link>https://www.sentratechnology.com/blog/cctv-ip-vs-analog</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/cctv-ip-vs-analog</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Perbedaan CCTV IP dan analog (AHD/TVI/CVI) dari sisi gambar, kabel, PoE, penyimpanan, analitik AI, dan biaya, plus kapan masing-masing masuk akal.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-ip-vs-analog.webp" medium="image"/>
+</item>
 <item>
 <title>WebGIS dan Peta Tematik untuk Pemda: Belajar dari POMPy BATARA Barito Utara</title>
 <link>https://www.sentratechnology.com/blog/webgis-peta-tematik-pemda</link>

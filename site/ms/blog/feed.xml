@@ -5,8 +5,32 @@
 <link>https://www.sentratechnology.com/ms/blog</link>
 <description>Panduan daripada pasukan Sentra tentang CCTV analytics, kehadiran wajah, pengesanan PPE, private LLM dan pendigitalan operasi organisasi.</description>
 <language>ms</language>
-<lastBuildDate>Sat, 31 Oct 2026 08:00:00 +0700</lastBuildDate>
+<lastBuildDate>Mon, 02 Nov 2026 08:00:00 +0700</lastBuildDate>
 <atom:link href="https://www.sentratechnology.com/ms/blog/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>Pakej CCTV untuk Kedai dan PKS: Berapa Kamera Mencukupi</title>
+<link>https://www.sentratechnology.com/ms/blog/paket-cctv-toko-umkm</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ms/blog/paket-cctv-toko-umkm</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Cara menentukan bilangan dan kedudukan kamera CCTV untuk kedai atau stor kecil dan apa yang patut ada dalam pakej.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-cctv-toko.webp" medium="image"/>
+</item>
+<item>
+<title>ChatGPT untuk Syarikat: Risiko Data dan Alternatif On-Premise</title>
+<link>https://www.sentratechnology.com/ms/blog/chatgpt-untuk-perusahaan</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ms/blog/chatgpt-untuk-perusahaan</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Apa yang perlu disemak sebelum pekerja menggunakan ChatGPT untuk dokumen pejabat, dan bila model on-premise lebih sesuai.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-chatgpt-perusahaan.webp" medium="image"/>
+</item>
+<item>
+<title>CCTV IP vs Analog: Mana yang Sesuai untuk Bangunan Anda</title>
+<link>https://www.sentratechnology.com/ms/blog/cctv-ip-vs-analog</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ms/blog/cctv-ip-vs-analog</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Perbandingan CCTV IP dan analog (AHD/TVI/CVI) dari segi gambar, kabel, PoE, storan, analitik AI dan kos.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-ip-vs-analog.webp" medium="image"/>
+</item>
 <item>
 <title>WebGIS dan Peta Tematik untuk Kerajaan Daerah: Pengajaran daripada POMPy BATARA Barito Utara</title>
 <link>https://www.sentratechnology.com/ms/blog/webgis-peta-tematik-pemda</link>

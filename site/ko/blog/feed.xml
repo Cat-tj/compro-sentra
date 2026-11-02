@@ -5,8 +5,32 @@
 <link>https://www.sentratechnology.com/ko/blog</link>
 <description>CCTV 분석, 얼굴 인식 출퇴근, 개인보호구 감지, 프라이빗 LLM, 조직의 디지털 전환에 관한 Sentra 팀의 가이드.</description>
 <language>ko</language>
-<lastBuildDate>Sat, 31 Oct 2026 08:00:00 +0700</lastBuildDate>
+<lastBuildDate>Mon, 02 Nov 2026 08:00:00 +0700</lastBuildDate>
 <atom:link href="https://www.sentratechnology.com/ko/blog/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>매장·소상공인용 CCTV 패키지: 카메라는 몇 대면 충분한가</title>
+<link>https://www.sentratechnology.com/ko/blog/paket-cctv-toko-umkm</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/paket-cctv-toko-umkm</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>매장, 가판, 소형 창고에 필요한 CCTV 카메라 수와 위치를 정하는 방법과 패키지 구성.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-cctv-toko.webp" medium="image"/>
+</item>
+<item>
+<title>기업의 ChatGPT 사용: 데이터 위험과 온프레미스 대안</title>
+<link>https://www.sentratechnology.com/ko/blog/chatgpt-untuk-perusahaan</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/chatgpt-untuk-perusahaan</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>직원이 ChatGPT 등 공개 AI로 업무 문서를 다루기 전에 확인할 점과, 온프레미스·프라이빗 LLM이 적합한 경우.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-chatgpt-perusahaan.webp" medium="image"/>
+</item>
+<item>
+<title>IP CCTV와 아날로그 CCTV: 우리 건물에 맞는 것은</title>
+<link>https://www.sentratechnology.com/ko/blog/cctv-ip-vs-analog</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/cctv-ip-vs-analog</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>화질, 배선, PoE, 저장, AI 분석, 비용으로 비교한 IP와 아날로그(AHD/TVI/CVI) CCTV.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-ip-vs-analog.webp" medium="image"/>
+</item>
 <item>
 <title>지역 단일 데이터: 지도부용 대시보드를 만드는 단계</title>
 <link>https://www.sentratechnology.com/ko/blog/satu-data-daerah-dashboard</link>

@@ -5,8 +5,32 @@
 <link>https://www.sentratechnology.com/zh/blog</link>
 <description>Sentra 团队关于 CCTV 分析、人脸考勤、PPE 检测、私有化 LLM 及组织数字化转型的指南。</description>
 <language>zh-CN</language>
-<lastBuildDate>Sat, 31 Oct 2026 08:00:00 +0700</lastBuildDate>
+<lastBuildDate>Mon, 02 Nov 2026 08:00:00 +0700</lastBuildDate>
 <atom:link href="https://www.sentratechnology.com/zh/blog/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>店铺与小微企业 CCTV 套餐：多少台摄像头够用</title>
+<link>https://www.sentratechnology.com/zh/blog/paket-cctv-toko-umkm</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/paket-cctv-toko-umkm</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>如何确定店铺、摊位或小仓库所需摄像头数量和位置，套餐应包含什么。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-cctv-toko.webp" medium="image"/>
+</item>
+<item>
+<title>企业使用 ChatGPT：数据风险与本地部署替代方案</title>
+<link>https://www.sentratechnology.com/zh/blog/chatgpt-untuk-perusahaan</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/chatgpt-untuk-perusahaan</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>员工用 ChatGPT 等公共 AI 处理办公文件前应检查什么，以及何时本地部署或私有 LLM 更合适。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-chatgpt-perusahaan.webp" medium="image"/>
+</item>
+<item>
+<title>IP 与模拟 CCTV：哪种适合您的大楼</title>
+<link>https://www.sentratechnology.com/zh/blog/cctv-ip-vs-analog</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/cctv-ip-vs-analog</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>从画质、布线、PoE、存储、AI 分析和成本比较 IP 与模拟（AHD/TVI/CVI）监控，以及各自适用场景。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-ip-vs-analog.webp" medium="image"/>
+</item>
 <item>
 <title>矿区 CCTV：摄像机、网络、供电与远程监控</title>
 <link>https://www.sentratechnology.com/zh/blog/cctv-area-tambang</link>

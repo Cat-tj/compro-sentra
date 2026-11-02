@@ -59,7 +59,7 @@ P1 = terbit bulan 1–3, P2 = bulan 4–6, P3 = setelahnya.
 | 40 | Absensi Pemanen Sawit di Lokasi Tanpa Sinyal | Sawit | absensi pemanen sawit | Panduan | /produk/attendance | P2 | belum |
 | 41 | Starlink untuk Kebun dan Pabrik Kelapa Sawit | Sawit | starlink perkebunan | Panduan | /services/starlink | P2 | belum |
 | 42 | CCTV Pabrik Kelapa Sawit: Timbangan, Loading Ramp, dan Gudang | Sawit | cctv pabrik sawit | Panduan | /services/cctv-analytics | P3 | belum |
-| 43 | Paket CCTV untuk Toko dan UMKM: Berapa Kamera dan Berapa Biayanya | UMKM | paket cctv toko | Panduan | /services/pengadaan-cctv | P1 | belum |
+| 43 | Paket CCTV untuk Toko dan UMKM: Berapa Kamera dan Berapa Biayanya | UMKM | paket cctv toko | Panduan | /services/pengadaan-cctv | P1 | TERBIT: /blog/paket-cctv-toko-umkm |
 | 44 | Aplikasi Kasir UMKM: Fitur yang Benar-benar Dipakai | UMKM | aplikasi kasir umkm | Panduan | /services/custom-software | P2 | belum |
 | 45 | Website untuk UMKM: Mulai dari Mana dan Berapa Biayanya | UMKM | website umkm | Panduan | /produk/website | P2 | belum |
 | 46 | Digitalisasi UMKM: 7 Teknologi Murah yang Langsung Terasa | UMKM | digitalisasi umkm | Daftar | /industri/umkm | P2 | belum |
@@ -82,7 +82,7 @@ Studi kasus memakai proyek yang sudah ada di portofolio; periode proyek ditulis 
 | # | Judul | Sektor | Keyword utama | Jenis | Tautkan ke | Prioritas | Status |
 |---|---|---|---|---|---|---|---|
 | 59 | Biaya Pasang CCTV Kantor 2026: Rincian per Titik | Semua | biaya pasang cctv | Panduan harga | /services/pengadaan-cctv | P1 | TERBIT: /blog/biaya-pasang-cctv-kantor |
-| 60 | CCTV IP vs Analog: Mana yang Cocok untuk Gedung Anda | Semua | cctv ip vs analog | Perbandingan | /katalog-cctv-vigi | P1 | belum |
+| 60 | CCTV IP vs Analog: Mana yang Cocok untuk Gedung Anda | Semua | cctv ip vs analog | Perbandingan | /katalog-cctv-vigi | P1 | TERBIT: /blog/cctv-ip-vs-analog |
 | 61 | TP-Link VIGI vs Hikvision vs Dahua untuk Kantor dan Gudang | Semua | vigi vs hikvision | Perbandingan | /katalog-cctv-vigi | P2 | belum |
 | 62 | Starlink vs VSAT vs Fiber untuk Kantor Cabang di Kalimantan | Semua | starlink vs vsat | Perbandingan | /services/starlink | P1 | TERBIT: /blog/starlink-vs-vsat-vs-fiber |
 | 63 | Starlink Business di Indonesia: Paket, Perangkat, dan Cara Pasang | Semua | starlink business indonesia | Panduan | /services/starlink | P1 | belum |
@@ -93,7 +93,7 @@ Studi kasus memakai proyek yang sudah ada di portofolio; periode proyek ditulis 
 | 68 | Aplikasi Android vs Web App untuk Tim Lapangan | Semua | aplikasi android vs web | Perbandingan | /services/aplikasi-android | P2 | belum |
 | 69 | Checklist Keamanan Website: 12 Hal yang Harus Dicek Sebelum Diretas | Semua | keamanan website | Checklist | /services/keamanan-digital | P1 | belum |
 | 70 | Backup dan Pemulihan Data Kantor: Aturan 3-2-1 dalam Praktik | Semua | backup data kantor | Panduan | /services/keamanan-digital | P2 | belum |
-| 71 | ChatGPT untuk Perusahaan: Risiko Data dan Alternatif On-Premise | Semua | chatgpt untuk perusahaan | Perbandingan | /services/private-llm | P1 | belum |
+| 71 | ChatGPT untuk Perusahaan: Risiko Data dan Alternatif On-Premise | Semua | chatgpt untuk perusahaan | Perbandingan | /services/private-llm | P1 | TERBIT: /blog/chatgpt-untuk-perusahaan |
 | 72 | GPS Tracker Kendaraan Kantor: Fitur, Biaya, dan Aturan Privasi Sopir | Semua | gps tracker kendaraan | Panduan | /produk/fleet | P2 | belum |
 | 73 | Jasa Pasang CCTV di Samarinda: Area Layanan dan Proyek | Lokal Samarinda | jasa pasang cctv samarinda | Halaman area | /services/pengadaan-cctv | P1 | belum |
 | 74 | Vendor IT di Balikpapan untuk Kantor dan Industri | Lokal Balikpapan | vendor it balikpapan | Halaman area | /services/pengadaan-it | P2 | belum |

@@ -5,8 +5,32 @@
 <link>https://www.sentratechnology.com/en/blog</link>
 <description>Guides from the Sentra team on CCTV analytics, face attendance, PPE detection, private LLMs, and digitizing operations.</description>
 <language>en</language>
-<lastBuildDate>Sat, 31 Oct 2026 08:00:00 +0700</lastBuildDate>
+<lastBuildDate>Mon, 02 Nov 2026 08:00:00 +0700</lastBuildDate>
 <atom:link href="https://www.sentratechnology.com/en/blog/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>IP vs Analog CCTV: Which Suits Your Building</title>
+<link>https://www.sentratechnology.com/en/blog/cctv-ip-vs-analog</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/cctv-ip-vs-analog</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>IP and analog (AHD/TVI/CVI) CCTV compared on image, cabling, PoE, storage, AI analytics and cost, and when each makes sense.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-ip-vs-analog.webp" medium="image"/>
+</item>
+<item>
+<title>ChatGPT for Business: Data Risks and On-Premise Alternatives</title>
+<link>https://www.sentratechnology.com/en/blog/chatgpt-untuk-perusahaan</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/chatgpt-untuk-perusahaan</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>What to check before staff use ChatGPT or other public AI for office documents, and when an on-premise model or private LLM makes more sense.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-chatgpt-perusahaan.webp" medium="image"/>
+</item>
+<item>
+<title>CCTV Packages for Shops and Small Businesses: How Many Cameras Are Enough</title>
+<link>https://www.sentratechnology.com/en/blog/paket-cctv-toko-umkm</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/en/blog/paket-cctv-toko-umkm</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>How to decide the number and position of CCTV cameras for a shop, stall or small warehouse, what a package should include, and what people often miss.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-cctv-toko.webp" medium="image"/>
+</item>
 <item>
 <title>What Is SPBE and What Local Governments Need to Prepare</title>
 <link>https://www.sentratechnology.com/en/blog/spbe-pemda-persiapan</link>
