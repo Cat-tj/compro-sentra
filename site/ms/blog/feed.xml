@@ -8,6 +8,22 @@
 <lastBuildDate>Mon, 02 Nov 2026 08:00:00 +0700</lastBuildDate>
 <atom:link href="https://www.sentratechnology.com/ms/blog/feed.xml" rel="self" type="application/rss+xml"/>
 <item>
+<title>Senarai Semak Keselamatan Laman Web: 12 Perkara Sebelum Digodam</title>
+<link>https://www.sentratechnology.com/ms/blog/keamanan-website-checklist</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ms/blog/keamanan-website-checklist</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>12 semakan keselamatan laman web untuk pejabat, sekolah dan agensi: kemas kini, kata laluan, sandaran, akaun dan tanda suntikan judi dalam talian.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-keamanan-website.webp" medium="image"/>
+</item>
+<item>
+<title>Pelayan AI On-Premise: GPU, RAM dan Storan yang Diperlukan</title>
+<link>https://www.sentratechnology.com/ms/blog/server-ai-on-premise</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ms/blog/server-ai-on-premise</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Cara menganggar keperluan GPU, VRAM, RAM dan storan untuk menjalankan model bahasa di pelayan sendiri.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-server-ai.webp" medium="image"/>
+</item>
+<item>
 <title>Pakej CCTV untuk Kedai dan PKS: Berapa Kamera Mencukupi</title>
 <link>https://www.sentratechnology.com/ms/blog/paket-cctv-toko-umkm</link>
 <guid isPermaLink="true">https://www.sentratechnology.com/ms/blog/paket-cctv-toko-umkm</guid>
@@ -30,6 +46,14 @@
 <pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
 <description>Perbandingan CCTV IP dan analog (AHD/TVI/CVI) dari segi gambar, kabel, PoE, storan, analitik AI dan kos.</description>
 <media:content url="https://www.sentratechnology.com/assets/img/art/blog-ip-vs-analog.webp" medium="image"/>
+</item>
+<item>
+<title>Aplikasi Android vs Aplikasi Web untuk Pasukan Lapangan</title>
+<link>https://www.sentratechnology.com/ms/blog/aplikasi-android-vs-web</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ms/blog/aplikasi-android-vs-web</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Bila pasukan lapangan patut guna aplikasi Android natif dan bila aplikasi web mencukupi.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-android-vs-web.webp" medium="image"/>
 </item>
 <item>
 <title>WebGIS dan Peta Tematik untuk Kerajaan Daerah: Pengajaran daripada POMPy BATARA Barito Utara</title>

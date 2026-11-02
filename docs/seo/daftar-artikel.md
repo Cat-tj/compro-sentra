@@ -87,11 +87,11 @@ Studi kasus memakai proyek yang sudah ada di portofolio; periode proyek ditulis 
 | 62 | Starlink vs VSAT vs Fiber untuk Kantor Cabang di Kalimantan | Semua | starlink vs vsat | Perbandingan | /services/starlink | P1 | TERBIT: /blog/starlink-vs-vsat-vs-fiber |
 | 63 | Starlink Business di Indonesia: Paket, Perangkat, dan Cara Pasang | Semua | starlink business indonesia | Panduan | /services/starlink | P1 | belum |
 | 64 | Spesifikasi Laptop Kantor 2026 untuk Admin, Desain, dan Lapangan | Semua | spesifikasi laptop kantor | Panduan | /services/pengadaan-it | P2 | belum |
-| 65 | Server On-Premise untuk AI: GPU, RAM, dan Penyimpanan yang Dibutuhkan | Semua | server ai on-premise | Panduan | /services/pengadaan-server | P2 | belum |
+| 65 | Server On-Premise untuk AI: GPU, RAM, dan Penyimpanan yang Dibutuhkan | Semua | server ai on-premise | Panduan | /services/pengadaan-server | P2 | TERBIT: /blog/server-ai-on-premise |
 | 66 | Instalasi Fiber Optik Gedung: Tahapan, Alat, dan Biaya | Semua | instalasi fiber optik | Panduan | /services/instalasi-infrastruktur | P2 | belum |
 | 67 | Biaya Membuat Aplikasi Android 2026: Dari MVP sampai Skala Perusahaan | Semua | biaya bikin aplikasi android | Panduan harga | /services/aplikasi-android | P1 | TERBIT: /blog/biaya-membuat-aplikasi-android |
-| 68 | Aplikasi Android vs Web App untuk Tim Lapangan | Semua | aplikasi android vs web | Perbandingan | /services/aplikasi-android | P2 | belum |
-| 69 | Checklist Keamanan Website: 12 Hal yang Harus Dicek Sebelum Diretas | Semua | keamanan website | Checklist | /services/keamanan-digital | P1 | belum |
+| 68 | Aplikasi Android vs Web App untuk Tim Lapangan | Semua | aplikasi android vs web | Perbandingan | /services/aplikasi-android | P2 | TERBIT: /blog/aplikasi-android-vs-web |
+| 69 | Checklist Keamanan Website: 12 Hal yang Harus Dicek Sebelum Diretas | Semua | keamanan website | Checklist | /services/keamanan-digital | P1 | TERBIT: /blog/keamanan-website-checklist |
 | 70 | Backup dan Pemulihan Data Kantor: Aturan 3-2-1 dalam Praktik | Semua | backup data kantor | Panduan | /services/keamanan-digital | P2 | belum |
 | 71 | ChatGPT untuk Perusahaan: Risiko Data dan Alternatif On-Premise | Semua | chatgpt untuk perusahaan | Perbandingan | /services/private-llm | P1 | TERBIT: /blog/chatgpt-untuk-perusahaan |
 | 72 | GPS Tracker Kendaraan Kantor: Fitur, Biaya, dan Aturan Privasi Sopir | Semua | gps tracker kendaraan | Panduan | /produk/fleet | P2 | belum |

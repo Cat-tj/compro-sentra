@@ -8,12 +8,28 @@
 <lastBuildDate>Mon, 02 Nov 2026 08:00:00 +0700</lastBuildDate>
 <atom:link href="https://www.sentratechnology.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
 <item>
+<title>Server AI On-Premise: GPU, RAM, dan Penyimpanan yang Dibutuhkan</title>
+<link>https://www.sentratechnology.com/blog/server-ai-on-premise</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/server-ai-on-premise</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Cara memperkirakan kebutuhan GPU, VRAM, RAM, dan penyimpanan untuk menjalankan model bahasa di server sendiri, dengan rumus sederhana dan contoh ukuran model.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-server-ai.webp" medium="image"/>
+</item>
+<item>
 <title>Paket CCTV untuk Toko dan UMKM: Berapa Kamera yang Cukup</title>
 <link>https://www.sentratechnology.com/blog/paket-cctv-toko-umkm</link>
 <guid isPermaLink="true">https://www.sentratechnology.com/blog/paket-cctv-toko-umkm</guid>
 <pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
 <description>Cara menentukan jumlah dan posisi kamera CCTV untuk toko, warung, atau gudang kecil, apa saja yang masuk paket, dan hal yang sering terlewat.</description>
 <media:content url="https://www.sentratechnology.com/assets/img/art/blog-cctv-toko.webp" medium="image"/>
+</item>
+<item>
+<title>Checklist Keamanan Website: 12 Hal yang Dicek Sebelum Diretas</title>
+<link>https://www.sentratechnology.com/blog/keamanan-website-checklist</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/keamanan-website-checklist</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Daftar 12 pemeriksaan keamanan website untuk kantor, sekolah, dan instansi: pembaruan, kata sandi, cadangan, akun, tanda peretasan judi online, dan langkah saat sudah terkena.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-keamanan-website.webp" medium="image"/>
 </item>
 <item>
 <title>ChatGPT untuk Perusahaan: Risiko Data dan Alternatif On-Premise</title>
@@ -30,6 +46,14 @@
 <pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
 <description>Perbedaan CCTV IP dan analog (AHD/TVI/CVI) dari sisi gambar, kabel, PoE, penyimpanan, analitik AI, dan biaya, plus kapan masing-masing masuk akal.</description>
 <media:content url="https://www.sentratechnology.com/assets/img/art/blog-ip-vs-analog.webp" medium="image"/>
+</item>
+<item>
+<title>Aplikasi Android vs Web App untuk Tim Lapangan</title>
+<link>https://www.sentratechnology.com/blog/aplikasi-android-vs-web</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/aplikasi-android-vs-web</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Kapan tim lapangan sebaiknya memakai aplikasi Android native dan kapan web app sudah cukup: sinyal, GPS, kamera, offline, perangkat keras, pembaruan, dan biaya perawatan.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-android-vs-web.webp" medium="image"/>
 </item>
 <item>
 <title>WebGIS dan Peta Tematik untuk Pemda: Belajar dari POMPy BATARA Barito Utara</title>

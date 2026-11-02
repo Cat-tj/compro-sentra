@@ -8,6 +8,30 @@
 <lastBuildDate>Mon, 02 Nov 2026 08:00:00 +0700</lastBuildDate>
 <atom:link href="https://www.sentratechnology.com/ko/blog/feed.xml" rel="self" type="application/rss+xml"/>
 <item>
+<title>현장 팀을 위한 안드로이드 앱 vs 웹 앱</title>
+<link>https://www.sentratechnology.com/ko/blog/aplikasi-android-vs-web</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/aplikasi-android-vs-web</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>현장 팀이 네이티브 안드로이드 앱을 써야 할 때와 웹 앱으로 충분할 때: 신호, GPS, 카메라, 오프라인, 하드웨어, 업데이트, 유지 비용.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-android-vs-web.webp" medium="image"/>
+</item>
+<item>
+<title>웹사이트 보안 체크리스트: 해킹당하기 전에 확인할 12가지</title>
+<link>https://www.sentratechnology.com/ko/blog/keamanan-website-checklist</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/keamanan-website-checklist</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>기관·학교·사무실을 위한 12가지 웹사이트 보안 점검: 업데이트, 비밀번호, 백업, 계정, 온라인 도박 삽입 징후, 피해 시 대응.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-keamanan-website.webp" medium="image"/>
+</item>
+<item>
+<title>온프레미스 AI 서버: 필요한 GPU, RAM, 저장소</title>
+<link>https://www.sentratechnology.com/ko/blog/server-ai-on-premise</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/server-ai-on-premise</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>자체 서버에서 언어 모델을 돌리는 데 필요한 GPU, VRAM, RAM, 저장소를 추정하는 방법.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-server-ai.webp" medium="image"/>
+</item>
+<item>
 <title>매장·소상공인용 CCTV 패키지: 카메라는 몇 대면 충분한가</title>
 <link>https://www.sentratechnology.com/ko/blog/paket-cctv-toko-umkm</link>
 <guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/paket-cctv-toko-umkm</guid>

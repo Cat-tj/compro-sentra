@@ -8,6 +8,30 @@
 <lastBuildDate>Mon, 02 Nov 2026 08:00:00 +0700</lastBuildDate>
 <atom:link href="https://www.sentratechnology.com/zh/blog/feed.xml" rel="self" type="application/rss+xml"/>
 <item>
+<title>网站安全检查清单：被黑前要检查的 12 件事</title>
+<link>https://www.sentratechnology.com/zh/blog/keamanan-website-checklist</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/keamanan-website-checklist</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>适用于机构、学校和政府部门的 12 项网站安全检查：更新、密码、备份、账号、网络赌博注入迹象以及被入侵后的处理。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-keamanan-website.webp" medium="image"/>
+</item>
+<item>
+<title>现场团队用安卓应用还是网页应用</title>
+<link>https://www.sentratechnology.com/zh/blog/aplikasi-android-vs-web</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/aplikasi-android-vs-web</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>现场团队何时应使用原生安卓应用，何时网页应用就够用：信号、GPS、摄像头、离线、硬件、更新和维护成本。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-android-vs-web.webp" medium="image"/>
+</item>
+<item>
+<title>本地 AI 服务器：所需 GPU、内存与存储</title>
+<link>https://www.sentratechnology.com/zh/blog/server-ai-on-premise</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/server-ai-on-premise</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>如何估算在自有服务器上运行语言模型所需的 GPU、显存、内存和存储。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-server-ai.webp" medium="image"/>
+</item>
+<item>
 <title>店铺与小微企业 CCTV 套餐：多少台摄像头够用</title>
 <link>https://www.sentratechnology.com/zh/blog/paket-cctv-toko-umkm</link>
 <guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/paket-cctv-toko-umkm</guid>
