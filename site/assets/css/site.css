@@ -195,6 +195,12 @@ a.card:hover, .card.hover:hover { border-color: #C6D4EC; box-shadow: var(--shado
 .media { position: relative; }
 .media > img { width: 100%; aspect-ratio: 4 / 4.2; object-fit: cover; border-radius: var(--r-lg); border: 6px solid #fff; box-shadow: var(--shadow-2); }
 .media.wide > img { aspect-ratio: 16 / 11; }
+.float-chip {
+  position: absolute; display: inline-flex; align-items: center; gap: 10px; padding: 10px 16px 10px 10px; border-radius: 999px;
+  background: #fff; box-shadow: 0 0 0 5px rgba(44,91,184,.12), var(--shadow-2); color: var(--ink); font-size: .9rem; font-weight: 500; white-space: nowrap;
+}
+.float-chip::before { content: ""; width: 22px; height: 22px; border-radius: 50%; background: var(--blue) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5 10 16.5 18 8'/%3E%3C/svg%3E") center/13px no-repeat; }
+.float-chip.c1 { left: -18px; top: 30%; } .float-chip.c2 { right: -18px; top: 52%; } .float-chip.c3 { left: 6%; bottom: 7%; } .float-chip.c4 { right: 10%; top: 8%; }
 
 /* ── banner gradien (seperti blok paket digifren, tanpa harga) ── */
 .banner { position: relative; overflow: hidden; border-radius: 28px; padding: clamp(28px, 4vw, 52px); display: grid; grid-template-columns: 1.35fr .9fr; gap: clamp(24px, 4vw, 48px); align-items: center; color: var(--ink); isolation: isolate; }
@@ -634,6 +640,7 @@ a.card:hover, .card.hover:hover { border-color: #C6D4EC; box-shadow: var(--shado
   .feats { grid-template-columns: 1fr; }
   .vg-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .contact-tiles { grid-template-columns: 1fr; }
+  .float-chip.c1 { left: 8px; } .float-chip.c2 { right: 8px; }
 }
 @media (max-width: 560px) {
   .g2, .g3, .g4, .hwi-grid, .projects-grid, .gallery, .feat-grid, .team, .timeline, .steps, .values { grid-template-columns: 1fr; }
@@ -652,6 +659,7 @@ a.card:hover, .card.hover:hover { border-color: #C6D4EC; box-shadow: var(--shado
   .sf-base { flex-direction: column; align-items: flex-start; }
   .vg-legend dl { grid-template-columns: 1fr; }
   .hero-actions .btn { width: 100%; }
+  .float-chip { font-size: .8rem; }
   .hwi-more, .hwi-allvigi { flex-direction: column; align-items: flex-start; }
 }
 
