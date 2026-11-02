@@ -1,0 +1,710 @@
+{
+ "slug": "kamera-surya-4g",
+ "date": "2026-11-02",
+ "template": "instalasi-infrastruktur",
+ "list_after": "energi-surya-container",
+ "card_icon": "cam",
+ "hero_img": "/assets/img/art/kamera-surya-4g.webp",
+ "og_img": "/assets/og/art-kamera-surya-4g.jpg",
+ "do_icons": [
+  "cam",
+  "sun",
+  "phone",
+  "pin",
+  "nvr",
+  "wrench"
+ ],
+ "sector_icons": [
+  "leaf",
+  "crane",
+  "shop"
+ ],
+ "sector_links": [
+  "/industri/pertambangan",
+  "/services/instalasi-infrastruktur",
+  "/industri/korporasi"
+ ],
+ "related_links": [
+  "/services/pengadaan-cctv",
+  "/services/energi-surya-container",
+  "/services/starlink"
+ ],
+ "llms": "- [Solar 4G CCTV Camera](https://www.sentratechnology.com/en/services/kamera-surya-4g): GDKJ-D440 solar-powered 4G wireless cameras from official partner PT GIDA International Trading Indonesia: dual-lens 2K, 355° pan, PIR human detection, colour night vision, cloud and TF card storage, phone app, for sites without power or WiFi; prices follow the manufacturer's official quotation.",
+ "langs": {
+  "": {
+   "crumb_home": "Beranda",
+   "crumb_services": "Layanan",
+   "btn_consult": "Konsultasi gratis",
+   "do_h2": "Yang kami kerjakan",
+   "sectors_h2": "Dipakai di",
+   "sector_link": "Lihat solusi",
+   "steps_h2": "Alur kerja",
+   "related_h2": "Terkait",
+   "faq_h2": "Pertanyaan umum",
+   "cta_wa": "Chat WhatsApp",
+   "cta_msg": "Kirim pesan",
+   "title": "Kamera CCTV Tenaga Surya 4G Tanpa Kabel (GDKJ-D440) | Sentra",
+   "description": "Pengadaan kamera CCTV tenaga surya 4G untuk lokasi tanpa listrik dan WiFi: resolusi 2K, putar 355°, deteksi manusia PIR, penglihatan malam berwarna, pantau dari ponsel.",
+   "name": "Kamera CCTV Surya 4G",
+   "h1": "Kamera CCTV tenaga surya 4G untuk lokasi tanpa listrik dan WiFi.",
+   "lead": "Sentra adalah mitra resmi PT GIDA International Trading Indonesia dan menyediakan kamera GDKJ-D440: kamera ganda 2K yang ditenagai panel surya dan baterai, terhubung lewat jaringan 4G, dan dipantau dari ponsel. Cocok untuk kebun, proyek, gudang, dan lokasi sementara.",
+   "wa_text": "Halo Sentra, saya ingin konsultasi kamera CCTV surya 4G untuk lokasi kami.",
+   "btn_kits": "Lihat spesifikasi",
+   "pains_h2": "Masalah yang sering ada di lapangan",
+   "pains": [
+    [
+     "Lokasi tanpa listrik dan tanpa kabel jaringan",
+     "Menarik kabel ke kebun, proyek, atau gudang jauh terlalu mahal."
+    ],
+    [
+     "Kamera berhenti saat listrik padam",
+     "Kamera yang bergantung pada listrik atau WiFi mati saat dibutuhkan."
+    ],
+    [
+     "Pencurian di lokasi sementara",
+     "Material, alat, dan hasil panen butuh pengawasan tanpa pemasangan permanen."
+    ],
+    [
+     "Tidak tahu kejadian saat tidak di lokasi",
+     "Pemilik butuh peringatan dan rekaman yang bisa dibuka dari ponsel."
+    ]
+   ],
+   "do": [
+    [
+     "Konsultasi lokasi",
+     "Sudut pandang, paparan matahari, dan sinyal 4G di lokasi menentukan kecocokan."
+    ],
+    [
+     "Pengadaan kamera surya 4G",
+     "Model GDKJ-D440 dengan panel surya, baterai, dan konektivitas 4G, sesuai penawaran resmi."
+    ],
+    [
+     "Pengaturan aplikasi dan peringatan",
+     "Penyambungan ke aplikasi iCam365 dan pengaturan notifikasi deteksi manusia."
+    ],
+    [
+     "Penempatan dan mounting",
+     "Posisi dan tinggi yang menangkap area penting dan menerima sinar matahari."
+    ],
+    [
+     "Kombinasi dengan CCTV kabel",
+     "Dipadukan dengan sistem kamera VIGI dan NVR Sentra di titik yang terjangkau kabel."
+    ],
+    [
+     "Dukungan setelah pembelian",
+     "Pertanyaan teknis diteruskan sesuai ketentuan pabrikan."
+    ]
+   ],
+   "kits_h2": "Spesifikasi",
+   "kits_lead": "Spesifikasi utama GDKJ-D440 dari brosur GIDA. Harga mengikuti penawaran resmi, silakan minta lewat WhatsApp.",
+   "sectors": [
+    [
+     "Perkebunan dan lahan",
+     "Pos jaga, gudang panen, dan akses jauh dari jaringan listrik."
+    ],
+    [
+     "Proyek dan konstruksi",
+     "Pengawasan material dan alat di lokasi sementara."
+    ],
+    [
+     "Gudang, toko, dan rumah",
+     "Titik tanpa kabel yang sulit dijangkau instalasi biasa."
+    ]
+   ],
+   "steps": [
+    "Tentukan titik dan area yang diawasi",
+    "Cek paparan matahari dan sinyal 4G",
+    "Pilih jumlah kamera dan minta penawaran resmi",
+    "Pemasangan dan pengaturan aplikasi",
+    "Pemeriksaan panel dan baterai secara berkala"
+   ],
+   "related": [
+    "Layanan: Pengadaan dan Instalasi CCTV",
+    "Layanan: Kontainer Surya dan Penyimpanan Energi",
+    "Layanan: Starlink untuk Bisnis"
+   ],
+   "faq": [
+    [
+     "Apakah perlu WiFi atau listrik di lokasi?",
+     "Menurut brosur, kamera ditenagai panel surya dan baterai serta terhubung lewat 4G, sehingga tidak butuh WiFi atau listrik jaringan. Cakupan sinyal 4G di lokasi tetap harus dicek."
+    ],
+    [
+     "Apakah rekaman tersimpan?",
+     "Kamera mendukung penyimpanan cloud untuk video alarm dan kartu TF hingga 128 GB. Rekaman penuh sepanjang waktu tidak dijadwalkan dalam brosur; sistem mengutamakan perekaman saat ada deteksi."
+    ],
+    [
+     "Bagaimana jika cuaca mendung berhari-hari?",
+     "Baterai 8000 mAh menyimpan cadangan, tetapi pengisian bergantung pada sinar matahari. Lokasi yang terlalu teduh atau sering mendung mungkin butuh solusi lain."
+    ],
+    [
+     "Apakah perlu kartu SIM?",
+     "Kamera terhubung lewat 4G, sehingga kartu SIM dan paket data kemungkinan diperlukan. Konfirmasi dalam penawaran."
+    ],
+    [
+     "Berapa harganya?",
+     "Harga mengikuti penawaran resmi dari pabrikan. Hubungi Sentra untuk meminta penawaran."
+    ]
+   ],
+   "cta_h2": "Butuh kamera untuk lokasi tanpa listrik?",
+   "cta_p": "Ceritakan lokasi, area yang diawasi, dan sinyal seluler yang ada. Diskusi awal gratis.",
+   "cta_trust": [
+    "Diskusi awal gratis",
+    "Penawaran resmi dari pabrikan",
+    "Pantau dari ponsel"
+   ],
+   "card": {
+    "num": "Kamera tanpa kabel",
+    "desc": "Kamera CCTV surya 4G 2K untuk lokasi tanpa listrik dan WiFi, dipantau dari ponsel.",
+    "tags": [
+     "Surya",
+     "4G",
+     "2K",
+     "Deteksi manusia"
+    ],
+    "meta_after": "penyimpanan energi surya, ",
+    "meta_add": "kamera CCTV surya 4G, "
+   },
+   "kits_html": "<div class=\"rv\" style=\"overflow-x:auto\"><table style=\"width:100%;border-collapse:collapse;font-size:.92rem\"><thead><tr><th style=\"text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap\">Spesifikasi</th><th style=\"text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap\">Nilai</th></tr></thead><tbody><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Resolusi</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">2560×1440 (2K), kompresi H.265</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Lensa</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">Dua lensa fix 4 mm + 4 mm, sudut pandang 80°</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">PTZ</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">Horizontal 355°, vertikal 90°</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Penglihatan malam</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">Berwarna penuh (0,1 Lux) dan hitam-putih (0,01 Lux); lampu IR dan LED putih jangkauan 30 m</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Deteksi</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">Sensor PIR dan deteksi bentuk manusia, jarak 0 sampai 12 m, sudut 120°</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Audio</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">Speaker 1 W dan mikrofon, jangkauan sekitar 20 m</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Jaringan</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">4G, pita FDD B1/B3/B5/B8 (termasuk Indonesia)</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Penyimpanan</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">Cloud (video alarm) dan kartu TF hingga 128 GB</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Daya</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">Panel surya 7,5 W dan baterai 8000 mAh</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Ketahanan</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">IP66, suhu kerja -30 sampai 50 °C</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Aplikasi</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">iCam365 (Android dan iOS)</td></tr></tbody></table></div><p class=\"lead\" style=\"margin-top:14px;font-size:.9rem\">Model GDKJ-D440 dari brosur GIDA. Kebutuhan kartu SIM atau paket data, ketersediaan, dan konfigurasi mengikuti penawaran resmi.</p>"
+  },
+  "en": {
+   "crumb_home": "Home",
+   "crumb_services": "Services",
+   "btn_consult": "Free consultation",
+   "do_h2": "What we do",
+   "sectors_h2": "Used in",
+   "sector_link": "See solution",
+   "steps_h2": "How we work",
+   "related_h2": "Related",
+   "faq_h2": "Frequently asked questions",
+   "cta_wa": "Chat on WhatsApp",
+   "cta_msg": "Send a message",
+   "title": "Solar 4G Wireless CCTV Camera (GDKJ-D440) | Sentra",
+   "description": "Procurement of solar-powered 4G CCTV cameras for sites without power or WiFi: 2K resolution, 355° pan, PIR human detection, colour night vision, monitoring from a phone.",
+   "name": "Solar 4G CCTV Camera",
+   "h1": "Solar-powered 4G CCTV cameras for sites without power or WiFi.",
+   "lead": "Sentra is an official partner of PT GIDA International Trading Indonesia and supplies the GDKJ-D440 camera: a dual-lens 2K camera powered by a solar panel and battery, connected over 4G and monitored from a phone. Suited to plantations, projects, warehouses and temporary sites.",
+   "wa_text": "Hello Sentra, I would like advice on solar 4G CCTV cameras for our site.",
+   "btn_kits": "See specifications",
+   "pains_h2": "Problems we see in the field",
+   "pains": [
+    [
+     "Sites with no power and no network cable",
+     "Running cable to a plantation, project or remote warehouse is too costly."
+    ],
+    [
+     "Cameras stop when power fails",
+     "Cameras that depend on mains power or WiFi go dark when needed."
+    ],
+    [
+     "Theft at temporary sites",
+     "Materials, tools and harvest need watching without permanent installation."
+    ],
+    [
+     "No idea what happened while away",
+     "Owners need alerts and recordings that open from a phone."
+    ]
+   ],
+   "do": [
+    [
+     "Site consultation",
+     "Viewing angle, sun exposure and 4G signal at the site decide suitability."
+    ],
+    [
+     "Procurement of solar 4G cameras",
+     "The GDKJ-D440 with solar panel, battery and 4G connectivity, per official quotation."
+    ],
+    [
+     "App and alert setup",
+     "Connection to the iCam365 app and human-detection notification settings."
+    ],
+    [
+     "Placement and mounting",
+     "Position and height that capture the key area and receive sunlight."
+    ],
+    [
+     "Combination with wired CCTV",
+     "Paired with Sentra's VIGI cameras and NVR at points cable can reach."
+    ],
+    [
+     "Support after purchase",
+     "Technical questions are passed on under the manufacturer's terms."
+    ]
+   ],
+   "kits_h2": "Specifications",
+   "kits_lead": "Key GDKJ-D440 specifications from the GIDA brochure. Prices follow the official quotation; request one via WhatsApp.",
+   "sectors": [
+    [
+     "Plantations and land",
+     "Guard posts, harvest stores and access far from the power grid."
+    ],
+    [
+     "Projects and construction",
+     "Watching materials and tools at temporary sites."
+    ],
+    [
+     "Warehouses, shops and homes",
+     "Cable-free points that ordinary installation cannot easily reach."
+    ]
+   ],
+   "steps": [
+    "Define the points and areas to watch",
+    "Check sun exposure and 4G signal",
+    "Choose the number of cameras and request an official quotation",
+    "Installation and app setup",
+    "Regular check of panel and battery"
+   ],
+   "related": [
+    "Service: CCTV Procurement and Installation",
+    "Service: Solar Container & Energy Storage",
+    "Service: Starlink for Business"
+   ],
+   "faq": [
+    [
+     "Does the site need WiFi or power?",
+     "According to the brochure, the camera runs on a solar panel and battery and connects over 4G, so it needs neither WiFi nor grid power. 4G coverage at the site must still be checked."
+    ],
+    [
+     "Is footage recorded?",
+     "The camera supports cloud storage for alarm videos and a TF card up to 128 GB. The brochure does not describe round-the-clock recording; the system prioritises recording on detection."
+    ],
+    [
+     "What about several cloudy days?",
+     "The 8000 mAh battery stores a reserve, but charging depends on sunlight. A very shaded or often cloudy site may need another solution."
+    ],
+    [
+     "Is a SIM card needed?",
+     "The camera connects over 4G, so a SIM card and data plan are likely needed. Confirm in the quotation."
+    ],
+    [
+     "How much does it cost?",
+     "Price follows the manufacturer's official quotation. Contact Sentra to request one."
+    ]
+   ],
+   "cta_h2": "Need a camera for a site without power?",
+   "cta_p": "Tell us the location, the area to watch and the mobile signal available. The first discussion is free.",
+   "cta_trust": [
+    "Free first discussion",
+    "Official manufacturer quotation",
+    "Monitor from your phone"
+   ],
+   "card": {
+    "num": "Wireless camera",
+    "desc": "2K solar 4G CCTV cameras for sites without power or WiFi, monitored from a phone.",
+    "tags": [
+     "Solar",
+     "4G",
+     "2K",
+     "Human detection"
+    ],
+    "meta_after": "solar energy storage, ",
+    "meta_add": "solar 4G CCTV camera, "
+   },
+   "kits_html": "<div class=\"rv\" style=\"overflow-x:auto\"><table style=\"width:100%;border-collapse:collapse;font-size:.92rem\"><thead><tr><th style=\"text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap\">Specification</th><th style=\"text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap\">Value</th></tr></thead><tbody><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Resolution</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">2560×1440 (2K), H.265 compression</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Lens</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">Dual fixed lens 4 mm + 4 mm, 80° viewing angle</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">PTZ</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">Horizontal 355°, vertical 90°</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Night vision</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">Full colour (0.1 Lux) and black-and-white (0.01 Lux); IR and white LED range 30 m</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Detection</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">PIR sensor and human-shape detection, 0 to 12 m, 120° angle</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Audio</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">1 W speaker and microphone, about 20 m pickup</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Network</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">4G, FDD bands B1/B3/B5/B8 (including Indonesia)</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Storage</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">Cloud (alarm videos) and TF card up to 128 GB</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Power</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">7.5 W solar panel and 8000 mAh battery</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Durability</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">IP66, operating temperature -30 to 50 °C</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">App</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">iCam365 (Android and iOS)</td></tr></tbody></table></div><p class=\"lead\" style=\"margin-top:14px;font-size:.9rem\">Model GDKJ-D440 from the GIDA brochure. SIM card or data plan needs, availability and configuration follow the official quotation.</p>"
+  },
+  "zh": {
+   "crumb_home": "首页",
+   "crumb_services": "服务",
+   "btn_consult": "免费咨询",
+   "do_h2": "我们的工作",
+   "sectors_h2": "应用场景",
+   "sector_link": "查看方案",
+   "steps_h2": "工作流程",
+   "related_h2": "相关内容",
+   "faq_h2": "常见问题",
+   "cta_wa": "WhatsApp 联系",
+   "cta_msg": "发送消息",
+   "title": "太阳能 4G 无线 CCTV 摄像头（GDKJ-D440）| Sentra",
+   "description": "为无电源、无 WiFi 的场所提供太阳能 4G CCTV 摄像头：2K 分辨率、355° 转动、PIR 人形检测、彩色夜视，可用手机查看。",
+   "name": "太阳能 4G CCTV 摄像头",
+   "h1": "为无电无 WiFi 的场所提供太阳能 4G CCTV 摄像头。",
+   "lead": "Sentra 是 PT GIDA International Trading Indonesia 的官方合作伙伴，供应 GDKJ-D440 摄像头：双镜头 2K，由太阳能板和电池供电，通过 4G 联网，用手机查看。适用于种植园、工程、仓库和临时场所。",
+   "wa_text": "您好 Sentra，我想咨询我们现场的太阳能 4G CCTV 摄像头。",
+   "btn_kits": "查看规格",
+   "pains_h2": "我们在现场常见的问题",
+   "pains": [
+    [
+     "现场没有电也没有网线",
+     "给种植园、项目或偏远仓库拉线成本太高。"
+    ],
+    [
+     "断电时摄像头停止工作",
+     "依赖市电或 WiFi 的摄像头在需要时失灵。"
+    ],
+    [
+     "临时场所被盗",
+     "材料、工具和收成需要监控，又不想做永久安装。"
+    ],
+    [
+     "不在现场时不知道发生了什么",
+     "业主需要能用手机查看的提醒和录像。"
+    ]
+   ],
+   "do": [
+    [
+     "现场咨询",
+     "现场的视角、日照和 4G 信号决定是否适合。"
+    ],
+    [
+     "太阳能 4G 摄像头采购",
+     "带太阳能板、电池和 4G 连接的 GDKJ-D440，以正式报价为准。"
+    ],
+    [
+     "应用与提醒设置",
+     "连接 iCam365 应用并设置人形检测通知。"
+    ],
+    [
+     "位置与安装",
+     "选择能拍到重点区域并接收阳光的位置和高度。"
+    ],
+    [
+     "与有线 CCTV 组合",
+     "在线缆可达的点位与 Sentra 的 VIGI 摄像头和 NVR 搭配。"
+    ],
+    [
+     "购买后的支持",
+     "技术问题按制造商条款转达。"
+    ]
+   ],
+   "kits_h2": "规格",
+   "kits_lead": "来自 GIDA 产品册的 GDKJ-D440 主要规格。价格以正式报价为准，请通过 WhatsApp 索取。",
+   "sectors": [
+    [
+     "种植园与土地",
+     "远离电网的岗亭、收获仓库和通道。"
+    ],
+    [
+     "项目与施工",
+     "临时场所的材料和工具监控。"
+    ],
+    [
+     "仓库、商店与住宅",
+     "普通安装难以到达的无线点位。"
+    ]
+   ],
+   "steps": [
+    "确定要监控的点位和区域",
+    "检查日照和 4G 信号",
+    "确定摄像头数量并索取正式报价",
+    "安装与应用设置",
+    "定期检查太阳能板和电池"
+   ],
+   "related": [
+    "服务：CCTV 采购与安装",
+    "服务：太阳能集装箱与储能",
+    "服务：企业 Starlink"
+   ],
+   "faq": [
+    [
+     "现场需要 WiFi 或电源吗？",
+     "根据产品册，摄像头由太阳能板和电池供电，并通过 4G 联网，因此无需 WiFi 或市电。现场的 4G 覆盖仍需确认。"
+    ],
+    [
+     "会录像吗？",
+     "摄像头支持报警视频的云存储和最高 128 GB 的 TF 卡。产品册未描述全天候录像，系统以检测触发录像为主。"
+    ],
+    [
+     "连续几天阴天怎么办？",
+     "8000 mAh 电池可储备电量，但充电依赖阳光。过于阴暗或常阴天的场所可能需要其他方案。"
+    ],
+    [
+     "需要 SIM 卡吗？",
+     "摄像头通过 4G 联网，可能需要 SIM 卡和流量套餐，请在报价中确认。"
+    ],
+    [
+     "价格是多少？",
+     "价格以制造商正式报价为准，请联系 Sentra 索取。"
+    ]
+   ],
+   "cta_h2": "需要为无电场所安装摄像头吗？",
+   "cta_p": "告诉我们地点、监控区域和可用的移动信号。首次沟通免费。",
+   "cta_trust": [
+    "首次沟通免费",
+    "制造商正式报价",
+    "手机查看"
+   ],
+   "card": {
+    "num": "无线摄像头",
+    "desc": "适用于无电无 WiFi 场所的 2K 太阳能 4G CCTV 摄像头，用手机查看。",
+    "tags": [
+     "太阳能",
+     "4G",
+     "2K",
+     "人形检测"
+    ],
+    "meta_after": "太阳能储能、",
+    "meta_add": "太阳能 4G CCTV 摄像头、"
+   },
+   "kits_html": "<div class=\"rv\" style=\"overflow-x:auto\"><table style=\"width:100%;border-collapse:collapse;font-size:.92rem\"><thead><tr><th style=\"text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap\">规格</th><th style=\"text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap\">参数</th></tr></thead><tbody><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">分辨率</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">2560×1440（2K），H.265 压缩</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">镜头</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">双定焦 4 mm + 4 mm，视角 80°</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">云台</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">水平 355°，垂直 90°</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">夜视</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">全彩（0.1 Lux）和黑白（0.01 Lux）；红外和白光 LED 距离 30 米</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">检测</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">PIR 传感器和人形检测，0 至 12 米，120° 角度</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">音频</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">1 W 扬声器和麦克风，拾音约 20 米</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">网络</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">4G，FDD 频段 B1/B3/B5/B8（含印尼）</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">存储</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">云端（报警视频）和最高 128 GB TF 卡</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">供电</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">7.5 W 太阳能板和 8000 mAh 电池</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">耐用性</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">IP66，工作温度 -30 至 50 °C</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">应用</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">iCam365（Android 和 iOS）</td></tr></tbody></table></div><p class=\"lead\" style=\"margin-top:14px;font-size:.9rem\">GDKJ-D440 型号，来自 GIDA 产品册。SIM 卡或流量套餐需求、供货和配置以正式报价为准。</p>"
+  },
+  "ko": {
+   "crumb_home": "홈",
+   "crumb_services": "서비스",
+   "btn_consult": "무료 상담",
+   "do_h2": "제공 서비스",
+   "sectors_h2": "적용 분야",
+   "sector_link": "솔루션 보기",
+   "steps_h2": "진행 절차",
+   "related_h2": "관련 항목",
+   "faq_h2": "자주 묻는 질문",
+   "cta_wa": "WhatsApp 상담",
+   "cta_msg": "메시지 보내기",
+   "title": "태양광 4G 무선 CCTV 카메라(GDKJ-D440) | Sentra",
+   "description": "전기와 WiFi가 없는 곳을 위한 태양광 4G CCTV 카메라 조달: 2K 해상도, 355° 회전, PIR 사람 감지, 컬러 야간 시야, 휴대폰 모니터링.",
+   "name": "태양광 4G CCTV 카메라",
+   "h1": "전기와 WiFi가 없는 현장을 위한 태양광 4G CCTV 카메라.",
+   "lead": "Sentra는 PT GIDA International Trading Indonesia의 공식 파트너로서 GDKJ-D440 카메라를 공급합니다. 태양광 패널과 배터리로 작동하는 듀얼 렌즈 2K 카메라로, 4G로 연결되어 휴대폰으로 확인합니다. 농장, 프로젝트, 창고, 임시 현장에 적합합니다.",
+   "wa_text": "안녕하세요 Sentra, 저희 현장의 태양광 4G CCTV 카메라 상담을 원합니다.",
+   "btn_kits": "사양 보기",
+   "pains_h2": "현장에서 자주 보는 문제",
+   "pains": [
+    [
+     "전기도 네트워크 케이블도 없는 현장",
+     "농장, 프로젝트, 외진 창고까지 케이블을 까는 비용이 너무 큽니다."
+    ],
+    [
+     "정전되면 카메라가 멈춤",
+     "상용 전원이나 WiFi에 의존하는 카메라는 필요할 때 꺼집니다."
+    ],
+    [
+     "임시 현장의 도난",
+     "자재, 공구, 수확물을 영구 설치 없이 감시해야 합니다."
+    ],
+    [
+     "자리를 비웠을 때 무슨 일이 있었는지 모름",
+     "휴대폰으로 열 수 있는 알림과 녹화가 필요합니다."
+    ]
+   ],
+   "do": [
+    [
+     "현장 상담",
+     "현장의 시야각, 일조량, 4G 신호가 적합성을 정합니다."
+    ],
+    [
+     "태양광 4G 카메라 조달",
+     "태양광 패널, 배터리, 4G 연결을 갖춘 GDKJ-D440을 공식 견적에 따라 공급합니다."
+    ],
+    [
+     "앱·알림 설정",
+     "iCam365 앱 연결과 사람 감지 알림 설정."
+    ],
+    [
+     "위치와 설치",
+     "주요 구역을 비추고 햇빛을 받는 위치와 높이."
+    ],
+    [
+     "유선 CCTV와의 조합",
+     "케이블이 닿는 지점에는 Sentra의 VIGI 카메라와 NVR을 함께 사용합니다."
+    ],
+    [
+     "구매 후 지원",
+     "기술 문의는 제조사 조건에 따라 전달됩니다."
+    ]
+   ],
+   "kits_h2": "사양",
+   "kits_lead": "GIDA 브로셔의 GDKJ-D440 주요 사양입니다. 가격은 공식 견적에 따르며 WhatsApp으로 요청하세요.",
+   "sectors": [
+    [
+     "농장·토지",
+     "전력망에서 먼 초소, 수확물 창고, 진입로."
+    ],
+    [
+     "프로젝트·건설",
+     "임시 현장의 자재와 공구 감시."
+    ],
+    [
+     "창고·상점·주택",
+     "일반 설치가 어려운 무선 지점."
+    ]
+   ],
+   "steps": [
+    "감시할 지점과 구역 정하기",
+    "일조량과 4G 신호 확인",
+    "카메라 수 결정 및 공식 견적 요청",
+    "설치와 앱 설정",
+    "패널과 배터리 정기 점검"
+   ],
+   "related": [
+    "서비스: CCTV 조달·설치",
+    "서비스: 태양광 컨테이너·에너지 저장",
+    "서비스: 기업용 Starlink"
+   ],
+   "faq": [
+    [
+     "현장에 WiFi나 전기가 필요한가요?",
+     "브로셔에 따르면 카메라는 태양광 패널과 배터리로 작동하고 4G로 연결되므로 WiFi나 상용 전원이 필요 없습니다. 현장의 4G 커버리지는 확인해야 합니다."
+    ],
+    [
+     "영상이 저장되나요?",
+     "경보 영상용 클라우드 저장과 최대 128GB TF 카드를 지원합니다. 브로셔는 24시간 상시 녹화를 설명하지 않으며 감지 시 녹화를 우선합니다."
+    ],
+    [
+     "며칠 동안 흐리면 어떻게 되나요?",
+     "8000mAh 배터리가 예비 전력을 저장하지만 충전은 햇빛에 달려 있습니다. 그늘이 많거나 자주 흐린 곳은 다른 방법이 필요할 수 있습니다."
+    ],
+    [
+     "SIM 카드가 필요한가요?",
+     "4G로 연결되므로 SIM 카드와 데이터 요금제가 필요할 수 있습니다. 견적에서 확인하세요."
+    ],
+    [
+     "가격은 얼마인가요?",
+     "제조사의 공식 견적에 따릅니다. Sentra에 견적을 요청하세요."
+    ]
+   ],
+   "cta_h2": "전기가 없는 곳에 카메라가 필요하신가요?",
+   "cta_p": "위치, 감시 구역, 사용 가능한 이동통신 신호를 알려 주세요. 첫 상담은 무료입니다.",
+   "cta_trust": [
+    "첫 상담 무료",
+    "제조사 공식 견적",
+    "휴대폰으로 확인"
+   ],
+   "card": {
+    "num": "무선 카메라",
+    "desc": "전기와 WiFi가 없는 곳을 위한 2K 태양광 4G CCTV 카메라, 휴대폰으로 확인.",
+    "tags": [
+     "태양광",
+     "4G",
+     "2K",
+     "사람 감지"
+    ],
+    "meta_after": "태양광 에너지 저장, ",
+    "meta_add": "태양광 4G CCTV 카메라, "
+   },
+   "kits_html": "<div class=\"rv\" style=\"overflow-x:auto\"><table style=\"width:100%;border-collapse:collapse;font-size:.92rem\"><thead><tr><th style=\"text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap\">사양</th><th style=\"text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap\">값</th></tr></thead><tbody><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">해상도</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">2560×1440(2K), H.265 압축</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">렌즈</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">4 mm + 4 mm 이중 고정 렌즈, 시야각 80°</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">PTZ</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">수평 355°, 수직 90°</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">야간 시야</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">풀컬러(0.1 Lux)와 흑백(0.01 Lux), 적외선·백색 LED 30 m</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">감지</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">PIR 센서와 사람 형태 감지, 0~12 m, 120° 각도</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">오디오</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">1 W 스피커와 마이크, 수음 약 20 m</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">네트워크</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">4G, FDD 대역 B1/B3/B5/B8(인도네시아 포함)</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">저장</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">클라우드(경보 영상)와 최대 128 GB TF 카드</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">전원</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">7.5 W 태양광 패널과 8000 mAh 배터리</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">내구성</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">IP66, 작동 온도 -30~50 °C</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">앱</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">iCam365(Android, iOS)</td></tr></tbody></table></div><p class=\"lead\" style=\"margin-top:14px;font-size:.9rem\">GIDA 브로셔의 GDKJ-D440 모델입니다. SIM 카드·데이터 요금제 요건, 공급, 구성은 공식 견적에 따릅니다.</p>"
+  },
+  "ms": {
+   "crumb_home": "Laman Utama",
+   "crumb_services": "Perkhidmatan",
+   "btn_consult": "Konsultasi percuma",
+   "do_h2": "Apa yang kami lakukan",
+   "sectors_h2": "Digunakan di",
+   "sector_link": "Lihat penyelesaian",
+   "steps_h2": "Aliran kerja",
+   "related_h2": "Berkaitan",
+   "faq_h2": "Soalan lazim",
+   "cta_wa": "Chat WhatsApp",
+   "cta_msg": "Hantar mesej",
+   "title": "Kamera CCTV Suria 4G Tanpa Wayar (GDKJ-D440) | Sentra",
+   "description": "Perolehan kamera CCTV suria 4G untuk lokasi tanpa elektrik dan WiFi: resolusi 2K, putaran 355°, pengesanan manusia PIR, penglihatan malam berwarna, pantau dari telefon.",
+   "name": "Kamera CCTV Suria 4G",
+   "h1": "Kamera CCTV suria 4G untuk lokasi tanpa elektrik dan WiFi.",
+   "lead": "Sentra ialah rakan kongsi rasmi PT GIDA International Trading Indonesia dan membekalkan kamera GDKJ-D440: kamera dua kanta 2K berkuasa panel suria dan bateri, bersambung melalui 4G dan dipantau dari telefon. Sesuai untuk ladang, projek, gudang dan lokasi sementara.",
+   "wa_text": "Hai Sentra, saya ingin berunding tentang kamera CCTV suria 4G untuk lokasi kami.",
+   "btn_kits": "Lihat spesifikasi",
+   "pains_h2": "Masalah yang sering ada di lapangan",
+   "pains": [
+    [
+     "Lokasi tanpa elektrik dan tanpa kabel rangkaian",
+     "Menarik kabel ke ladang, projek atau gudang terpencil terlalu mahal."
+    ],
+    [
+     "Kamera berhenti apabila elektrik terputus",
+     "Kamera yang bergantung pada elektrik atau WiFi mati ketika diperlukan."
+    ],
+    [
+     "Kecurian di lokasi sementara",
+     "Bahan, alatan dan hasil tuaian perlu dipantau tanpa pemasangan kekal."
+    ],
+    [
+     "Tidak tahu kejadian semasa tiada di lokasi",
+     "Pemilik memerlukan amaran dan rakaman yang boleh dibuka dari telefon."
+    ]
+   ],
+   "do": [
+    [
+     "Perundingan lokasi",
+     "Sudut pandangan, pendedahan matahari dan isyarat 4G menentukan kesesuaian."
+    ],
+    [
+     "Perolehan kamera suria 4G",
+     "GDKJ-D440 dengan panel suria, bateri dan sambungan 4G, mengikut sebut harga rasmi."
+    ],
+    [
+     "Tetapan aplikasi dan amaran",
+     "Sambungan ke aplikasi iCam365 dan tetapan pemberitahuan pengesanan manusia."
+    ],
+    [
+     "Penempatan dan pemasangan",
+     "Kedudukan dan ketinggian yang menangkap kawasan penting dan menerima cahaya matahari."
+    ],
+    [
+     "Gabungan dengan CCTV berwayar",
+     "Digabungkan dengan kamera VIGI dan NVR Sentra di titik yang dicapai kabel."
+    ],
+    [
+     "Sokongan selepas pembelian",
+     "Soalan teknikal disalurkan mengikut syarat pengilang."
+    ]
+   ],
+   "kits_h2": "Spesifikasi",
+   "kits_lead": "Spesifikasi utama GDKJ-D440 daripada risalah GIDA. Harga mengikut sebut harga rasmi; mohon melalui WhatsApp.",
+   "sectors": [
+    [
+     "Ladang dan tanah",
+     "Pondok pengawal, stor tuaian dan akses jauh dari grid elektrik."
+    ],
+    [
+     "Projek dan pembinaan",
+     "Pemantauan bahan dan alatan di lokasi sementara."
+    ],
+    [
+     "Gudang, kedai dan rumah",
+     "Titik tanpa wayar yang sukar dicapai pemasangan biasa."
+    ]
+   ],
+   "steps": [
+    "Tentukan titik dan kawasan yang dipantau",
+    "Semak pendedahan matahari dan isyarat 4G",
+    "Pilih bilangan kamera dan mohon sebut harga rasmi",
+    "Pemasangan dan tetapan aplikasi",
+    "Semakan berkala panel dan bateri"
+   ],
+   "related": [
+    "Perkhidmatan: Perolehan dan Pemasangan CCTV",
+    "Perkhidmatan: Kontena Suria & Storan Tenaga",
+    "Perkhidmatan: Starlink untuk Perniagaan"
+   ],
+   "faq": [
+    [
+     "Adakah lokasi memerlukan WiFi atau elektrik?",
+     "Menurut risalah, kamera berkuasa panel suria dan bateri serta bersambung melalui 4G, jadi tidak memerlukan WiFi atau elektrik grid. Liputan 4G di lokasi tetap perlu disemak."
+    ],
+    [
+     "Adakah rakaman disimpan?",
+     "Kamera menyokong storan awan untuk video penggera dan kad TF sehingga 128 GB."
+    ],
+    [
+     "Bagaimana jika mendung beberapa hari?",
+     "Bateri 8000 mAh menyimpan simpanan, tetapi pengecasan bergantung pada cahaya matahari."
+    ],
+    [
+     "Adakah kad SIM diperlukan?",
+     "Kamera bersambung melalui 4G, jadi kad SIM dan pelan data mungkin diperlukan."
+    ],
+    [
+     "Berapakah harganya?",
+     "Harga mengikut sebut harga rasmi pengilang."
+    ]
+   ],
+   "cta_h2": "Perlukan kamera untuk lokasi tanpa elektrik?",
+   "cta_p": "Beritahu kami lokasi, kawasan yang dipantau dan isyarat selular yang ada. Perbincangan awal percuma.",
+   "cta_trust": [
+    "Perbincangan awal percuma",
+    "Sebut harga rasmi pengilang",
+    "Pantau dari telefon"
+   ],
+   "card": {
+    "num": "Kamera tanpa wayar",
+    "desc": "Kamera CCTV suria 4G 2K untuk lokasi tanpa elektrik dan WiFi, dipantau dari telefon.",
+    "tags": [
+     "Suria",
+     "4G",
+     "2K",
+     "Pengesanan manusia"
+    ],
+    "meta_after": "storan tenaga suria, ",
+    "meta_add": "kamera CCTV suria 4G, "
+   },
+   "kits_html": "<div class=\"rv\" style=\"overflow-x:auto\"><table style=\"width:100%;border-collapse:collapse;font-size:.92rem\"><thead><tr><th style=\"text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap\">Spesifikasi</th><th style=\"text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap\">Nilai</th></tr></thead><tbody><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Resolusi</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">2560×1440 (2K), mampatan H.265</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Kanta</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">Dua kanta tetap 4 mm + 4 mm, sudut pandangan 80°</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">PTZ</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">Mendatar 355°, menegak 90°</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Penglihatan malam</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">Berwarna penuh (0.1 Lux) dan hitam putih (0.01 Lux); jarak IR dan LED putih 30 m</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Pengesanan</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">Penderia PIR dan pengesanan bentuk manusia, 0 hingga 12 m, sudut 120°</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Audio</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">Pembesar suara 1 W dan mikrofon, jarak sekitar 20 m</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Rangkaian</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">4G, jalur FDD B1/B3/B5/B8 (termasuk Indonesia)</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Storan</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">Awan (video penggera) dan kad TF sehingga 128 GB</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Kuasa</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">Panel suria 7.5 W dan bateri 8000 mAh</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Ketahanan</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">IP66, suhu operasi -30 hingga 50 °C</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">Aplikasi</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">iCam365 (Android dan iOS)</td></tr></tbody></table></div><p class=\"lead\" style=\"margin-top:14px;font-size:.9rem\">Model GDKJ-D440 daripada risalah GIDA. Keperluan kad SIM atau pelan data, ketersediaan dan konfigurasi mengikut sebut harga rasmi.</p>"
+  }
+ }
+}

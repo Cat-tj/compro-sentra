@@ -36,11 +36,11 @@ ICONS = {
 }
 
 NUMBERS = {
-    "": "Satu Dua Tiga Empat Lima Enam Tujuh Delapan Sembilan Sepuluh Sebelas Dua_belas Tiga_belas Empat_belas Lima_belas",
-    "ms": "Satu Dua Tiga Empat Lima Enam Tujuh Lapan Sembilan Sepuluh Sebelas Dua_belas Tiga_belas Empat_belas Lima_belas",
-    "en": "One Two Three Four Five Six Seven Eight Nine Ten Eleven Twelve Thirteen Fourteen Fifteen",
-    "zh": "一 二 三 四 五 六 七 八 九 十 十一 十二 十三 十四 十五",
-    "ko": "한 두 세 네 다섯 여섯 일곱 여덟 아홉 열 열한 열두 열세 열네 열다섯",
+    "": "Satu Dua Tiga Empat Lima Enam Tujuh Delapan Sembilan Sepuluh Sebelas Dua_belas Tiga_belas Empat_belas Lima_belas Enam_belas",
+    "ms": "Satu Dua Tiga Empat Lima Enam Tujuh Lapan Sembilan Sepuluh Sebelas Dua_belas Tiga_belas Empat_belas Lima_belas Enam_belas",
+    "en": "One Two Three Four Five Six Seven Eight Nine Ten Eleven Twelve Thirteen Fourteen Fifteen Sixteen",
+    "zh": "一 二 三 四 五 六 七 八 九 十 十一 十二 十三 十四 十五 十六",
+    "ko": "한 두 세 네 다섯 여섯 일곱 여덟 아홉 열 열한 열두 열세 열네 열다섯 열여섯",
 }
 SERVICE_WORD = {"": " layanan,", "ms": " perkhidmatan,", "en": " services,", "zh": "项服务，", "ko": " 가지 서비스,"}
 

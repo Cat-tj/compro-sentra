@@ -1,0 +1,710 @@
+{
+ "slug": "energi-surya-container",
+ "date": "2026-11-02",
+ "template": "instalasi-infrastruktur",
+ "list_after": "menara-lampu-surya",
+ "card_icon": "sun",
+ "hero_img": "/assets/img/art/energi-surya.webp",
+ "og_img": "/assets/og/art-energi-surya.jpg",
+ "do_icons": [
+  "sun",
+  "box",
+  "wrench",
+  "wifi",
+  "pin",
+  "shuffle"
+ ],
+ "sector_icons": [
+  "pick",
+  "crane",
+  "factory"
+ ],
+ "sector_links": [
+  "/industri/pertambangan",
+  "/services/instalasi-infrastruktur",
+  "/industri/korporasi"
+ ],
+ "related_links": [
+  "/services/menara-lampu-surya",
+  "/services/starlink",
+  "/services/pengadaan-cctv"
+ ],
+ "llms": "- [Solar Container & Energy Storage](https://www.sentratechnology.com/en/services/energi-surya-container): GD-MES containers combining solar panels (20 to 270 kWp), battery storage (up to 520 kWh) and controls from official partner PT GIDA International Trading Indonesia, for commercial and industrial sites, mines, projects and emergency backup, able to run off-grid; prices follow the manufacturer's official quotation.",
+ "langs": {
+  "": {
+   "crumb_home": "Beranda",
+   "crumb_services": "Layanan",
+   "btn_consult": "Konsultasi gratis",
+   "do_h2": "Yang kami kerjakan",
+   "sectors_h2": "Dipakai di",
+   "sector_link": "Lihat solusi",
+   "steps_h2": "Alur kerja",
+   "related_h2": "Terkait",
+   "faq_h2": "Pertanyaan umum",
+   "cta_wa": "Chat WhatsApp",
+   "cta_msg": "Kirim pesan",
+   "title": "Kontainer Tenaga Surya & Penyimpanan Energi (PV + Baterai) | Sentra",
+   "description": "Pengadaan kontainer tenaga surya dengan penyimpanan baterai untuk industri, tambang, proyek, dan cadangan darurat: panel 20 sampai 270 kWp, baterai hingga 520 kWh, bisa beroperasi off-grid.",
+   "name": "Kontainer Surya & Penyimpanan Energi",
+   "h1": "Kontainer tenaga surya dan baterai untuk lokasi yang butuh listrik mandiri.",
+   "lead": "Sentra adalah mitra resmi PT GIDA International Trading Indonesia dan menyediakan GD-MES: kontainer yang menyatukan panel surya, penyimpanan baterai, dan sistem kontrol dalam satu paket yang bisa dipindah. Dirancang untuk keperluan komersial dan industri, termasuk lokasi tanpa jaringan listrik.",
+   "wa_text": "Halo Sentra, saya ingin konsultasi kontainer tenaga surya dan penyimpanan energi untuk lokasi kami.",
+   "btn_kits": "Lihat pilihan model",
+   "pains_h2": "Masalah yang sering ada di lapangan",
+   "pains": [
+    [
+     "Lokasi tanpa listrik jaringan atau jaringannya tidak stabil",
+     "Kamp, proyek, dan area remote bergantung pada genset diesel."
+    ],
+    [
+     "Biaya BBM genset terus berulang",
+     "Solar, pengiriman, dan perawatan mesin menumpuk dari bulan ke bulan."
+    ],
+    [
+     "Listrik padam mengganggu operasi",
+     "Server, CCTV, jaringan, dan peralatan penting butuh cadangan daya."
+    ],
+    [
+     "Instalasi panel dan baterai terpisah rumit",
+     "Fondasi, penempatan, dan integrasi sering memakan waktu di lokasi."
+    ]
+   ],
+   "do": [
+    [
+     "Konsultasi kebutuhan daya",
+     "Daftar beban, jam pakai, dan target cadangan menentukan kapasitas panel dan baterai."
+    ],
+    [
+     "Pengadaan kontainer PV dan baterai",
+     "Model GD-MES dari 20 sampai 270 kWp dan baterai hingga 520 kWh, sesuai penawaran resmi."
+    ],
+    [
+     "Pemilihan konfigurasi",
+     "Ukuran kontainer, daya panel, kapasitas baterai, dan kebutuhan off-grid atau cadangan."
+    ],
+    [
+     "Integrasi dengan CCTV dan jaringan",
+     "Daya untuk kamera, Starlink, dan perangkat jaringan di site Anda."
+    ],
+    [
+     "Perencanaan lokasi",
+     "Penempatan, akses, dan kebutuhan pondasi ringan mengikuti panduan pabrikan."
+    ],
+    [
+     "Dukungan setelah pembelian",
+     "Pertanyaan teknis dan perawatan diteruskan sesuai ketentuan pabrikan."
+    ]
+   ],
+   "kits_h2": "Pilihan model",
+   "kits_lead": "Sebelas konfigurasi dari brosur GIDA. Harga mengikuti penawaran resmi, silakan minta lewat WhatsApp.",
+   "sectors": [
+    [
+     "Tambang dan kamp",
+     "Kantor site, mess, dan fasilitas di area remote tanpa jaringan listrik."
+    ],
+    [
+     "Proyek dan konstruksi",
+     "Daya sementara untuk lokasi kerja yang berpindah."
+    ],
+    [
+     "Industri dan cadangan darurat",
+     "Sumber listrik mandiri atau cadangan untuk pabrik dan fasilitas penting."
+    ]
+   ],
+   "steps": [
+    "Catat beban listrik dan jam pakai",
+    "Tentukan kapasitas panel dan baterai",
+    "Pilih konfigurasi dan minta penawaran resmi",
+    "Pengiriman, penempatan, dan serah terima",
+    "Pemantauan dan perawatan berkala"
+   ],
+   "related": [
+    "Layanan: Menara Lampu Surya dan Hybrid",
+    "Layanan: Starlink untuk Bisnis",
+    "Layanan: Pengadaan dan Instalasi CCTV"
+   ],
+   "faq": [
+    [
+     "Apakah bisa beroperasi tanpa jaringan listrik?",
+     "Menurut brosur pabrikan, sistem dapat beroperasi sepenuhnya mandiri (off-grid). Kecocokan untuk beban Anda perlu dihitung dari daftar beban dan jam pakai."
+    ],
+    [
+     "Berapa lama pemasangannya?",
+     "Brosur menyebut instalasi tidak memerlukan pondasi yang rumit. Waktu nyata bergantung pada lokasi dan model, dan dikonfirmasi dalam penawaran."
+    ],
+    [
+     "Berapa harganya?",
+     "Harga bergantung pada konfigurasi dan jumlah, dan mengikuti penawaran resmi dari pabrikan. Hubungi Sentra untuk meminta penawaran."
+    ],
+    [
+     "Apakah bisa menghidupkan peralatan berat?",
+     "Tergantung daya inverter dan kapasitas baterai. Perlu hitung beban puncak dan arus awal peralatan sebelum memilih model."
+    ],
+    [
+     "Bagaimana dengan garansi?",
+     "Garansi dan layanan purna jual mengikuti ketentuan pabrikan dan dicantumkan di penawaran."
+    ]
+   ],
+   "cta_h2": "Butuh listrik mandiri untuk lokasi Anda?",
+   "cta_p": "Ceritakan beban listrik, jam pakai, dan lokasi. Diskusi awal gratis.",
+   "cta_trust": [
+    "Diskusi awal gratis",
+    "Penawaran resmi dari pabrikan",
+    "Panel 20 sampai 270 kWp"
+   ],
+   "card": {
+    "num": "Energi surya",
+    "desc": "Kontainer panel surya dan baterai untuk lokasi tanpa listrik jaringan atau butuh cadangan daya.",
+    "tags": [
+     "Panel surya",
+     "Baterai",
+     "Off-grid",
+     "Kontainer"
+    ],
+    "meta_after": "menara lampu surya, ",
+    "meta_add": "penyimpanan energi surya, "
+   },
+   "kits_html": "<div class=\"rv\" style=\"overflow-x:auto\"><table style=\"width:100%;border-collapse:collapse;font-size:.92rem\"><thead><tr><th style=\"text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap\">Model container</th><th style=\"text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap\">Daya panel surya</th><th style=\"text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap\">Kapasitas baterai</th></tr></thead><tbody><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-8GP-P20K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">20 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-10GP-P40K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">25 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-20HQ-P70K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">76 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-20HQ-P110K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">135 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-40GP-P150K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">150 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-40HQ-P270K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">270 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-08GP-P20K/30</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">20 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">30 kWh</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-08GP-P25K/60</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">25 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">60 kWh</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-20HQ-P80K/260</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">80 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">260 kWh</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-40HQ-P190K/260</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">190 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">260 kWh</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-40HQ-P200K/520</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">200 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">520 kWh</td></tr></tbody></table></div><p class=\"lead\" style=\"margin-top:14px;font-size:.9rem\">Dari brosur GIDA. Angka \"KP\" di brosur dibaca sebagai kWp. Kapasitas baterai tidak dicantumkan untuk enam model pertama; ketersediaan dan konfigurasi mengikuti penawaran resmi.</p>"
+  },
+  "en": {
+   "crumb_home": "Home",
+   "crumb_services": "Services",
+   "btn_consult": "Free consultation",
+   "do_h2": "What we do",
+   "sectors_h2": "Used in",
+   "sector_link": "See solution",
+   "steps_h2": "How we work",
+   "related_h2": "Related",
+   "faq_h2": "Frequently asked questions",
+   "cta_wa": "Chat on WhatsApp",
+   "cta_msg": "Send a message",
+   "title": "Solar Container & Energy Storage (PV + Battery) | Sentra",
+   "description": "Procurement of solar containers with battery storage for industry, mines, projects and emergency backup: 20 to 270 kWp of panels, batteries up to 520 kWh, able to run off-grid.",
+   "name": "Solar Container & Energy Storage",
+   "h1": "Solar and battery containers for sites that need their own power.",
+   "lead": "Sentra is an official partner of PT GIDA International Trading Indonesia and supplies GD-MES: a container that combines solar panels, battery storage and controls in one movable package. Designed for commercial and industrial use, including sites without grid power.",
+   "wa_text": "Hello Sentra, I would like advice on a solar container and energy storage for our site.",
+   "btn_kits": "See model options",
+   "pains_h2": "Problems we see in the field",
+   "pains": [
+    [
+     "Sites with no grid power or an unstable grid",
+     "Camps, projects and remote areas depend on diesel generators."
+    ],
+    [
+     "Generator fuel costs keep recurring",
+     "Diesel, delivery and engine maintenance pile up month after month."
+    ],
+    [
+     "Power cuts disrupt operations",
+     "Servers, CCTV, networks and key equipment need backup power."
+    ],
+    [
+     "Installing panels and batteries separately is complex",
+     "Foundations, placement and integration often eat time on site."
+    ]
+   ],
+   "do": [
+    [
+     "Power needs consultation",
+     "The load list, hours of use and backup target decide panel and battery capacity."
+    ],
+    [
+     "Procurement of PV and battery containers",
+     "GD-MES models from 20 to 270 kWp and batteries up to 520 kWh, per official quotation."
+    ],
+    [
+     "Configuration choice",
+     "Container size, panel power, battery capacity, and off-grid or backup needs."
+    ],
+    [
+     "Integration with CCTV and networks",
+     "Power for cameras, Starlink and network equipment at your site."
+    ],
+    [
+     "Site planning",
+     "Placement, access and light foundation needs follow the manufacturer's guide."
+    ],
+    [
+     "Support after purchase",
+     "Technical questions and maintenance are passed on under the manufacturer's terms."
+    ]
+   ],
+   "kits_h2": "Model options",
+   "kits_lead": "Eleven configurations from the GIDA brochure. Prices follow the official quotation; request one via WhatsApp.",
+   "sectors": [
+    [
+     "Mines and camps",
+     "Site offices, mess halls and facilities in remote areas without grid power."
+    ],
+    [
+     "Projects and construction",
+     "Temporary power for work sites that move."
+    ],
+    [
+     "Industry and emergency backup",
+     "Independent or backup power for factories and critical facilities."
+    ]
+   ],
+   "steps": [
+    "Record electrical loads and hours of use",
+    "Determine panel and battery capacity",
+    "Choose a configuration and request an official quotation",
+    "Delivery, placement and handover",
+    "Monitoring and regular maintenance"
+   ],
+   "related": [
+    "Service: Solar & Hybrid Light Towers",
+    "Service: Starlink for Business",
+    "Service: CCTV Procurement and Installation"
+   ],
+   "faq": [
+    [
+     "Can it run without grid power?",
+     "According to the manufacturer's brochure, the system can run fully independently (off-grid). Suitability for your load must be calculated from the load list and hours of use."
+    ],
+    [
+     "How long does installation take?",
+     "The brochure says no complex foundation is needed. Real time depends on site and model, and is confirmed in the quotation."
+    ],
+    [
+     "How much does it cost?",
+     "Price depends on configuration and quantity, and follows the manufacturer's official quotation. Contact Sentra to request one."
+    ],
+    [
+     "Can it run heavy equipment?",
+     "It depends on inverter power and battery capacity. Peak load and starting current must be calculated before choosing a model."
+    ],
+    [
+     "What about warranty?",
+     "Warranty and after-sales follow the manufacturer's terms and are stated in the quotation."
+    ]
+   ],
+   "cta_h2": "Need independent power for your site?",
+   "cta_p": "Tell us the electrical load, hours of use and location. The first discussion is free.",
+   "cta_trust": [
+    "Free first discussion",
+    "Official manufacturer quotation",
+    "20 to 270 kWp of panels"
+   ],
+   "card": {
+    "num": "Solar energy",
+    "desc": "Solar panel and battery containers for sites without grid power or needing backup.",
+    "tags": [
+     "Solar panels",
+     "Battery",
+     "Off-grid",
+     "Container"
+    ],
+    "meta_after": "solar light towers, ",
+    "meta_add": "solar energy storage, "
+   },
+   "kits_html": "<div class=\"rv\" style=\"overflow-x:auto\"><table style=\"width:100%;border-collapse:collapse;font-size:.92rem\"><thead><tr><th style=\"text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap\">Container model</th><th style=\"text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap\">Solar panel power</th><th style=\"text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap\">Battery capacity</th></tr></thead><tbody><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-8GP-P20K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">20 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-10GP-P40K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">25 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-20HQ-P70K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">76 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-20HQ-P110K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">135 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-40GP-P150K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">150 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-40HQ-P270K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">270 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-08GP-P20K/30</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">20 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">30 kWh</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-08GP-P25K/60</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">25 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">60 kWh</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-20HQ-P80K/260</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">80 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">260 kWh</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-40HQ-P190K/260</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">190 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">260 kWh</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-40HQ-P200K/520</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">200 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">520 kWh</td></tr></tbody></table></div><p class=\"lead\" style=\"margin-top:14px;font-size:.9rem\">From the GIDA brochure. The \"KP\" figures in the brochure are read as kWp. Battery capacity is not stated for the first six models; availability and configuration follow the official quotation.</p>"
+  },
+  "zh": {
+   "crumb_home": "首页",
+   "crumb_services": "服务",
+   "btn_consult": "免费咨询",
+   "do_h2": "我们的工作",
+   "sectors_h2": "应用场景",
+   "sector_link": "查看方案",
+   "steps_h2": "工作流程",
+   "related_h2": "相关内容",
+   "faq_h2": "常见问题",
+   "cta_wa": "WhatsApp 联系",
+   "cta_msg": "发送消息",
+   "title": "太阳能集装箱与储能系统（光伏＋电池）| Sentra",
+   "description": "为工业、矿区、工程和应急备用提供带电池储能的太阳能集装箱：光伏 20 至 270 kWp，电池最高 520 kWh，可离网运行。",
+   "name": "太阳能集装箱与储能",
+   "h1": "为需要自主供电的现场提供太阳能与电池集装箱。",
+   "lead": "Sentra 是 PT GIDA International Trading Indonesia 的官方合作伙伴，供应 GD-MES：把光伏板、电池储能和控制系统集成在一个可移动的集装箱里，面向商业和工业场景，包括没有市电的场所。",
+   "wa_text": "您好 Sentra，我想咨询我们现场的太阳能集装箱和储能系统。",
+   "btn_kits": "查看型号",
+   "pains_h2": "我们在现场常见的问题",
+   "pains": [
+    [
+     "现场没有市电或电网不稳定",
+     "营地、项目和偏远区域依赖柴油发电机。"
+    ],
+    [
+     "发电机燃油成本不断重复",
+     "柴油、运输和发动机维护逐月累积。"
+    ],
+    [
+     "停电影响运营",
+     "服务器、CCTV、网络和关键设备需要备用电源。"
+    ],
+    [
+     "光伏板和电池分开安装很复杂",
+     "基础、摆放和集成常占用现场时间。"
+    ]
+   ],
+   "do": [
+    [
+     "用电需求咨询",
+     "负载清单、使用时间和备用目标决定光伏和电池容量。"
+    ],
+    [
+     "光伏与电池集装箱采购",
+     "GD-MES 型号从 20 至 270 kWp，电池最高 520 kWh，以正式报价为准。"
+    ],
+    [
+     "配置选择",
+     "集装箱尺寸、光伏功率、电池容量，以及离网或备用需求。"
+    ],
+    [
+     "与 CCTV 和网络集成",
+     "为现场的摄像头、Starlink 和网络设备供电。"
+    ],
+    [
+     "现场规划",
+     "摆放、通道和轻型基础要求遵循制造商指南。"
+    ],
+    [
+     "购买后的支持",
+     "技术问题和维护按制造商条款转达。"
+    ]
+   ],
+   "kits_h2": "型号选择",
+   "kits_lead": "来自 GIDA 产品册的十一种配置。价格以正式报价为准，请通过 WhatsApp 索取。",
+   "sectors": [
+    [
+     "矿区与营地",
+     "偏远无市电区域的现场办公室、宿舍和设施。"
+    ],
+    [
+     "项目与施工",
+     "为流动的作业现场提供临时电力。"
+    ],
+    [
+     "工业与应急备用",
+     "工厂和关键设施的独立或备用电源。"
+    ]
+   ],
+   "steps": [
+    "记录用电负载和使用时间",
+    "确定光伏和电池容量",
+    "选择配置并索取正式报价",
+    "交付、就位与交接",
+    "监控与定期维护"
+   ],
+   "related": [
+    "服务：太阳能与混合动力灯塔",
+    "服务：企业 Starlink",
+    "服务：CCTV 采购与安装"
+   ],
+   "faq": [
+    [
+     "可以离网运行吗？",
+     "根据制造商产品册，系统可完全独立（离网）运行。是否适合您的负载，需要根据负载清单和使用时间计算。"
+    ],
+    [
+     "安装需要多久？",
+     "产品册称无需复杂基础。实际时间取决于现场和型号，并在报价中确认。"
+    ],
+    [
+     "价格是多少？",
+     "价格取决于配置和数量，以制造商正式报价为准，请联系 Sentra 索取。"
+    ],
+    [
+     "能带动大型设备吗？",
+     "取决于逆变器功率和电池容量。选型前需计算峰值负载和启动电流。"
+    ],
+    [
+     "保修如何？",
+     "保修和售后遵循制造商条款，并写入报价单。"
+    ]
+   ],
+   "cta_h2": "您的现场需要自主供电吗？",
+   "cta_p": "告诉我们用电负载、使用时间和地点。首次沟通免费。",
+   "cta_trust": [
+    "首次沟通免费",
+    "制造商正式报价",
+    "光伏 20 至 270 kWp"
+   ],
+   "card": {
+    "num": "太阳能",
+    "desc": "适用于无市电或需要备用电源场所的太阳能板与电池集装箱。",
+    "tags": [
+     "光伏板",
+     "电池",
+     "离网",
+     "集装箱"
+    ],
+    "meta_after": "太阳能灯塔、",
+    "meta_add": "太阳能储能、"
+   },
+   "kits_html": "<div class=\"rv\" style=\"overflow-x:auto\"><table style=\"width:100%;border-collapse:collapse;font-size:.92rem\"><thead><tr><th style=\"text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap\">集装箱型号</th><th style=\"text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap\">光伏功率</th><th style=\"text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap\">电池容量</th></tr></thead><tbody><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-8GP-P20K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">20 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-10GP-P40K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">25 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-20HQ-P70K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">76 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-20HQ-P110K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">135 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-40GP-P150K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">150 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-40HQ-P270K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">270 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-08GP-P20K/30</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">20 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">30 kWh</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-08GP-P25K/60</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">25 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">60 kWh</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-20HQ-P80K/260</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">80 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">260 kWh</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-40HQ-P190K/260</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">190 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">260 kWh</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-40HQ-P200K/520</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">200 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">520 kWh</td></tr></tbody></table></div><p class=\"lead\" style=\"margin-top:14px;font-size:.9rem\">来自 GIDA 产品册。册中的“KP”按 kWp 理解。前六个型号未标明电池容量；供货与配置以正式报价为准。</p>"
+  },
+  "ko": {
+   "crumb_home": "홈",
+   "crumb_services": "서비스",
+   "btn_consult": "무료 상담",
+   "do_h2": "제공 서비스",
+   "sectors_h2": "적용 분야",
+   "sector_link": "솔루션 보기",
+   "steps_h2": "진행 절차",
+   "related_h2": "관련 항목",
+   "faq_h2": "자주 묻는 질문",
+   "cta_wa": "WhatsApp 상담",
+   "cta_msg": "메시지 보내기",
+   "title": "태양광 컨테이너·에너지 저장 시스템(PV+배터리) | Sentra",
+   "description": "산업, 광산, 프로젝트, 비상 백업을 위한 배터리 저장형 태양광 컨테이너 조달: 태양광 20~270kWp, 배터리 최대 520kWh, 오프그리드 운영 가능.",
+   "name": "태양광 컨테이너·에너지 저장",
+   "h1": "자체 전력이 필요한 현장을 위한 태양광·배터리 컨테이너.",
+   "lead": "Sentra는 PT GIDA International Trading Indonesia의 공식 파트너로서 GD-MES를 공급합니다. 태양광 패널, 배터리 저장, 제어 시스템을 하나의 이동 가능한 컨테이너에 통합한 제품으로, 전력망이 없는 현장을 포함한 상업·산업용입니다.",
+   "wa_text": "안녕하세요 Sentra, 저희 현장의 태양광 컨테이너와 에너지 저장 시스템 상담을 원합니다.",
+   "btn_kits": "모델 보기",
+   "pains_h2": "현장에서 자주 보는 문제",
+   "pains": [
+    [
+     "전력망이 없거나 불안정한 현장",
+     "캠프, 프로젝트, 외진 지역은 디젤 발전기에 의존합니다."
+    ],
+    [
+     "발전기 연료비가 계속 반복됨",
+     "경유, 운송, 엔진 정비가 매달 쌓입니다."
+    ],
+    [
+     "정전이 운영을 방해함",
+     "서버, CCTV, 네트워크, 핵심 장비에는 예비 전원이 필요합니다."
+    ],
+    [
+     "패널과 배터리를 따로 설치하기 복잡함",
+     "기초, 배치, 연동에 현장 시간이 많이 듭니다."
+    ]
+   ],
+   "do": [
+    [
+     "전력 수요 상담",
+     "부하 목록, 사용 시간, 백업 목표가 패널과 배터리 용량을 정합니다."
+    ],
+    [
+     "PV·배터리 컨테이너 조달",
+     "20~270kWp GD-MES 모델과 최대 520kWh 배터리를 공식 견적에 따라 공급합니다."
+    ],
+    [
+     "구성 선택",
+     "컨테이너 크기, 패널 출력, 배터리 용량, 오프그리드 또는 백업 요구."
+    ],
+    [
+     "CCTV·네트워크 연동",
+     "현장의 카메라, Starlink, 네트워크 장비에 전력을 공급합니다."
+    ],
+    [
+     "현장 계획",
+     "배치, 접근, 가벼운 기초 요건은 제조사 가이드를 따릅니다."
+    ],
+    [
+     "구매 후 지원",
+     "기술 문의와 유지보수는 제조사 조건에 따라 전달됩니다."
+    ]
+   ],
+   "kits_h2": "모델 선택",
+   "kits_lead": "GIDA 브로셔의 11개 구성입니다. 가격은 공식 견적에 따르며 WhatsApp으로 요청하세요.",
+   "sectors": [
+    [
+     "광산·캠프",
+     "전력망이 없는 외진 지역의 현장 사무실, 숙소, 시설."
+    ],
+    [
+     "프로젝트·건설",
+     "이동하는 작업 현장의 임시 전력."
+    ],
+    [
+     "산업·비상 백업",
+     "공장과 핵심 시설의 독립 또는 백업 전원."
+    ]
+   ],
+   "steps": [
+    "전기 부하와 사용 시간 기록",
+    "패널과 배터리 용량 결정",
+    "구성 선택 및 공식 견적 요청",
+    "배송, 설치 위치 선정, 인도",
+    "모니터링과 정기 유지보수"
+   ],
+   "related": [
+    "서비스: 태양광·하이브리드 조명탑",
+    "서비스: 기업용 Starlink",
+    "서비스: CCTV 조달·설치"
+   ],
+   "faq": [
+    [
+     "전력망 없이 운영할 수 있나요?",
+     "제조사 브로셔에 따르면 완전 독립(오프그리드) 운영이 가능합니다. 귀사의 부하에 맞는지는 부하 목록과 사용 시간으로 계산해야 합니다."
+    ],
+    [
+     "설치에는 얼마나 걸리나요?",
+     "브로셔는 복잡한 기초가 필요 없다고 합니다. 실제 시간은 현장과 모델에 따라 다르며 견적에서 확인합니다."
+    ],
+    [
+     "가격은 얼마인가요?",
+     "구성과 수량에 따라 다르며 제조사의 공식 견적에 따릅니다. Sentra에 견적을 요청하세요."
+    ],
+    [
+     "중장비도 가동할 수 있나요?",
+     "인버터 출력과 배터리 용량에 따라 다릅니다. 모델 선택 전에 피크 부하와 기동 전류를 계산해야 합니다."
+    ],
+    [
+     "보증은 어떻게 되나요?",
+     "보증과 사후 서비스는 제조사 조건에 따르며 견적서에 명시됩니다."
+    ]
+   ],
+   "cta_h2": "현장에 자체 전력이 필요하신가요?",
+   "cta_p": "전기 부하, 사용 시간, 위치를 알려 주세요. 첫 상담은 무료입니다.",
+   "cta_trust": [
+    "첫 상담 무료",
+    "제조사 공식 견적",
+    "태양광 20~270kWp"
+   ],
+   "card": {
+    "num": "태양광 에너지",
+    "desc": "전력망이 없거나 백업이 필요한 곳을 위한 태양광 패널·배터리 컨테이너.",
+    "tags": [
+     "태양광 패널",
+     "배터리",
+     "오프그리드",
+     "컨테이너"
+    ],
+    "meta_after": "태양광 조명탑, ",
+    "meta_add": "태양광 에너지 저장, "
+   },
+   "kits_html": "<div class=\"rv\" style=\"overflow-x:auto\"><table style=\"width:100%;border-collapse:collapse;font-size:.92rem\"><thead><tr><th style=\"text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap\">컨테이너 모델</th><th style=\"text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap\">태양광 출력</th><th style=\"text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap\">배터리 용량</th></tr></thead><tbody><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-8GP-P20K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">20 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-10GP-P40K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">25 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-20HQ-P70K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">76 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-20HQ-P110K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">135 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-40GP-P150K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">150 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-40HQ-P270K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">270 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-08GP-P20K/30</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">20 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">30 kWh</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-08GP-P25K/60</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">25 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">60 kWh</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-20HQ-P80K/260</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">80 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">260 kWh</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-40HQ-P190K/260</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">190 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">260 kWh</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-40HQ-P200K/520</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">200 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">520 kWh</td></tr></tbody></table></div><p class=\"lead\" style=\"margin-top:14px;font-size:.9rem\">GIDA 브로셔 기준입니다. 브로셔의 \"KP\"는 kWp로 해석했습니다. 앞의 여섯 모델은 배터리 용량이 명시되지 않았으며 공급 및 구성은 공식 견적에 따릅니다.</p>"
+  },
+  "ms": {
+   "crumb_home": "Laman Utama",
+   "crumb_services": "Perkhidmatan",
+   "btn_consult": "Konsultasi percuma",
+   "do_h2": "Apa yang kami lakukan",
+   "sectors_h2": "Digunakan di",
+   "sector_link": "Lihat penyelesaian",
+   "steps_h2": "Aliran kerja",
+   "related_h2": "Berkaitan",
+   "faq_h2": "Soalan lazim",
+   "cta_wa": "Chat WhatsApp",
+   "cta_msg": "Hantar mesej",
+   "title": "Kontena Suria & Storan Tenaga (PV + Bateri) | Sentra",
+   "description": "Perolehan kontena suria dengan storan bateri untuk industri, lombong, projek dan sandaran kecemasan: panel 20 hingga 270 kWp, bateri sehingga 520 kWh, boleh beroperasi luar grid.",
+   "name": "Kontena Suria & Storan Tenaga",
+   "h1": "Kontena suria dan bateri untuk lokasi yang memerlukan kuasa sendiri.",
+   "lead": "Sentra ialah rakan kongsi rasmi PT GIDA International Trading Indonesia dan membekalkan GD-MES: kontena yang menggabungkan panel suria, storan bateri dan kawalan dalam satu pakej boleh alih. Direka untuk kegunaan komersial dan industri, termasuk lokasi tanpa grid elektrik.",
+   "wa_text": "Hai Sentra, saya ingin berunding tentang kontena suria dan storan tenaga untuk lokasi kami.",
+   "btn_kits": "Lihat pilihan model",
+   "pains_h2": "Masalah yang sering ada di lapangan",
+   "pains": [
+    [
+     "Lokasi tanpa grid elektrik atau grid tidak stabil",
+     "Kem, projek dan kawasan terpencil bergantung pada penjana diesel."
+    ],
+    [
+     "Kos bahan api penjana berulang",
+     "Diesel, penghantaran dan penyelenggaraan enjin terkumpul setiap bulan."
+    ],
+    [
+     "Gangguan bekalan menjejaskan operasi",
+     "Pelayan, CCTV, rangkaian dan peralatan penting memerlukan kuasa sandaran."
+    ],
+    [
+     "Pemasangan panel dan bateri berasingan rumit",
+     "Asas, penempatan dan integrasi memakan masa di lokasi."
+    ]
+   ],
+   "do": [
+    [
+     "Perundingan keperluan kuasa",
+     "Senarai beban, waktu guna dan sasaran sandaran menentukan kapasiti panel dan bateri."
+    ],
+    [
+     "Perolehan kontena PV dan bateri",
+     "Model GD-MES 20 hingga 270 kWp dan bateri sehingga 520 kWh, mengikut sebut harga rasmi."
+    ],
+    [
+     "Pilihan konfigurasi",
+     "Saiz kontena, kuasa panel, kapasiti bateri dan keperluan luar grid atau sandaran."
+    ],
+    [
+     "Integrasi dengan CCTV dan rangkaian",
+     "Kuasa untuk kamera, Starlink dan peranti rangkaian di tapak anda."
+    ],
+    [
+     "Perancangan lokasi",
+     "Penempatan, akses dan keperluan asas ringan mengikut panduan pengilang."
+    ],
+    [
+     "Sokongan selepas pembelian",
+     "Soalan teknikal dan penyelenggaraan disalurkan mengikut syarat pengilang."
+    ]
+   ],
+   "kits_h2": "Pilihan model",
+   "kits_lead": "Sebelas konfigurasi daripada risalah GIDA. Harga mengikut sebut harga rasmi; mohon melalui WhatsApp.",
+   "sectors": [
+    [
+     "Lombong dan kem",
+     "Pejabat tapak, asrama dan kemudahan di kawasan terpencil tanpa grid elektrik."
+    ],
+    [
+     "Projek dan pembinaan",
+     "Kuasa sementara untuk tapak kerja yang berpindah."
+    ],
+    [
+     "Industri dan sandaran kecemasan",
+     "Kuasa bebas atau sandaran untuk kilang dan kemudahan penting."
+    ]
+   ],
+   "steps": [
+    "Catat beban elektrik dan waktu guna",
+    "Tentukan kapasiti panel dan bateri",
+    "Pilih konfigurasi dan mohon sebut harga rasmi",
+    "Penghantaran, penempatan dan serah terima",
+    "Pemantauan dan penyelenggaraan berkala"
+   ],
+   "related": [
+    "Perkhidmatan: Menara Lampu Suria & Hibrid",
+    "Perkhidmatan: Starlink untuk Perniagaan",
+    "Perkhidmatan: Perolehan dan Pemasangan CCTV"
+   ],
+   "faq": [
+    [
+     "Bolehkah beroperasi tanpa grid elektrik?",
+     "Menurut risalah pengilang, sistem boleh beroperasi sepenuhnya bebas (luar grid). Kesesuaian untuk beban anda perlu dikira daripada senarai beban dan waktu guna."
+    ],
+    [
+     "Berapa lama pemasangan?",
+     "Risalah menyatakan tiada asas rumit diperlukan. Masa sebenar bergantung pada lokasi dan model."
+    ],
+    [
+     "Berapakah harganya?",
+     "Harga mengikut sebut harga rasmi pengilang."
+    ],
+    [
+     "Bolehkah ia menghidupkan peralatan berat?",
+     "Bergantung pada kuasa penyongsang dan kapasiti bateri."
+    ],
+    [
+     "Bagaimana dengan waranti?",
+     "Waranti mengikut syarat pengilang dan dinyatakan dalam sebut harga."
+    ]
+   ],
+   "cta_h2": "Perlukan kuasa sendiri untuk lokasi anda?",
+   "cta_p": "Beritahu kami beban elektrik, waktu guna dan lokasi. Perbincangan awal percuma.",
+   "cta_trust": [
+    "Perbincangan awal percuma",
+    "Sebut harga rasmi pengilang",
+    "Panel 20 hingga 270 kWp"
+   ],
+   "card": {
+    "num": "Tenaga suria",
+    "desc": "Kontena panel suria dan bateri untuk lokasi tanpa grid elektrik atau memerlukan kuasa sandaran.",
+    "tags": [
+     "Panel suria",
+     "Bateri",
+     "Luar grid",
+     "Kontena"
+    ],
+    "meta_after": "menara lampu suria, ",
+    "meta_add": "storan tenaga suria, "
+   },
+   "kits_html": "<div class=\"rv\" style=\"overflow-x:auto\"><table style=\"width:100%;border-collapse:collapse;font-size:.92rem\"><thead><tr><th style=\"text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap\">Model kontena</th><th style=\"text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap\">Kuasa panel suria</th><th style=\"text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap\">Kapasiti bateri</th></tr></thead><tbody><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-8GP-P20K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">20 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-10GP-P40K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">25 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-20HQ-P70K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">76 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-20HQ-P110K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">135 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-40GP-P150K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">150 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-40HQ-P270K</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">270 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">–</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-08GP-P20K/30</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">20 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">30 kWh</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-08GP-P25K/60</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">25 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">60 kWh</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-20HQ-P80K/260</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">80 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">260 kWh</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-40HQ-P190K/260</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">190 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">260 kWh</td></tr><tr><td style=\"padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700\">GD-40HQ-P200K/520</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">200 kWp</td><td style=\"padding:10px 12px;border-bottom:1px solid var(--line)\">520 kWh</td></tr></tbody></table></div><p class=\"lead\" style=\"margin-top:14px;font-size:.9rem\">Daripada risalah GIDA. Angka \"KP\" dalam risalah dibaca sebagai kWp. Kapasiti bateri tidak dinyatakan untuk enam model pertama; ketersediaan dan konfigurasi mengikut sebut harga rasmi.</p>"
+  }
+ }
+}
