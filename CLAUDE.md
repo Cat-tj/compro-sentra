@@ -45,6 +45,14 @@ Static site, no build step. Everything served lives in `site/`. Vercel project `
 4. Ping Bing and the other IndexNow engines for the changed pages (production only):
    `python3 tools/indexnow.py <url> ...` or `python3 tools/indexnow.py --since <YYYY-MM-DD>`.
 
+## Copy style (anti AI-slop, decided 2026-11-02)
+The owner dislikes generic AI-sounding copy. Rules: plain descriptive headings ("Sembilan layanan, satu tim", "Cara kerja kami") instead of
+abstract ones ("Kapabilitas terpadu", "Pusat teknologi"); concrete nouns and numbers (50+ proyek, 13 ahli, 2-4 minggu pilot) instead of
+superlatives (terbaik, terdepan, inovatif); no floating claim chips; avoid repeated "dari X sampai Y" and triads of vague benefits; every
+claim must exist on the site or in docs/. Reference research (Gamatechno, Mitrais, SoftwareSeni, Nodeflux): borrow their *structure* (stat
+grid, case-study cards with type/duration/tech, plain service names, logo wall, short numbered use cases), not their language, which is
+full of superlatives and repeated blurbs. Rewrite all 5 languages together.
+
 ## Design decisions so far
 - Light theme everywhere; only the footer is dark navy.
 - About page team section: three groups (Leadership, Infra, Software; "Hardware" was renamed "Infra"),
