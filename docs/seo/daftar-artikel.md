@@ -29,8 +29,8 @@ P1 = terbit bulan 1–3, P2 = bulan 4–6, P3 = setelahnya.
 | 15 | CCTV Smart City: Dari Kamera Lalu Lintas ke Command Center | Pemerintahan | cctv smart city | Panduan | /services/cctv-analytics | P2 | belum |
 | 16 | Website OPD Sering Diretas Judi Online: Penyebab dan Cara Mencegah | Pemerintahan | website pemda diretas judi online | Panduan | /services/keamanan-digital | P1 | belum |
 | 17 | Absensi ASN dengan Face Recognition: Aturan, Integrasi, dan Data Pribadi | Pemerintahan | absensi asn face recognition | Panduan | /produk/attendance | P2 | belum |
-| 18 | Kiosk Pelayanan Publik untuk Mal Pelayanan Publik (MPP) | Pemerintahan | kiosk pelayanan publik | Panduan | /produk/kiosk | P2 | belum |
-| 19 | AI untuk Pemerintah Daerah: Asisten Dokumen yang Datanya Tidak Keluar | Pemerintahan | ai untuk pemda | Panduan | /services/private-llm | P2 | belum |
+| 18 | Kiosk Pelayanan Publik untuk Mal Pelayanan Publik (MPP) | Pemerintahan | kiosk pelayanan publik | Panduan | /produk/kiosk | P2 | TERBIT: /blog/kiosk-pelayanan-publik-mpp |
+| 19 | AI untuk Pemerintah Daerah: Asisten Dokumen yang Datanya Tidak Keluar | Pemerintahan | ai untuk pemda | Panduan | /services/private-llm | P2 | TERBIT: /blog/ai-untuk-pemerintah-daerah |
 | 20 | Videotron Pemda: Spesifikasi, Lokasi, dan Perawatan | Pemerintahan | videotron pemda | Panduan | /services/videotron | P3 | belum |
 | 21 | Teknologi untuk IKN Nusantara: Jaringan, CCTV, dan Smart Building | Pemerintahan | teknologi ikn | Panduan | /industri/pemerintahan | P2 | belum |
 | 22 | Sistem Informasi Desa: Website, Data Penduduk, dan Layanan Surat | Desa | sistem informasi desa | Panduan | /industri/desa | P2 | belum |
@@ -49,7 +49,7 @@ P1 = terbit bulan 1–3, P2 = bulan 4–6, P3 = setelahnya.
 
 | # | Judul | Sektor | Keyword utama | Jenis | Tautkan ke | Prioritas | Status |
 |---|---|---|---|---|---|---|---|
-| 33 | Sistem Antrian Rumah Sakit: Kiosk, Display, dan Integrasi SIMRS | Kesehatan | sistem antrian rumah sakit | Panduan | /produk/kiosk | P1 | belum |
+| 33 | Sistem Antrian Rumah Sakit: Kiosk, Display, dan Integrasi SIMRS | Kesehatan | sistem antrian rumah sakit | Panduan | /produk/kiosk | P1 | TERBIT: /blog/sistem-antrian-rumah-sakit |
 | 34 | Integrasi SATUSEHAT untuk Klinik dan RS Daerah: Langkah Teknis | Kesehatan | integrasi satusehat | Panduan | /services/integrasi-sistem | P2 | belum |
 | 35 | Sistem Antrian Poliklinik: Studi Kasus | Kesehatan | antrian poliklinik | Studi kasus | /portfolio/sistem-antrian-poliklinik | P2 | belum |
 | 36 | CCTV Rumah Sakit: Area Wajib dan Aturan Privasi Pasien | Kesehatan | cctv rumah sakit | Panduan | /services/pengadaan-cctv | P3 | belum |

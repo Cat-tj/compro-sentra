@@ -24,6 +24,14 @@
 <media:content url="https://www.sentratechnology.com/assets/img/art/blog-android-vs-web.webp" medium="image"/>
 </item>
 <item>
+<title>지방정부를 위한 AI: 데이터가 밖으로 나가지 않는 문서 도우미</title>
+<link>https://www.sentratechnology.com/ko/blog/ai-untuk-pemerintah-daerah</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/ai-untuk-pemerintah-daerah</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>지방정부에 현실적인 AI 활용: 규정 질의응답, 회의 요약, 문서 검색, 그리고 데이터 통제·출처 표시·사람의 검토 조건.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-ai-pemda.webp" medium="image"/>
+</item>
+<item>
 <title>웹사이트 보안 체크리스트: 해킹당하기 전에 확인할 12가지</title>
 <link>https://www.sentratechnology.com/ko/blog/keamanan-website-checklist</link>
 <guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/keamanan-website-checklist</guid>
@@ -64,6 +72,14 @@
 <media:content url="https://www.sentratechnology.com/assets/img/art/blog-backup-321.webp" medium="image"/>
 </item>
 <item>
+<title>병원·의원 대기 시스템: 키오스크, 화면, 병원정보시스템 연동</title>
+<link>https://www.sentratechnology.com/ko/blog/sistem-antrian-rumah-sakit</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/sistem-antrian-rumah-sakit</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>병원, 의원, 외래에 필요한 대기 시스템 준비: 환자 동선, 키오스크, 호출 화면, 병원정보시스템 연동, 대기시간 데이터.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-antrian-rs.webp" medium="image"/>
+</item>
+<item>
 <title>매장·소상공인용 CCTV 패키지: 카메라는 몇 대면 충분한가</title>
 <link>https://www.sentratechnology.com/ko/blog/paket-cctv-toko-umkm</link>
 <guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/paket-cctv-toko-umkm</guid>
@@ -78,6 +94,14 @@
 <pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
 <description>직원이 ChatGPT 등 공개 AI로 업무 문서를 다루기 전에 확인할 점과, 온프레미스·프라이빗 LLM이 적합한 경우.</description>
 <media:content url="https://www.sentratechnology.com/assets/img/art/blog-chatgpt-perusahaan.webp" medium="image"/>
+</item>
+<item>
+<title>공공서비스몰(MPP)을 위한 민원 키오스크</title>
+<link>https://www.sentratechnology.com/ko/blog/kiosk-pelayanan-publik-mpp</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/ko/blog/kiosk-pelayanan-publik-mpp</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>공공서비스몰이나 민원실의 대기·안내 키오스크에 필요한 준비: 기능, 장비, 대기 흐름, 접근성, 유지보수.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-kiosk-mpp.webp" medium="image"/>
 </item>
 <item>
 <title>건물 광케이블 설치: 단계, 장비, 비용 구성</title>

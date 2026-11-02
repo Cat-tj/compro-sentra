@@ -32,6 +32,14 @@
 <media:content url="https://www.sentratechnology.com/assets/img/art/blog-smartlock-kantor.webp" medium="image"/>
 </item>
 <item>
+<title>Sistem Antrian Rumah Sakit dan Klinik: Kiosk, Layar, dan Integrasi SIMRS</title>
+<link>https://www.sentratechnology.com/blog/sistem-antrian-rumah-sakit</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/sistem-antrian-rumah-sakit</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Apa yang perlu disiapkan untuk sistem antrian rumah sakit, klinik, atau poliklinik: alur pasien, kiosk, layar panggilan, integrasi SIMRS, dan data waktu tunggu.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-antrian-rs.webp" medium="image"/>
+</item>
+<item>
 <title>Server AI On-Premise: GPU, RAM, dan Penyimpanan yang Dibutuhkan</title>
 <link>https://www.sentratechnology.com/blog/server-ai-on-premise</link>
 <guid isPermaLink="true">https://www.sentratechnology.com/blog/server-ai-on-premise</guid>
@@ -46,6 +54,14 @@
 <pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
 <description>Cara menentukan jumlah dan posisi kamera CCTV untuk toko, warung, atau gudang kecil, apa saja yang masuk paket, dan hal yang sering terlewat.</description>
 <media:content url="https://www.sentratechnology.com/assets/img/art/blog-cctv-toko.webp" medium="image"/>
+</item>
+<item>
+<title>Kiosk Pelayanan Publik untuk Mal Pelayanan Publik (MPP)</title>
+<link>https://www.sentratechnology.com/blog/kiosk-pelayanan-publik-mpp</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/kiosk-pelayanan-publik-mpp</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Apa yang perlu disiapkan untuk kiosk antrean dan informasi di Mal Pelayanan Publik atau kantor layanan: fungsi, perangkat, alur antrean, aksesibilitas, dan perawatan.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-kiosk-mpp.webp" medium="image"/>
 </item>
 <item>
 <title>Instalasi Fiber Optik Gedung: Tahapan, Alat, dan Komponen Biaya</title>
@@ -102,6 +118,14 @@
 <pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
 <description>Kapan tim lapangan sebaiknya memakai aplikasi Android native dan kapan web app sudah cukup: sinyal, GPS, kamera, offline, perangkat keras, pembaruan, dan biaya perawatan.</description>
 <media:content url="https://www.sentratechnology.com/assets/img/art/blog-android-vs-web.webp" medium="image"/>
+</item>
+<item>
+<title>AI untuk Pemerintah Daerah: Asisten Dokumen yang Datanya Tidak Keluar</title>
+<link>https://www.sentratechnology.com/blog/ai-untuk-pemerintah-daerah</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/blog/ai-untuk-pemerintah-daerah</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>Contoh pemakaian AI untuk pemda yang realistis: tanya jawab peraturan, ringkasan rapat, dan pencarian arsip, dengan syarat kontrol data, rujukan sumber, dan peninjauan manusia.</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-ai-pemda.webp" medium="image"/>
 </item>
 <item>
 <title>WebGIS dan Peta Tematik untuk Pemda: Belajar dari POMPy BATARA Barito Utara</title>

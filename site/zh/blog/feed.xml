@@ -56,6 +56,22 @@
 <media:content url="https://www.sentratechnology.com/assets/img/art/blog-cctv-toko.webp" medium="image"/>
 </item>
 <item>
+<title>地方政府的 AI：数据不出门的文档助手</title>
+<link>https://www.sentratechnology.com/zh/blog/ai-untuk-pemerintah-daerah</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/ai-untuk-pemerintah-daerah</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>地方政府切合实际的 AI 用法：法规问答、会议纪要摘要和档案检索，前提是数据可控、有来源引用并经人工审核。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-ai-pemda.webp" medium="image"/>
+</item>
+<item>
+<title>医院与诊所排队系统：自助终端、显示屏与 HIS 集成</title>
+<link>https://www.sentratechnology.com/zh/blog/sistem-antrian-rumah-sakit</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/sistem-antrian-rumah-sakit</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>医院、诊所或门诊部排队系统需要准备什么：患者流程、自助终端、叫号屏、医院信息系统集成和等待时间数据。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-antrian-rs.webp" medium="image"/>
+</item>
+<item>
 <title>办公室智能门锁：刷卡、密码、人脸与手机开门</title>
 <link>https://www.sentratechnology.com/zh/blog/smartlock-kantor</link>
 <guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/smartlock-kantor</guid>
@@ -78,6 +94,14 @@
 <pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
 <description>在运营车辆上安装 GPS 追踪器前需考虑什么：功能、安装、SIM 卡、平台、成本构成和司机隐私规则。</description>
 <media:content url="https://www.sentratechnology.com/assets/img/art/blog-gps-kendaraan.webp" medium="image"/>
+</item>
+<item>
+<title>公共服务中心（MPP）的服务自助终端</title>
+<link>https://www.sentratechnology.com/zh/blog/kiosk-pelayanan-publik-mpp</link>
+<guid isPermaLink="true">https://www.sentratechnology.com/zh/blog/kiosk-pelayanan-publik-mpp</guid>
+<pubDate>Mon, 02 Nov 2026 08:00:00 +0700</pubDate>
+<description>公共服务中心或服务办公室的排队与信息自助终端需要准备什么：功能、设备、排队流程、无障碍和维护。</description>
+<media:content url="https://www.sentratechnology.com/assets/img/art/blog-kiosk-mpp.webp" medium="image"/>
 </item>
 <item>
 <title>企业使用 ChatGPT：数据风险与本地部署替代方案</title>
