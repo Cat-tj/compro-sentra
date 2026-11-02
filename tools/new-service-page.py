@@ -138,9 +138,11 @@ def build_main(c, t, prefix, slug):
     related = "".join(f'<a class="mini-card" href="{p}{href}"><span class="mc-ico">{ARROW}</span><span><b>{e(label)}</b></span></a>'
                       for href, label in zip(c["related_links"], t["related"]))
     faq = "".join(f"<details><summary>{e(q)}</summary><p>{e(a)}</p></details>" for q, a in t["faq"])
-    chips = "".join(f'<span class="float-chip c{i + 1}">{e(x)}</span>' for i, x in enumerate(t["chips"]))
+    chips = ""  # floating chips were removed site-wide (owner decision 2026-11-02); any "chips" in the content file are ignored
     trust = "".join(f"<li>{e(x)}</li>" for x in t["cta_trust"])
-    if c.get("catalog_ids"):
+    if t.get("kits_html"):
+        kits = t["kits_html"]
+    elif c.get("catalog_ids"):
         kits = f'<div class="hwi-grid">{catalog_cards(prefix, c["catalog_ids"])}</div>'
     else:
         kits = f'<div class="grid g3">{project_cards(prefix, c["project_slugs"])}</div>'

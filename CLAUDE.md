@@ -65,3 +65,8 @@ full of superlatives and repeated blurbs. Rewrite all 5 languages together.
 - Owner is looking for a new reference for the About hero ASCII; hero and footer animations may become static.
 - Real photo for Ilham; real bios; whether Adam's title becomes "Infra Lead".
 - PR https://github.com/Sentra-Technology/compro-sentra/pull/2 needs a repo writer to merge.
+
+## Partners and price rules
+- GIDA (PT GIDA International Trading Indonesia) became a Sentra partner on 2026-11-02 (mobile light towers, energy storage containers, solar 4G cameras). Page: `/services/menara-lampu-surya` (source `tools/pages/menara-lampu-surya.build.py`, specs from their brochure), article `/blog/light-tower-surya-vs-diesel`.
+- Never publish distributor or partner price lists (GIDA's says distributor price is for partners only and market price is only a recommendation). Pages say "price follows the manufacturer's official quotation; request via WhatsApp". Brochure and price list model names differ (GD7-H vs 7H) and some specs disagree (PV 595 W vs 610 W per panel); the page uses the brochure.
+- Not yet on the site: GD-MES energy storage containers and the GDKJ-D440 solar 4G camera (could become pages after the owner confirms Sentra sells them).
